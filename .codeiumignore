@@ -1,0 +1,88 @@
+# Windsurf/Codeium Ignore File
+# Prevents AI from indexing/reading these paths for better performance
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+bin/
+obj/
+
+# Large data files
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pkl
+*.h5
+
+# Media files (large)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.flac
+
+# Image datasets (large collections)
+datasets/
+training_data/
+output/images/
+galleries/
+
+# Logs and temporary files
+*.log
+logs/
+*.tmp
+*.temp
+.cache/
+
+# IDE and system files
+.git/
+.svn/
+.hg/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets (should never be indexed)
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Project-specific large directories
+checkpoints/
+models/
+loras/
+embeddings/
+vae/
+compare/
+project/
+ramdrive_virtual/

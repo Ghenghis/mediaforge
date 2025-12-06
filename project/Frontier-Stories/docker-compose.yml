@@ -1,0 +1,108 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: frontier-stories-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: frontier_stories
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/init-db.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    networks:
+      - frontier-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d frontier_stories"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # pgAdmin for database management (lighter than Supabase Studio)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: frontier-stories-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@frontier.dev
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - frontier-network
+
+  # AI Functions Server with LM Studio Integration
+  functions:
+    build:
+      context: ./docker/functions
+      dockerfile: Dockerfile
+    container_name: frontier-stories-functions
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/frontier_stories
+      # LM Studio Configuration - connects to host machine
+      LM_STUDIO_URL: http://host.docker.internal:1234
+      LM_STUDIO_VISION_MODEL: ${LM_STUDIO_VISION_MODEL:-default}
+      LM_STUDIO_TEXT_MODEL: ${LM_STUDIO_TEXT_MODEL:-default}
+      # Optional external API keys (if needed)
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ELEVENLABS_API_KEY: ${ELEVENLABS_API_KEY:-}
+    ports:
+      - "3001:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - frontier-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile
+    container_name: frontier-stories-frontend
+    restart: unless-stopped
+    volumes:
+      - ./src:/app/src  # Mount source code for development
+      - ./public:/app/public
+      - C:\Users\Admin\.lmstudio\models:/host_lmstudio/models:ro
+    environment:
+      VITE_SUPABASE_URL: https://pvlqwxkgovjwqhpqnssl.supabase.co
+      VITE_SUPABASE_PUBLISHABLE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB2bHF3eGtnb3Zqd3FocHFuc3NsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQzOTE2OTMsImV4cCI6MjA3OTk2NzY5M30.aha9EGU1H2XtudJWvRnSHemQYm0x41TMaInLVCZAg_4
+      VITE_SUPABASE_PROJECT_ID: pvlqwxkgovjwqhpqnssl
+      # LM Studio Configuration
+      VITE_LM_STUDIO_URL: http://host.docker.internal:1234
+      VITE_LM_STUDIO_MODELS_PATH: /host_lmstudio/models
+    ports:
+      - "5173:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      functions:
+        condition: service_healthy
+    networks:
+      - frontier-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  frontier-network:
+    driver: bridge

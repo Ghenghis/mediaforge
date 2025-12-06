@@ -1,0 +1,323 @@
+{
+  "version": "2.0",
+  "description": "Comprehensive Content Rating System for Story Generation",
+  "updated": "2024-12-04",
+  
+  "rating_categories": {
+    "family": {
+      "name": "Family Content",
+      "description": "Safe for all ages, family-appropriate stories",
+      "access": "public",
+      "ratings": ["EL", "L", "PG", "PG13", "PG17"]
+    },
+    "adult": {
+      "name": "Adult Content",
+      "description": "Mature content requiring age verification",
+      "access": "restricted",
+      "ratings": ["SOFT", "MED", "R", "HARD", "HC", "X", "XXX"]
+    }
+  },
+  
+  "ratings": {
+    "EL": {
+      "code": "EL",
+      "name": "Extra Light",
+      "label": "Extra Light - All Ages",
+      "description": "Completely family-safe, fully modest attire",
+      "min_age": 0,
+      "coverage_percent": 100,
+      "allowed_transparency": 0,
+      "family_safe": true,
+      "clothing_rules": {
+        "required": ["full_coverage", "modest_neckline", "long_sleeves_optional", "full_length_bottoms"],
+        "forbidden": ["low_cut", "tight_fitting", "revealing", "transparent", "swimwear"],
+        "modifiers": ["conservative", "period_accurate", "family_appropriate"]
+      },
+      "pose_rules": {
+        "allowed": ["standing", "sitting", "walking", "working", "family_group"],
+        "forbidden": ["suggestive", "provocative", "intimate"]
+      },
+      "guardrails": ["strict_modesty", "child_safe", "no_skin_exposure"]
+    },
+    
+    "L": {
+      "code": "L",
+      "name": "Light",
+      "label": "Light - General Audience",
+      "description": "General audience, modest with slight relaxation",
+      "min_age": 6,
+      "coverage_percent": 95,
+      "allowed_transparency": 0,
+      "family_safe": true,
+      "clothing_rules": {
+        "required": ["modest_coverage", "appropriate_neckline"],
+        "forbidden": ["revealing", "transparent", "swimwear"],
+        "modifiers": ["period_accurate", "family_appropriate"]
+      },
+      "pose_rules": {
+        "allowed": ["natural_poses", "action_poses", "group_poses"],
+        "forbidden": ["suggestive", "provocative"]
+      },
+      "guardrails": ["modesty_enforced", "child_safe"]
+    },
+    
+    "PG": {
+      "code": "PG",
+      "name": "PG",
+      "label": "PG - Parental Guidance",
+      "description": "Parental guidance suggested, standard modest attire",
+      "min_age": 8,
+      "coverage_percent": 90,
+      "allowed_transparency": 0,
+      "family_safe": true,
+      "clothing_rules": {
+        "required": ["standard_coverage"],
+        "forbidden": ["revealing", "transparent", "swimwear"],
+        "modifiers": ["period_accurate"]
+      },
+      "pose_rules": {
+        "allowed": ["natural_poses", "action_poses", "dramatic_poses"],
+        "forbidden": ["provocative", "intimate"]
+      },
+      "guardrails": ["standard_modesty", "child_safe"]
+    },
+    
+    "PG13": {
+      "code": "PG13",
+      "name": "PG-13",
+      "label": "PG-13 - Teen Appropriate",
+      "description": "Teen appropriate, slightly more mature themes",
+      "min_age": 13,
+      "coverage_percent": 85,
+      "allowed_transparency": 0,
+      "family_safe": true,
+      "clothing_rules": {
+        "required": ["teen_appropriate"],
+        "allowed": ["period_formal", "working_attire", "modest_evening"],
+        "forbidden": ["revealing", "transparent"],
+        "modifiers": ["period_accurate"]
+      },
+      "pose_rules": {
+        "allowed": ["natural_poses", "confident_poses", "dramatic_poses"],
+        "forbidden": ["provocative"]
+      },
+      "guardrails": ["teen_appropriate"]
+    },
+    
+    "PG17": {
+      "code": "PG17",
+      "name": "PG-17",
+      "label": "PG-17 - Older Teen",
+      "description": "Older teen, more mature but still family-appropriate",
+      "min_age": 17,
+      "coverage_percent": 80,
+      "allowed_transparency": 0,
+      "family_safe": true,
+      "clothing_rules": {
+        "required": ["age_appropriate"],
+        "allowed": ["formal_wear", "evening_wear", "period_accurate"],
+        "forbidden": ["explicit", "very_revealing"],
+        "modifiers": ["period_accurate", "elegant"]
+      },
+      "pose_rules": {
+        "allowed": ["confident_poses", "dramatic_poses", "romantic_mild"],
+        "forbidden": ["explicit"]
+      },
+      "guardrails": ["mature_teen"]
+    },
+    
+    "SOFT": {
+      "code": "SOFT",
+      "name": "Soft",
+      "label": "Soft - Transparent Fabrics",
+      "description": "See-through fabrics allowed, like fashion/red carpet. NOT nude.",
+      "min_age": 18,
+      "coverage_percent": 70,
+      "allowed_transparency": 50,
+      "family_safe": false,
+      "clothing_rules": {
+        "required": ["clothing_present"],
+        "allowed": ["sheer_fabrics", "lace", "transparent_overlays", "fashion_forward"],
+        "forbidden": ["full_nudity", "explicit_exposure"],
+        "modifiers": ["elegant", "artistic", "fashion"]
+      },
+      "pose_rules": {
+        "allowed": ["confident_poses", "fashion_poses", "artistic_poses"],
+        "forbidden": ["explicit"]
+      },
+      "examples": ["red_carpet_sheer_dress", "lace_overlay", "fashion_editorial"],
+      "guardrails": ["soft_content", "no_explicit"]
+    },
+    
+    "MED": {
+      "code": "MED",
+      "name": "Medium",
+      "label": "Medium - Adult Content",
+      "description": "Medium adult content, more revealing",
+      "min_age": 18,
+      "coverage_percent": 60,
+      "allowed_transparency": 70,
+      "family_safe": false,
+      "clothing_rules": {
+        "allowed": ["revealing", "lingerie", "swimwear", "partial_coverage"],
+        "forbidden": ["full_nudity"],
+        "modifiers": ["sensual", "artistic"]
+      },
+      "pose_rules": {
+        "allowed": ["sensual_poses", "artistic_poses"],
+        "forbidden": ["explicit_sexual"]
+      },
+      "guardrails": ["medium_adult"]
+    },
+    
+    "R": {
+      "code": "R",
+      "name": "R-Rated",
+      "label": "R - Restricted",
+      "description": "Restricted adult content",
+      "min_age": 18,
+      "coverage_percent": 40,
+      "allowed_transparency": 90,
+      "family_safe": false,
+      "clothing_rules": {
+        "allowed": ["minimal_coverage", "artistic_partial"],
+        "modifiers": ["adult", "sensual"]
+      },
+      "pose_rules": {
+        "allowed": ["adult_poses", "artistic_poses"]
+      },
+      "guardrails": ["adult_only", "age_verified"]
+    },
+    
+    "HARD": {
+      "code": "HARD",
+      "name": "Hard",
+      "label": "Hard - Mature Adult",
+      "description": "Hard adult content",
+      "min_age": 18,
+      "coverage_percent": 20,
+      "allowed_transparency": 100,
+      "family_safe": false,
+      "clothing_rules": {
+        "allowed": ["minimal", "artistic_nude"],
+        "modifiers": ["adult", "explicit"]
+      },
+      "guardrails": ["strict_adult", "age_verified"]
+    },
+    
+    "HC": {
+      "code": "HC",
+      "name": "Hardcore",
+      "label": "Hardcore",
+      "description": "Hardcore adult content",
+      "min_age": 18,
+      "coverage_percent": 10,
+      "allowed_transparency": 100,
+      "family_safe": false,
+      "guardrails": ["explicit_adult", "strict_verification"]
+    },
+    
+    "X": {
+      "code": "X",
+      "name": "X-Rated",
+      "label": "X - Explicit",
+      "description": "Explicit adult content",
+      "min_age": 18,
+      "coverage_percent": 5,
+      "allowed_transparency": 100,
+      "family_safe": false,
+      "guardrails": ["explicit", "strict_verification"]
+    },
+    
+    "XXX": {
+      "code": "XXX",
+      "name": "XXX",
+      "label": "XXX - Extreme",
+      "description": "Extreme explicit content",
+      "min_age": 18,
+      "coverage_percent": 0,
+      "allowed_transparency": 100,
+      "family_safe": false,
+      "guardrails": ["extreme_explicit", "strict_verification", "content_warnings"]
+    }
+  },
+  
+  "global_guardrails": {
+    "absolute_rules": [
+      "No minors in any adult content (SOFT and above) - EVER",
+      "Child characters (under 18) always fully clothed in all ratings",
+      "Family content (EL-PG17) cannot access adult features",
+      "Age verification required for SOFT and above",
+      "Content warnings mandatory for R and above"
+    ],
+    "forbidden_always": [
+      "child", "minor", "underage", "teen in adult context",
+      "loli", "shota", "young", "kid", "preteen"
+    ],
+    "soft_definition": {
+      "description": "SOFT rating allows see-through/transparent clothing like celebrities wear on red carpets",
+      "examples": [
+        "Sheer evening gown with strategic coverage",
+        "Lace overlay dress",
+        "Mesh fashion piece",
+        "Transparent fabric with undergarments"
+      ],
+      "NOT_allowed": [
+        "Full nudity",
+        "Explicit exposure",
+        "No clothing at all"
+      ]
+    }
+  },
+  
+  "western_era_modifiers": {
+    "period": "1850-1900",
+    "region": "American West/Frontier",
+    "clothing_by_rating": {
+      "EL": "Full prairie dress, high collar, long sleeves, bonnet",
+      "L": "Modest western dress, covered shoulders",
+      "PG": "Period-accurate western wear, modest",
+      "PG13": "Western formal wear, modest evening",
+      "PG17": "Elegant western formal, slight glamour",
+      "SOFT": "Saloon style with sheer overlay, elegant",
+      "MED": "Revealing saloon attire",
+      "R": "Minimal western attire",
+      "HARD": "Very minimal coverage",
+      "HC": "Extreme minimal",
+      "X": "Explicit western",
+      "XXX": "No restrictions"
+    }
+  },
+  
+  "dialog_templates": {
+    "introduction": {
+      "sheriff": [
+        "Name's {name}. I keep the peace 'round here.",
+        "You new in town? I'm Sheriff {name}.",
+        "Welcome to {town}. I run a tight ship here."
+      ],
+      "outlaw": [
+        "Don't ask my name if you know what's good for you.",
+        "They call me {name}. You might've seen my poster.",
+        "I ain't lookin' for trouble... unless you are."
+      ],
+      "rancher": [
+        "This here's my land, far as the eye can see.",
+        "{name}'s the name. Biggest spread in the territory.",
+        "Been ranchin' these parts for thirty years."
+      ]
+    },
+    "family_scenes": {
+      "dinner": [
+        "Pass the biscuits, would you?",
+        "How was your day in town?",
+        "The harvest is looking good this year."
+      ],
+      "morning": [
+        "Rise and shine, we got work to do.",
+        "Breakfast is ready, everyone to the table.",
+        "Another beautiful day on the frontier."
+      ]
+    }
+  }
+}

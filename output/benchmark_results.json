@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-12-03T16:46:12.271077",
+  "test_images": 2,
+  "results": [
+    {
+      "model": "qwen2-vl-ocr-2b-instruct",
+      "avg_time": 5.774723291397095,
+      "throughput_per_hour": 623.4064938424161,
+      "errors": []
+    },
+    {
+      "model": "granite-vision-3.2-2b",
+      "avg_time": 999,
+      "throughput_per_hour": 0,
+      "errors": [
+        "HTTP 400",
+        "HTTP 400"
+      ]
+    },
+    {
+      "model": "vlaa-thinker-qwen2vl-2b-i1",
+      "avg_time": 999,
+      "throughput_per_hour": 0,
+      "errors": [
+        "HTTP 400",
+        "HTTP 400"
+      ]
+    },
+    {
+      "model": "blazer.1-2b-vision",
+      "avg_time": 999,
+      "throughput_per_hour": 0,
+      "errors": [
+        "HTTP 400",
+        "HTTP 400"
+      ]
+    }
+  ]
+}

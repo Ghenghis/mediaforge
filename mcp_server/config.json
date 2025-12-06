@@ -1,0 +1,28 @@
+{
+  "lm_studio": {
+    "base_url": "http://localhost:1234",
+    "timeout": 60,
+    "retry_attempts": 3,
+    "retry_delay": 1
+  },
+  "server": {
+    "name": "lm-studio-mcp",
+    "version": "1.0.0"
+  },
+  "model_selection": {
+    "active_mode": "local",
+    "modes": {
+      "windsurf": {
+        "name": "Windsurf Built-in",
+        "description": "Use Windsurf's default model",
+        "enabled": true
+      },
+      "local": {
+        "name": "Local LM Studio",
+        "description": "Use local uncensored model",
+        "enabled": true,
+        "model_name": null
+      }
+    }
+  }
+}

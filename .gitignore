@@ -1,0 +1,142 @@
+# ============================================
+# LORAFORGE .gitignore
+# Excludes user data, models, and secrets
+# ============================================
+
+# ===========================================
+# USER DATA - NEVER COMMIT
+# ===========================================
+training/
+models_output/
+evaluation/
+logs/
+*.log
+
+# Temporary files
+temp_*.jpg
+temp_*.png
+*.tmp
+
+# ===========================================
+# VIDEO & IMAGE DATA
+# ===========================================
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.bmp
+*.tiff
+
+# ===========================================
+# ENVIRONMENT & SECRETS
+# ===========================================
+.env
+.env.*
+*.local
+*.local.user
+api_keys.txt
+secrets.yaml
+config.local.yaml
+
+# ===========================================
+# AI MODEL FILES
+# ===========================================
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+*.onnx
+
+# LM Studio / Ollama paths
+.lmstudio/
+.ollama/
+
+# ===========================================
+# PYTHON
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# ===========================================
+# .NET / WPF
+# ===========================================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ===========================================
+# IDE / EDITORS
+# ===========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===========================================
+# OS GENERATED
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===========================================
+# MISC
+# ===========================================
+*.bak
+*.backup
+*.old
+.cache/
+.history/
+node_modules/

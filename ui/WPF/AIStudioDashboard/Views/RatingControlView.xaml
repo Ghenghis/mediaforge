@@ -1,0 +1,348 @@
+<Window x:Class="AIStudioDashboard.Views.RatingControlView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Rating Control Panel" Height="700" Width="1000"
+        Background="#1a1a2e" WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style x:Key="CategoryButton" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="15,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="8" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="RatingCard" TargetType="Border">
+            <Setter Property="Background" Value="#252547"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="15"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#16213e" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel>
+                    <TextBlock Text="Content Rating Control" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="22 Rating Levels | Country Compliance | Guardrails" 
+                               FontSize="12" Foreground="#8892b0" Margin="0,5,0,0"/>
+                </StackPanel>
+                
+                <!-- Settings Gear -->
+                <Button Grid.Column="1" Background="Transparent" BorderThickness="0" 
+                        Width="40" Height="40" Cursor="Hand" Click="SettingsGear_Click">
+                    <TextBlock Text="&#x2699;" FontSize="24" Foreground="#64ffda"/>
+                </Button>
+            </Grid>
+        </Border>
+        
+        <!-- Category Selector -->
+        <Border Grid.Row="1" Background="#0f3460" Padding="15">
+            <StackPanel>
+                <TextBlock Text="SELECT CATEGORY" FontSize="12" Foreground="#8892b0" Margin="0,0,0,10"/>
+                <WrapPanel>
+                    <Button Style="{StaticResource CategoryButton}" 
+                            Background="#4CAF50" Foreground="White" 
+                            Content="Family Safe (5)" Tag="family_safe" Click="Category_Click"/>
+                    <Button Style="{StaticResource CategoryButton}" 
+                            Background="#2196F3" Foreground="White" 
+                            Content="Teen (4)" Tag="teen" Click="Category_Click"/>
+                    <Button Style="{StaticResource CategoryButton}" 
+                            Background="#FF9800" Foreground="White" 
+                            Content="Adult Entry (3)" Tag="adult_entry" Click="Category_Click"/>
+                    <Button Style="{StaticResource CategoryButton}" 
+                            Background="#9C27B0" Foreground="White" 
+                            Content="Adult Soft (4)" Tag="adult_soft" Click="Category_Click"/>
+                    <Button Style="{StaticResource CategoryButton}" 
+                            Background="#F44336" Foreground="White" 
+                            Content="Adult Explicit (5)" Tag="adult_explicit" Click="Category_Click"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+        
+        <!-- Main Content -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <Grid Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="350"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Ratings Grid -->
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="AVAILABLE RATINGS" FontSize="14" FontWeight="Bold" 
+                               Foreground="#64ffda" Margin="0,0,0,15"/>
+                    
+                    <ItemsControl x:Name="RatingsPanel">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                    
+                    <!-- Family Safe Ratings -->
+                    <TextBlock Text="Family Safe" FontSize="12" Foreground="#4CAF50" Margin="0,15,0,5"/>
+                    <WrapPanel x:Name="FamilySafePanel">
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="EL" FontSize="20" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0-5 yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="100%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="L" FontSize="20" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="5-7 yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="100%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="G" FontSize="20" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="7-10 yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="95%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="PG" FontSize="20" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="10-12 yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="90%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="PG-13" FontSize="20" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                                <TextBlock Text="13+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="85%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </WrapPanel>
+                    
+                    <!-- Teen Ratings -->
+                    <TextBlock Text="Teen" FontSize="12" Foreground="#2196F3" Margin="0,15,0,5"/>
+                    <WrapPanel x:Name="TeenPanel">
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-14" FontSize="18" FontWeight="Bold" Foreground="#2196F3" HorizontalAlignment="Center"/>
+                                <TextBlock Text="14+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="80%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-15" FontSize="18" FontWeight="Bold" Foreground="#2196F3" HorizontalAlignment="Center"/>
+                                <TextBlock Text="15+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="75%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-16" FontSize="18" FontWeight="Bold" Foreground="#2196F3" HorizontalAlignment="Center"/>
+                                <TextBlock Text="16+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="70%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-17" FontSize="18" FontWeight="Bold" Foreground="#2196F3" HorizontalAlignment="Center"/>
+                                <TextBlock Text="17+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="60%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </WrapPanel>
+                    
+                    <!-- Adult Entry Ratings -->
+                    <TextBlock Text="Adult Entry (Age Verification Required)" FontSize="12" Foreground="#FF9800" Margin="0,15,0,5"/>
+                    <WrapPanel x:Name="AdultEntryPanel">
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-18" FontSize="18" FontWeight="Bold" Foreground="#FF9800" HorizontalAlignment="Center"/>
+                                <TextBlock Text="18+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="50%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-19" FontSize="18" FontWeight="Bold" Foreground="#FF9800" HorizontalAlignment="Center"/>
+                                <TextBlock Text="19+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="40%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="NC-20" FontSize="18" FontWeight="Bold" Foreground="#FF9800" HorizontalAlignment="Center"/>
+                                <TextBlock Text="20+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="30%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </WrapPanel>
+                    
+                    <!-- Adult Soft Ratings -->
+                    <TextBlock Text="Adult Soft (Restriction Release)" FontSize="12" Foreground="#9C27B0" Margin="0,15,0,5"/>
+                    <WrapPanel x:Name="AdultSoftPanel">
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="SOFT" FontSize="18" FontWeight="Bold" Foreground="#9C27B0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="18+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="25%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="SOFTCORE" FontSize="14" FontWeight="Bold" Foreground="#9C27B0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="18+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="15%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="MED" FontSize="18" FontWeight="Bold" Foreground="#9C27B0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="18+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="10%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="R" FontSize="18" FontWeight="Bold" Foreground="#9C27B0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="18+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="5%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </WrapPanel>
+                    
+                    <!-- Adult Explicit Ratings -->
+                    <TextBlock Text="Adult Explicit (Full Release Required)" FontSize="12" Foreground="#F44336" Margin="0,15,0,5"/>
+                    <WrapPanel x:Name="AdultExplicitPanel">
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="HARD" FontSize="18" FontWeight="Bold" Foreground="#F44336" HorizontalAlignment="Center"/>
+                                <TextBlock Text="21+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0%+" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="HC" FontSize="18" FontWeight="Bold" Foreground="#F44336" HorizontalAlignment="Center"/>
+                                <TextBlock Text="21+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="X" FontSize="18" FontWeight="Bold" Foreground="#F44336" HorizontalAlignment="Center"/>
+                                <TextBlock Text="21+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="XXX" FontSize="18" FontWeight="Bold" Foreground="#F44336" HorizontalAlignment="Center"/>
+                                <TextBlock Text="21+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource RatingCard}" Width="100">
+                            <StackPanel>
+                                <TextBlock Text="EXTREME" FontSize="14" FontWeight="Bold" Foreground="#F44336" HorizontalAlignment="Center"/>
+                                <TextBlock Text="21+ yrs" FontSize="10" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                                <TextBlock Text="0%" FontSize="10" Foreground="#666" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </WrapPanel>
+                </StackPanel>
+                
+                <!-- Side Panel -->
+                <StackPanel Grid.Column="1" Margin="20,0,0,0">
+                    <!-- Current Rating -->
+                    <Border Style="{StaticResource RatingCard}">
+                        <StackPanel>
+                            <TextBlock Text="CURRENT RATING" FontSize="12" Foreground="#8892b0"/>
+                            <TextBlock x:Name="CurrentRatingText" Text="PG" FontSize="48" FontWeight="Bold" 
+                                       Foreground="#4CAF50" HorizontalAlignment="Center" Margin="0,10"/>
+                            <TextBlock x:Name="CurrentRatingDesc" Text="Family Safe - Parental Guidance" 
+                                       FontSize="12" Foreground="#8892b0" TextAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!-- Controls -->
+                    <Border Style="{StaticResource RatingCard}" Margin="0,10,0,0">
+                        <StackPanel>
+                            <TextBlock Text="CONTROLS" FontSize="12" Foreground="#8892b0" Margin="0,0,0,10"/>
+                            
+                            <CheckBox x:Name="AutoTaggingToggle" Content="Auto-Tagging Enabled" 
+                                      Foreground="White" Margin="0,5"/>
+                            <CheckBox x:Name="GuardrailsToggle" Content="Guardrails Active" 
+                                      Foreground="White" Margin="0,5" IsChecked="True"/>
+                            <CheckBox x:Name="CountryComplianceToggle" Content="Country Compliance" 
+                                      Foreground="White" Margin="0,5" IsChecked="True"/>
+                            
+                            <Separator Background="#333" Margin="0,10"/>
+                            
+                            <Button Content="Release Restrictions" Background="#FF9800" Foreground="White"
+                                    Padding="10" Margin="0,5" Cursor="Hand" Click="ReleaseRestrictions_Click"/>
+                            <Button Content="Lock All" Background="#F44336" Foreground="White"
+                                    Padding="10" Margin="0,5" Cursor="Hand" Click="LockAll_Click"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!-- Stats -->
+                    <Border Style="{StaticResource RatingCard}" Margin="0,10,0,0">
+                        <StackPanel>
+                            <TextBlock Text="PROTECTION STATS" FontSize="12" Foreground="#8892b0" Margin="0,0,0,10"/>
+                            <TextBlock Text="Global Forbidden: 47 terms" Foreground="#F44336"/>
+                            <TextBlock Text="Ratings Protected: 22 levels" Foreground="#64ffda"/>
+                            <TextBlock Text="Countries: 197" Foreground="#2196F3"/>
+                            <TextBlock Text="Guardrail Levels: 6" Foreground="#FF9800"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+        
+        <!-- Footer -->
+        <Border Grid.Row="3" Background="#16213e" Padding="15">
+            <Grid>
+                <TextBlock Text="Rating System v2.0 | 22 Levels | 197 Countries" 
+                           Foreground="#8892b0" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Apply" Background="#4CAF50" Foreground="White" 
+                            Padding="20,8" Margin="5,0" Cursor="Hand" Click="Apply_Click"/>
+                    <Button Content="Cancel" Background="#666" Foreground="White" 
+                            Padding="20,8" Margin="5,0" Cursor="Hand" Click="Cancel_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

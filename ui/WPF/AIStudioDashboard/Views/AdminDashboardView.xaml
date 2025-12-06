@@ -1,0 +1,262 @@
+<Window x:Class="AIStudioDashboard.Views.AdminDashboardView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Dashboard - Full Access" Height="800" Width="1100"
+        Background="#1a1a2e" WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style x:Key="AdminCard" TargetType="Border">
+            <Setter Property="Background" Value="#252547"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        
+        <Style x:Key="AdminButton" TargetType="Button">
+            <Setter Property="Padding" Value="15,10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#8B0000" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#x26A0;" FontSize="24" Foreground="#FFD700" Margin="0,0,10,0"/>
+                        <TextBlock Text="ADMIN DASHBOARD" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    </StackPanel>
+                    <TextBlock Text="Full Access Mode - All Restrictions Bypassed" 
+                               FontSize="12" Foreground="#FFD700" Margin="0,5,0,0"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock x:Name="AdminUser" Text="admin" Foreground="White" 
+                               VerticalAlignment="Center" Margin="0,0,15,0" FontWeight="Bold"/>
+                    <Button Content="Logout" Background="#333" Foreground="White" 
+                            Style="{StaticResource AdminButton}" Click="Logout_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Sidebar -->
+            <Border Grid.Column="0" Style="{StaticResource AdminCard}">
+                <StackPanel>
+                    <TextBlock Text="ADMIN CONTROLS" FontSize="14" FontWeight="Bold" 
+                               Foreground="#FFD700" Margin="0,0,0,20"/>
+                    
+                    <Button Content="&#x1F512; Full Access Mode" Background="#4CAF50" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="FullAccess_Click"/>
+                    <Button Content="&#x1F6AB; Bypass Ratings" Background="#FF9800" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="BypassRatings_Click"/>
+                    <Button Content="&#x1F30D; Bypass Country" Background="#2196F3" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="BypassCountry_Click"/>
+                    
+                    <Separator Background="#333" Margin="0,15"/>
+                    
+                    <TextBlock Text="TESTING" FontSize="12" Foreground="#8892b0" Margin="0,0,0,10"/>
+                    <Button Content="Test Violation" Background="#9C27B0" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="TestViolation_Click"/>
+                    <Button Content="Test Forbidden" Background="#F44336" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="TestForbidden_Click"/>
+                    
+                    <Separator Background="#333" Margin="0,15"/>
+                    
+                    <TextBlock Text="SYSTEM" FontSize="12" Foreground="#8892b0" Margin="0,0,0,10"/>
+                    <Button Content="View Logs" Background="#333" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="ViewLogs_Click"/>
+                    <Button Content="User Management" Background="#333" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="UserManagement_Click"/>
+                    <Button Content="System Config" Background="#333" Foreground="White"
+                            Style="{StaticResource AdminButton}" Click="SystemConfig_Click"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Main Panel -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <!-- Stats Row -->
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Border Grid.Column="0" Style="{StaticResource AdminCard}">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="TotalUsers" Text="0" FontSize="32" FontWeight="Bold" Foreground="#64ffda"/>
+                            <TextBlock Text="Total Users" FontSize="11" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Grid.Column="1" Style="{StaticResource AdminCard}">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="ActiveSessions" Text="0" FontSize="32" FontWeight="Bold" Foreground="#2196F3"/>
+                            <TextBlock Text="Active Sessions" FontSize="11" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Grid.Column="2" Style="{StaticResource AdminCard}">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="TotalViolations" Text="0" FontSize="32" FontWeight="Bold" Foreground="#F44336"/>
+                            <TextBlock Text="Violations" FontSize="11" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Grid.Column="3" Style="{StaticResource AdminCard}">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="FlaggedUsers" Text="0" FontSize="32" FontWeight="Bold" Foreground="#FF9800"/>
+                            <TextBlock Text="Flagged Users" FontSize="11" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+                
+                <!-- Tabs -->
+                <TabControl Grid.Row="1" Background="Transparent" Margin="10">
+                    <!-- Actions Log Tab -->
+                    <TabItem Header="Actions Log">
+                        <Border Style="{StaticResource AdminCard}">
+                            <StackPanel>
+                                <TextBlock Text="RECENT ADMIN ACTIONS" FontSize="14" FontWeight="Bold" 
+                                           Foreground="#64ffda" Margin="0,0,0,15"/>
+                                <ListBox x:Name="ActionsLog" Height="350" Background="#1a1a2e" 
+                                         Foreground="#8892b0" BorderThickness="0">
+                                    <ListBoxItem Content="[2025-12-04 10:00:00] Admin logged in"/>
+                                    <ListBoxItem Content="[2025-12-04 10:00:01] Full access mode enabled"/>
+                                    <ListBoxItem Content="[2025-12-04 10:00:02] Rating bypass active"/>
+                                </ListBox>
+                            </StackPanel>
+                        </Border>
+                    </TabItem>
+                    
+                    <!-- Flagged Users Tab -->
+                    <TabItem Header="Flagged Users">
+                        <Border Style="{StaticResource AdminCard}">
+                            <StackPanel>
+                                <TextBlock Text="FLAGGED USERS" FontSize="14" FontWeight="Bold" 
+                                           Foreground="#F44336" Margin="0,0,0,15"/>
+                                <DataGrid x:Name="FlaggedUsersGrid" AutoGenerateColumns="False" 
+                                          Height="350" Background="#1a1a2e" Foreground="White"
+                                          BorderThickness="0" GridLinesVisibility="None">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="User ID" Width="*"/>
+                                        <DataGridTextColumn Header="Country" Width="80"/>
+                                        <DataGridTextColumn Header="Flag Type" Width="100"/>
+                                        <DataGridTextColumn Header="Reason" Width="*"/>
+                                        <DataGridTextColumn Header="Date" Width="120"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </StackPanel>
+                        </Border>
+                    </TabItem>
+                    
+                    <!-- Violations Tab -->
+                    <TabItem Header="Violations">
+                        <Border Style="{StaticResource AdminCard}">
+                            <StackPanel>
+                                <TextBlock Text="CONTENT VIOLATIONS" FontSize="14" FontWeight="Bold" 
+                                           Foreground="#FF9800" Margin="0,0,0,15"/>
+                                <DataGrid x:Name="ViolationsGrid" AutoGenerateColumns="False" 
+                                          Height="350" Background="#1a1a2e" Foreground="White"
+                                          BorderThickness="0" GridLinesVisibility="None">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Type" Width="100"/>
+                                        <DataGridTextColumn Header="Severity" Width="80"/>
+                                        <DataGridTextColumn Header="Rating" Width="80"/>
+                                        <DataGridTextColumn Header="Prompt" Width="*"/>
+                                        <DataGridTextColumn Header="Date" Width="120"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </StackPanel>
+                        </Border>
+                    </TabItem>
+                    
+                    <!-- System Status Tab -->
+                    <TabItem Header="System Status">
+                        <Border Style="{StaticResource AdminCard}">
+                            <StackPanel>
+                                <TextBlock Text="API SERVICES STATUS" FontSize="14" FontWeight="Bold" 
+                                           Foreground="#64ffda" Margin="0,0,0,15"/>
+                                
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="100"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Rating System API" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="1" Text="8198" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="2" x:Name="RatingStatus" Text="ONLINE" Foreground="#4CAF50" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Country Rating API" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="1" Text="8199" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="2" x:Name="CountryStatus" Text="ONLINE" Foreground="#4CAF50" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Guardrails API" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="2" Grid.Column="1" Text="8200" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="2" Grid.Column="2" x:Name="GuardrailsStatus" Text="ONLINE" Foreground="#4CAF50" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Admin System API" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="3" Grid.Column="1" Text="8201" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="3" Grid.Column="2" x:Name="AdminStatus" Text="ONLINE" Foreground="#4CAF50" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Supabase Local API" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="4" Grid.Column="1" Text="8202" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="4" Grid.Column="2" x:Name="SupabaseStatus" Text="ONLINE" Foreground="#4CAF50" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="5" Grid.Column="0" Text="Playwright Automation" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="5" Grid.Column="1" Text="8203" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="5" Grid.Column="2" x:Name="PlaywrightStatus" Text="OFFLINE" Foreground="#F44336" FontWeight="Bold" Margin="5"/>
+                                    
+                                    <TextBlock Grid.Row="6" Grid.Column="0" Text="ComfyUI Integration" Foreground="White" Margin="5"/>
+                                    <TextBlock Grid.Row="6" Grid.Column="1" Text="8204" Foreground="#8892b0" Margin="5"/>
+                                    <TextBlock Grid.Row="6" Grid.Column="2" x:Name="ComfyUIStatus" Text="OFFLINE" Foreground="#F44336" FontWeight="Bold" Margin="5"/>
+                                </Grid>
+                                
+                                <Button Content="Refresh Status" Background="#2196F3" Foreground="White"
+                                        Style="{StaticResource AdminButton}" Margin="0,20,0,0" Click="RefreshStatus_Click"/>
+                            </StackPanel>
+                        </Border>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

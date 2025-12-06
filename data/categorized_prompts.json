@@ -1,0 +1,529 @@
+{
+  "tribal": [
+    {
+      "positive": "1girl, 25yo, (silver white hair), cute oval face, freckles, blush,provocative, (naked). rings, pink background. Facing viewer, realistic skin with natural imperfections, high-resolution skin pores, realistic lighting reflections, ultra-detailed shading, 8k resolution, medium breast, puffy nipples, (cute oval face, prominent cheek bones),very sexy girl, sexy figure, black wall background, 1girl, heterochromia eyes, medium breasts, beautiful face, freckled face, eyeliner, makeup on eyelashes, 25yo, feather headdress, ornamental earring, bare shoulders, tribal design clothing, body paint, intricate face paint, exotic pattern, geometric patterns, striking makeup, bold colors, dramatic expression, shoulder-length hair, stylized hair, black hair, white hair, red accents, black accents, white accents, red earring, feathers, tribal motifs, feathered earring, round earring, tribal pattern, face paint, red lip, black feathers, feather hairpiece, red face paint, white face paint, black face paint, geometric face paint, striking tribal makeup, black panties, (crotch, butt, tribal design panties:1.2)",
+      "negative": "bad anatomy, bad proportions, blurry, cartoonish, deformed hands, missing fingers, extra fingers, fused fingers, poorly drawn hands, disfigured face, distorted features, double vision, exaggerated facial expressions, floating limbs, glowy skin, grainy, gross proportions, lack of detail, low resolution, low quality, missing eyes, mutated hands, out of focus, poorly drawn face, semi-realistic, surrealism, text, watermark, worst quality, unrealistic eyes, unnatural skin texture, visible artifacts, warped face, bad car design, deformed car, unrealistic vehicle, distorted wheels, extra wheels, missing headlights, warped body, cartoon, (tan lines:1.6)",
+      "settings": {
+        "steps": "34",
+        "cfg": "4",
+        "sampler": "DPM++ 2M",
+        "model": "Illustrious",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "1girl, 25yo, (silver white hair), cute oval face, freckles, blush,provocative, (naked). rings, pink background. Facing viewer, realistic skin with natural imperfections, high-resolution skin pores, realistic lighting reflections, ultra-detailed shading, 8k resolution, medium breast, puffy nipples, (cute oval face, prominent cheek bones),very sexy girl, sexy figure, black wall background, 1girl, heterochromia eyes, medium breasts, beautiful face, freckled face, eyeliner, makeup on eyelashes, 25yo, feather headdress, ornamental earring, bare shoulders, tribal design clothing, body paint, intricate face paint, exotic pattern, geometric patterns, striking makeup, bold colors, dramatic expression, shoulder-length hair, stylized hair, black hair, white hair, red accents, black accents, white accents, red earring, feathers, tribal motifs, feathered earring, round earring, tribal pattern, face paint, red lip, black feathers, feather hairpiece, red face paint, white face paint, black face paint, geometric face paint, striking tribal makeup, black panties, crotch, butt, tribal design panties",
+      "negative": "bad anatomy, bad proportions, blurry, cartoonish, deformed hands, missing fingers, extra fingers, fused fingers, poorly drawn hands, disfigured face, distorted features, double vision, exaggerated facial expressions, floating limbs, glowy skin, grainy, gross proportions, lack of detail, low resolution, low quality, missing eyes, mutated hands, out of focus, poorly drawn face, semi-realistic, surrealism, text, watermark, worst quality, unrealistic eyes, unnatural skin texture, visible artifacts, warped face, bad car design, deformed car, unrealistic vehicle, distorted wheels, extra wheels, missing headlights, warped body, cartoon, (tan lines:1.6)",
+      "settings": {
+        "steps": "22",
+        "cfg": "4",
+        "sampler": "DPM++ 2M",
+        "model": "Illustrious",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-STRONG:1>, ((naked)), perfect breasts, face paint, face marker, elaborate Native American head dress, highly detailed skin, tattoos, body paint, war paint",
+      "negative": "((low quality)), ((bad quality)), ((poorly drawn)), ((poorly drawn face)), ((poorly drawn eyes)), ((poorly drawn hands)), ((bad hands)), ((Ugly)), (obese), 3d, render, 3d render, Illustration, cartoon, b&w, black and white, grayscale, watermark, text, CyberRealistic_Negative-neg, easynegative, bad-hands-5, BadDream, NegfeetV2, realisticvision-negative-embedding, UnrealisticDream",
+      "settings": {
+        "steps": "35",
+        "cfg": "21",
+        "sampler": "DPM++ 2M Karras",
+        "seed": "375051599",
+        "size": "512x768",
+        "model": "LimitlessReality",
+        "denoise": "0.6"
+      }
+    },
+    {
+      "positive": "TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-STRONG:1>, ((naked)), medium breast, face paint, face marker, Native American head dress, highly detailed skin, tattoos, body paint, war paint",
+      "negative": "((low quality)), ((bad quality)), ((poorly drawn)), ((poorly drawn face)), ((poorly drawn eyes)), ((poorly drawn hands)), ((bad hands)), ((Ugly)), (obese), 3d, render, 3d render, Illustration, cartoon, b&w, black and white, grayscale, watermark, text, CyberRealistic_Negative-neg, easynegative, bad-hands-5, BadDream, NegfeetV2, realisticvision-negative-embedding, UnrealisticDream",
+      "settings": {
+        "steps": "35",
+        "cfg": "21",
+        "sampler": "DPM++ 2M Karras",
+        "seed": "1821283734",
+        "size": "512x768",
+        "model": "LimitlessReality",
+        "denoise": "0.6"
+      }
+    },
+    {
+      "positive": "(extremely detailed 8k wallpaper), a medium shot photo of a ((25 years old)) TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-STRONG:1>, (((wearing bikini))), medium breast, ((face paint)), ((face marker)), action shot, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k), <lora:add_detail:0.5>",
+      "negative": "(hat:1.3),, (deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation, painting, illustration, (worst quality, low quality, normal quality:2)",
+      "settings": {
+        "steps": "25",
+        "cfg": "6.5",
+        "sampler": "DPM++ SDE Karras",
+        "seed": "1307832517",
+        "size": "512x768",
+        "model": "epicdream_lullaby",
+        "denoise": "0.35"
+      }
+    },
+    {
+      "positive": "modelshoot style, (extremely detailed 8k wallpaper),a medium shot photo of a ((22 years old)) TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-STRONG:1>, (((wearing bikini))), medium breast, face paint, face marker, action shot, ((very dark lighting)), heavy shadows, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k), <lora:add_detail:0.5>",
+      "negative": "(hat:1.3),, (deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation, painting, illustration, (worst quality, low quality, normal quality:2),  (asian, chinese:1.3),",
+      "settings": {
+        "steps": "25",
+        "cfg": "7",
+        "sampler": "DPM++ 2M Karras",
+        "seed": "1927991257",
+        "size": "512x768",
+        "model": "epicdream_lullaby",
+        "denoise": "0.35"
+      }
+    },
+    {
+      "positive": "RAW photo, TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-LIGHT:1>, (((wearing bikini))), ((tribal)), medium breast, face paint, face marker, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3",
+      "negative": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation, UnrealisticDream",
+      "settings": {
+        "steps": "25",
+        "cfg": "6.5",
+        "sampler": "DPM++ SDE Karras",
+        "seed": "3319521787",
+        "size": "512x768",
+        "model": "realisticVisionV51_v51VAE",
+        "denoise": "0.35"
+      }
+    },
+    {
+      "positive": "((a 23 year old)) sexy TRIBAL-BEAUTY, <lora:TRIBAL-BEAUTY-LIGHT:1>, ((wearing bikini)), medium breast, ((slim body)), ((tattoo)), face paint, face marker, ((tribal)), standing",
+      "negative": "cartoon, painting, illustration, (worst quality, low quality, normal quality:2)",
+      "settings": {
+        "steps": "20",
+        "cfg": "6.5",
+        "sampler": "DPM++ 2M Karras",
+        "seed": "732638412",
+        "size": "512x768",
+        "model": "photon_v1",
+        "clip_skip": "2",
+        "denoise": "0.45"
+      }
+    },
+    {
+      "positive": "21 year old toned model, fine art parody,<lora:Cosine_freck:.5>,Natural skin,vellus 1girl, Tribal Witch Doctor: Tribal Bone Armor with Shamanic Symbols, Feathered Headdress with Animal Skulls, Bone Necklace with Tribal Charms, Animal Hide Skirt with Fringe, Shamanic Staff with Animal Totems, Face Paint with Ritual Symbols, Earthy Tones with Tribal Patterns, green eyes, hat, lips, long hair, looking at viewer, medium breasts, midriff, navel, nipples, nose, open fly, realistic, red hair, short shorts, shorts, solo, standing In the Bamboo Grove, tank top, unzipped, Sexy fashion style, embraces sensuality and confidence, beauty, allure, reflects a bold and seductive attitude",
+      "negative": "score_6, score_5, score_4, fcNeg, simple background, blur, low quality,  fairy wings, elf ears, censored , cross-eyed, (lazy eye), bucktooth, mature, cartoon, ugly, anime, whore, makeup, burned, sunburned, ghostly, deformed, dismembered, disembodied, detached, fat, chubby, polydactyl, amputated, contorted, flat-chested, fingers",
+      "settings": {
+        "steps": "50",
+        "cfg": "6",
+        "sampler": "DPM++ 3M SDE",
+        "seed": "2620548562",
+        "size": "800x1200",
+        "model": "svsn001_v10",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "((Heavenly)), Caucasian, young, 18 y.o. girl, Medium hair, Marmaid waves hair, Multicolored hair, Cap, Round eyes, Hazel eyes, Heart-shaped lips, Mauve lips, Heart face, Fantasy face paint, Surprised, Well-built body, Fluid movement, Gardening, Bikini, Cargo shorts, Belly button ring, Gas Lamp, Bloom, Night, Heavy rain, Thunderstorms, silver sparkle backdrop, Slot parking, Steppe, Fujifilm GFX 100S, 8mm fisheye lens, Zoom shot, BREAK PA7_Portrait-ECU, side profile shot, Strong shapes composition, Kodak vision3 IMAX, Technicolor, PA7_Enhancer-03, (((PA7_Human-Likeness)))",
+      "negative": "<lora:zPDXLrl-neg:1>",
+      "settings": {
+        "steps": "20",
+        "cfg": "9",
+        "sampler": "Euler A Turbo",
+        "seed": "196969079",
+        "size": "616x928",
+        "model": "iniverseMixXLSFWNSFW_guofengTurboV14"
+      }
+    },
+    {
+      "positive": "3/4 body view, a highly detailed, hyper-realistic portrait of a woman with a striking, otherworldly appearance, she has a pale complexion and her face is adorned with intricate, blue and gold face paint, featuring a symmetrical, ornate design that resembles a mandala, her eyes are a vivid, golden yellow, with a piercing gaze that conveys a sense of intensity and otherworldliness, her lips are full and painted a deep, rich purple, matching the blue of her face, she wears a dark teal-green hooded cloak with intricate gold and silver beading along the edges, adding to the regal and mystical feel of the scene, the background is blurred, emphasizing the subject and its surroundings, which are rich in texture and depth, enhancing the sense of depth and mystery, the overall composition is rich in detail and color, with the woman's face and clothing blending seamlessly into the background, creating a visually striking and immersive experience, exposed perky medium breasts, perfect medium breasts,",
+      "negative": "monochrome,   bad anatomy, deformed body, distortion, bad quality, bad-hands, close-up, makeup, logo, watermark, colored tattoos",
+      "settings": {
+        "steps": "25",
+        "cfg": "4",
+        "sampler": "DPM++ 2M Karras",
+        "seed": "1265994637",
+        "size": "832x1216",
+        "model": "Pony",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "(medium full shot) of (primal cavewoman) young woman, full-figured body, caramel skin, medium ginger hair, wearing a leopard print animal skin vest, frayed skirt, fur boots, clay face paint, pelt armband, set in  a snow-capped mountain, with icy paths, chilling winds, snow-covered ledges, a serene silence , under the moonlight, woman smiling, ,Masterpiece,best quality, photo, realistic, very aesthetic, detailed face,",
+      "settings": {
+        "steps": "10",
+        "sampler": "dpmpp_sde_karras",
+        "seed": "929685250617337",
+        "size": "832x1216",
+        "model": "zaxiousXL_lightiningV30"
+      }
+    },
+    {
+      "positive": "(medium full shot) of (untamed cavewoman) young woman, busty body, mahogany skin, medium brown hair, wearing a zebra print fur top, woven grass skirt, hide sandals, clay face paint, woven grass belt, set in  a wild forest, with thick vines, large roots, a variety of wildlife sounds, untamed paths, at dusk, woman smiling, ,Masterpiece,best quality, photo, realistic, very aesthetic, detailed face,",
+      "settings": {
+        "steps": "10",
+        "sampler": "dpmpp_sde_karras",
+        "seed": "463202382441031",
+        "size": "832x1216",
+        "model": "zaxiousXL_lightiningV30"
+      }
+    },
+    {
+      "positive": "(medium full shot) of (fierce cavewoman) young woman, lithe body, dark skin, medium dark hair, wearing a woven grass halter dress with primitive stitching , fur boots, clay face paint, shell bracelet, set in  a dense forest, with towering trees, thick underbrush, scattered animal trails, a small clearing for rest, woman smiling, ,Masterpiece,best quality, photo, realistic, very aesthetic, detailed face,",
+      "settings": {
+        "steps": "10",
+        "sampler": "dpmpp_sde_karras",
+        "seed": "941085897521815",
+        "size": "832x1216",
+        "model": "zaxiousXL_lightiningV30"
+      }
+    },
+    {
+      "positive": "fashion magazine ad (front lighting:0.3) happy woman at Burningman medium closeup of (upper body) of a woman wearing simple prisms diamond swarovski bodysuit, opaque bodysuit, long straight hair covers beautiful face and eyes, angelic face, at Burningman, bare arms, tanned   Iroquois shaman face paint, solid black face paint, solid black paint forehead, solid black paint nose, burner_style telephoto medium shot of slender woman, red hair, solo, naughty smile, seductive, crystal rhinestone bodysuit with tassels, muted colors, big perky breasts, large breasts,covered nipples, (massive erect nipples), hair back in messy bun, hair ornament. (((slim waist))), having fun and dancing and bending forward at Burningman, sweaty, shiny skin, glistening, small ass   older mature woman having fun dancing at Burningman festival playa, detailed face, pink bobcut wig, wearing a ((macrame) backless halter flared jumpsuit), fringes, tassels, flat abs, hat, dangling necklace, jewelry, vivid colors, dilated pupils, detailed, sharp, uhd, 8k, zeiss lens, hdr",
+      "negative": "bare chest, (bare breasts:1.5), nipples, bare midriff, text, head cut off, cropped, extra arms, bad-image-v2-39000",
+      "settings": {
+        "steps": "35",
+        "cfg": "7",
+        "sampler": "DPM++ 2M",
+        "seed": "1782436967",
+        "size": "832x1216",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "(medium full shot) of (radiant fairy) young woman, russian, blue eyes, fair skin, tall,,             wearing a corset top with delicate lace details,lace-trimmed shorts, delicate lace-up sandals, shimmering silver wavy hair cascading down her back, ethereal moth wings, floral face paint,shimmering arm cuffs, surprised, open mouth, running toward the viewer, set in  a hidden garden, where the walls are covered in ivy and the paths are lined with glowing flowers, creating a secret, magical retreat , ,Masterpiece,best quality, photorealistic, amazing quality, very aesthetic, extremely detailed face,",
+      "settings": {
+        "steps": "8",
+        "sampler": "dpmpp_sde_karras",
+        "seed": "888900813524710",
+        "size": "832x1216",
+        "model": "zaxiousXL_lightiningV30"
+      }
+    },
+    {
+      "positive": "(from above:1.3), (close up of face:1.5), (barefoot:1), African Tribal village theme, beautiful (24yo ethnic Zulu warrior princess young girl:1.2) with (traditional voodoo face paint:1.2) wearing (African tribal headdress and kanzu outfit), (detailed tribal tattoos:1.2) standing in (broad African village background) under sunlight, erotic expression, (small body:1.2), (deep black skin:1.2), (huge breasts:1.3) with (cleavage by breast press:1.2), (topless:1.2), nipples, sunlight, erotic grin teeth, African neck rings, outdoor, (dark skin African body paint small girl with mini cleavage:1.2), <lora:FilmVelvia3:0.7><lora:lcm_lora_sdv1_5 :0.5><lora:perfect hands:0.7> (realistic photography:1.2), extremely high detailed skin, best quality, RAW",
+      "negative": "EasyNegative, bad_prompt_version2, bad-picture-chill-75v,",
+      "settings": {
+        "steps": "10",
+        "cfg": "1.5",
+        "sampler": "DPM++ SDE",
+        "seed": "1455466801",
+        "size": "2048x3072",
+        "model": "rgtamixrealAsian_v10",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, ((adult woman)), (pretty face), (cute girl), (cute), (beautiful woman), <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, <lora:Face_Enhancer_Illustrious:0.4>, Face Enhancer, rating:explicit, A digital illustration shoot from a frontal camera angle about a woman with futuristic face paint and a snake in a lush, tropical environment. the image also shows intricate tattoos on her face and body. on the middle of the image, a 1woman, who appears to be in her mid-twenties, with light skin, long blonde hair, and blue eyes, is facing the viewer with a neutral expression. she is wearing a white bandeau top that is pulled down to reveal her medium-sized breasts. her body is slim, and she has a mole on her breast. she has tattoos on both arms and legs, and her lips are parted. on her head, there are two snakes coiled around her, one on each side. the background is a dense jungle with dense foliage, and the lighting is soft and natural, highlighting the intricate details of the tattoos and the woman's skin. 1girl, breasts, tattoo, snake, long hair, lips, medium breasts, blue eyes, solo, upper body, rating:sensitive, underboob, sarashi, blonde hair, facial mark, parted lips, arm tattoo, bandages, covered nipples, cleavage, <lora:Sinozick_style:0.2>, Sinozick_illu,gradient,spot color,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "509097950",
+        "size": "1348x1970",
+        "model": "ilustreal_v50VAE",
+        "denoise": "0.25"
+      }
+    },
+    {
+      "positive": "breast focus, medium breasts, close up shot, full face and tits, 1girl, solo, colorful latex rash guard, beautiful round face, chun li, full pouty lips, small pale pink nipples, push-up bikini, assisted shirt lift, looking at viewer, posing for photo, sexy pose, reddit, amateur, real life photo, raw photo, film grain, (warm lighting:1.8), dramatic lighting, beach, outdoors, foreground lighting, low angle, bending forward, toned, athletic, wet, (smug, raise eyebrow:1.1), face paint",
+      "negative": "fat, obese, tan-lines:1.5, brown nipples, purple nipples, asymmetrical-eyes, mismatched eyes, bad hands, deformed eyes, asymmetrical face, cold lighting, low contrast, prominent forehead, prominent jawline, prominent chin, (cold lighting:1.6), (dim lighting:1.4),",
+      "settings": {
+        "steps": "19",
+        "cfg": "3.5",
+        "sampler": "Euler a",
+        "seed": "1954547236",
+        "size": "832x1216",
+        "model": "Pony",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "1girl, 25yo, (silver white hair), cute oval face, freckles, blush,provocative, (naked). rings, pink background. Facing viewer, realistic skin with natural imperfections, high-resolution skin pores, realistic lighting reflections, ultra-detailed shading, 8k resolution, medium breast, puffy nipples, (cute oval face, prominent cheek bones),very sexy girl, sexy figure, black wall background, 1girl, heterochromia eyes, medium breasts, beautiful face, freckled face, eyeliner, makeup on eyelashes, 25yo, feather headdress, ornamental earring, bare shoulders, tribal design clothing, body paint, intricate face paint, exotic pattern, geometric patterns, striking makeup, bold colors, dramatic expression, shoulder-length hair, stylized hair, black hair, white hair, red accents, black accents, white accents, red earring, feathers, tribal motifs, feathered earring, round earring, tribal pattern, face paint, red lip, black feathers, feather hairpiece, red face paint, white face paint, black face paint, geometric face paint, striking tribal makeup, black panties, crotch, butt, tribal design panties",
+      "negative": "bad anatomy, bad proportions, blurry, cartoonish, deformed hands, missing fingers, extra fingers, fused fingers, poorly drawn hands, disfigured face, distorted features, double vision, exaggerated facial expressions, floating limbs, glowy skin, grainy, gross proportions, lack of detail, low resolution, low quality, missing eyes, mutated hands, out of focus, poorly drawn face, semi-realistic, surrealism, text, watermark, worst quality, unrealistic eyes, unnatural skin texture, visible artifacts, warped face, bad car design, deformed car, unrealistic vehicle, distorted wheels, extra wheels, missing headlights, warped body, cartoon, (nude)",
+      "settings": {
+        "steps": "22",
+        "cfg": "4",
+        "sampler": "Euler a",
+        "seed": "2039035279",
+        "model": "Illustrious",
+        "clip_skip": "2"
+      }
+    },
+    {
+      "positive": "Prompt 1girl, 25yo, (silver white hair), cute oval face, freckles, blush,provocative, (naked). rings, pink background. Facing viewer, realistic skin with natural imperfections, high-resolution skin pores, realistic lighting reflections, ultra-detailed shading, 8k resolution, medium breast, puffy nipples, (cute oval face, prominent cheek bones),very sexy girl, sexy figure, black wall background, 1girl, heterochromia eyes, medium breasts, beautiful face, freckled face, eyeliner, makeup on eyelashes, 25yo, feather headdress, ornamental earring, bare shoulders, tribal design clothing, body paint, intricate face paint, exotic pattern, geometric patterns, striking makeup, bold colors, dramatic expression, shoulder-length hair, stylized hair, black hair, white hair, red accents, black accents, white accents, red earring, feathers, tribal motifs, feathered earring, round earring, tribal pattern, face paint, red lip, black feathers, feather hairpiece, red face paint, white face paint, black face paint, geometric face paint, striking tribal makeup, black panties, crotch, butt, tribal design panties"
+    }
+  ],
+  "anime": [
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, ((adult woman)), (pretty face), (cute girl), (cute), (beautiful woman), <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, <lora:Face_Enhancer_Illustrious:0.4>, Face Enhancer, rating:explicit, A digital illustration shoot from a portrait camera angle about a beautiful woman with long red hair wearing a revealing blue and gold outfit, standing confidently in an ancient egyptian temple with stone columns and hieroglyphics in the background. the image also shows a  woman with fair skin, blue eyes, and a slender physique, who appears to be in her early twenties, standing in the middle of the image, looking directly at the viewer with a confident expression. she has long, wavy red hair and is wearing a teal, sleeveless, form-fitting top that accentuates her toned stomach and navel, along with a gold belt and armlet. her hair is styled in loose waves and falls down her back, framing her face. she is wearing gold earrings and has a mole on her stomach. her body is slim and toned, and she is standing with her arms at her sides. the background is a stone temple with intricate carvings and columns, and the lighting is bright and natural, highlighting her curves and the intricate details of her outfit. 1girl, rating:sensitive, solo, jewelry, navel, earrings, red hair, blue eyes, long hair, looking at viewer, pelvic curtain, breasts, pillar, column, head tilt, lips, midriff, crop top, cowboy shot, realistic, arms at sides, medium breasts, standing, bracer, closed mouth, stomach, loincloth, sleeveless, wavy hair, groin, <lora:Marin_Kitagawa_My_Dress-Up_Darling_-_Illustrious:0.2>, Marin Kitagawa,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "439151358",
+        "size": "1430x2093",
+        "model": "ilustreal_v50VAE",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a side angle about a character in a playful pose, wearing a black and white checkered outfit with a yellow scarf. the image also shows a  woman with long, wavy red hair, brown eyes, and a playful expression. she is standing in the middle of the image, with her upper body facing the viewer and her eyes looking directly at the viewer. her hair is styled in a long, loose ponytail, and she has a slim body with a small waist. she wears a black blazer with yellow accents and a yellow ribbon tied around her neck, along with a black skirt with a houndstooth pattern. her outfit is completed with white panties and black thigh-high stockings. the background is a simple gradient of light pink and white, with a slight shadow behind her, adding to the playful and confident atmosphere of the scene. the style is anime-inspired with bold lines and vibrant colors, making the image visually appealing and engaging. character:kujikawa rise, 1girl, underwear, skirt, panties, white panties,  uniform, yasogami  uniform, ass, thighhighs, solo, rating:sensitive, earrings, jewelry, brown eyes, twintails, yellow neckerchief, brown hair, open mouth, serafuku, sailor collar, smile, neckerchief, long hair, pleated skirt, houndstooth, long sleeves, arm up, medium breasts, breasts, pantyshot, miniskirt, cowboy shot, black thighhighs, <lora:Marin_Kitagawa_My_Dress-Up_Darling_-_Illustrious:0.3>, Marin Kitagawa,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2336428872",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from the side about a  woman with long, wavy blonde hair lying on a bed, looking at her phone while wearing a short-sleeved grey t-shirt and denim shorts. on the middle of the image, a 1girl, who appears to be elsa from frozen, is lying on her back with her legs spread apart, holding a smartphone in her hands. she has a slender physique and fair skin, with blue eyes that are looking to the side. her long, flowing blonde hair cascades down her back, and her hair is styled in loose waves that frame her face. her expression is serene and relaxed, with a slight blush on her cheeks. she is wearing a grey t shirt that is short-shattered, and denim short shorts that are slightly frayed at the edges. her feet are bare, with her toes pointing upwards, and she is holding a phone in her hand. the background shows a softly lit room with a window, and the lighting is soft and warm, creating a serene atmosphere. the image has a watermark in the bottom right corner, adding a touch of authenticity to the overall aesthetic. 1girl, rating:sensitive, long hair, barefoot, solo, shorts, lying, blue eyes, very long hair, character:elsa (frozen), ass, feet, on stomach, short shorts, shirt, blonde hair, denim shorts, signature, looking back, denim, on bed, legs up, casual, the pose, profile, toes, bare legs, phone, white hair, t-shirt, from behind, artist name, short sleeves, legs, soles, indoors, smile, holding, blue shorts, cellphone, crossed ankles, bed, curtains, window, full body, makeup, <lora:Incase_New_Illust:.2>, ICJournals, blocky, painterly,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2503532082",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, An anime-style drawing of a  woman with long, straight black hair with orange highlights, wearing a revealing black and white outfit with a large bow at the chest. she has large breasts and is standing in the middle of the image, looking directly at the viewer with a confident expression. her eyes are a striking orange color, and she has a slight blush on her cheeks. she is wearing a white coat with puffy sleeves, and a scarf around her neck. the background is a simple room with wooden paneling and a wooden ceiling, and the lighting is soft and warm, casting gentle shadows on her body. the overall style is detailed and polished, with a focus on the character's curves and expression. 1girl, breasts, rating:sensitive, underwear, orange eyes, looking at viewer, cleavage, solo, long hair, panties, multicolored hair, navel, white panties, large breasts, black hair, twintails, detached sleeves, hair between eyes, gradient hair, indoors, smile, orange hair, scarf, dress, collarbone, closed mouth, sidelocks, leaning forward, black dress, bare shoulders, cowboy shot,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3209722063",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A photo-realistic digital illustration shoot from a profile camera angle about a stylized female character in a red and black outfit holding a baseball bat, standing confidently in a narrow alleyway. the image also shows a solo female character, harley quinn, in the middle of the image, standing with her back to the viewer, looking over her shoulder with a serious expression. she has long blonde hair tied in a high ponytail and is wearing a black and red harley-themed bodysuit with a black thong and thigh-high stockings. her body is slim and toned, and she has a tattoo on her lower back that reads \"japanese: daplionounted.\" she is holding a large wooden baseball bat in her right hand and her left hand is resting on her hip. the alleyway is narrow and cobblestone, with tall buildings on either side, and the lighting is dim, casting shadows that accentuate her curves. the style is highly detailed and realistic, with a focus on the character's curves and the texture of her outfit. 1girl, baseball bat, solo, ass, thighhighs, ponytail, underwear, from behind, panties, black panties, holding baseball bat, looking back, jewelry, blurry, earrings, blurry background, red eyes, outdoors, holding, thong, rating:questionable, blonde hair, makeup, rating:sensitive, long sleeves, white hair, looking at viewer, crop top, body writing, hand on own hip, <lora:dreikoo_style_ilxl_0.1:0.4>, dreikoo style,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "172713439",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, ((adult woman)), (pretty face), (cute girl), (cute), (beautiful woman), <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, <lora:Face_Enhancer_Illustrious:0.4>, Face Enhancer, rating:explicit, A digital illustration shoot from a portrait angle about a  girl with light blue hair styled in twin tails with colorful hair accessories, wearing a white tank top. the image also shows a serene expression and a slight blush on her cheeks. on the middle of the image, a 1girl, who appears to be a  woman, is sitting with her upper body facing the viewer, looking at the viewer with a neutral expression. she has blue eyes, a closed mouth, and a slim body. her hair is styled in a long, flowing ponytail with a black hairband adorned with red and pink hair clips. she is wearing a sleeveless, white, tank top that accentuates her medium-sized breasts and bare shoulders. the background is a plain white background, which helps to focus attention on the subject. the lighting is soft and even, highlighting her delicate features and the smooth texture of her skin. 1girl, character:kamisato ayaka, solo, rating:sensitive, breasts, navel, long hair, blue eyes, looking at viewer, ponytail, medium breasts, blunt bangs, closed mouth, bare shoulders, blue hair, tank top, upper body, tress ribbon, hair ribbon, hair ornament, stomach, ribbon, collarbone, simple background, sidelocks, white background, light blue hair, blunt tresses, very long hair, mole, mole under eye, white tank top, alternate costume, shirt, blush, crop top, flower knot, <lora:iLLMythM4gicalL1nes:0.2>, M4gicalL1nes,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2869657471",
+        "size": "1430x2093",
+        "model": "ilustreal_v50VAE",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a slightly from below camera angle about a  woman in a tropical setting, wearing a bikini, standing confidently in the middle of the image. the image also shows lush greenery and a river in the background, creating a vibrant and lush environment. on the middle position of the camera, a 1woman, who appears to be a  adult, with dark skin, long black hair, and brown eyes, is standing with a confident expression, looking directly at the viewer. she is wearing a red and white bandeau bikini top and a light blue bikini bottom tied at the bottom, with gold hoop earrings and a gold necklace around her neck. her body is slim and toned, with a toned stomach and abs, and she is holding a staff in her right hand. the lighting is soft and natural, highlighting her curves and the texture of her skin. the style is realistic with a touch of fantasy, with detailed shading and vibrant colors. 1girl, jewelry, solo, navel, long hair, black hair, breasts, earrings, bracelet, rating:sensitive, dark skin, contrapposto, pelvic curtain, loincloth, dark-skinned female, looking at viewer, necklace, strapless, lips, bare shoulders, outdoors, hoop earrings, holding, thighs, medium breasts, tube top, cowboy shot, standing, brown eyes, collarbone, hand on own hip, stomach, closed mouth, bandeau, bangle, fingernails, leaf, toned, realistic, nature, linea alba, <lora:iLLMythM4gicalL1nes:0.2>, M4gicalL1nes,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "1351373079",
+        "size": "1430x2093",
+        "model": "nova3DCGXL_illustriousV60",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a frontal camera angle about a  woman in a revealing outfit, featuring a blonde woman with blue eyes and a slender physique, standing confidently in the middle of the image. the woman, who appears to be in her early twenties, has long, wavy blonde hair and blue eyes that are looking directly at the viewer with a neutral expression. she is wearing a white strapless bandeau top with a sheer, see-through design that reveals her midriff and black panties, along with a black choker and a black bracelet on her wrist. her body is slim and toned, with large breasts and a small navel piercing. her hair is styled in a long hair style that falls between her eyes, and she has a subtle blush on her cheeks. the background is a plain, light beige color, and the overall style is clean and detailed, with a focus on the character's curves and the sheer fabric of her outfit. 1girl, breasts, solo, navel, rating:sensitive, choker, blonde hair, jewelry, cleavage, dark-skinned female, earrings, looking at viewer, bare shoulders, dark skin, medium breasts, underwear, cowboy shot, parted lips, collarbone, simple background, thigh gap, blue eyes, black choker, panties, long hair, hoop earrings, standing, <lora:Sinozick_style:0.2>, Sinozick_illu,gradient,spot color,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3881798591",
+        "size": "1430x2093",
+        "model": "nova3DCGXL_illustriousV60",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, ((adult woman)), (pretty face), (cute girl), (cute), (beautiful woman), <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, <lora:Face_Enhancer_Illustrious:0.4>, Face Enhancer, rating:explicit, A digital illustration shoot from a frontal camera angle about a  woman with short, blue hair and striking blue eyes, wearing a black bikini top and a blue jacket, sitting in the middle of the image, looking directly at the viewer with a confident expression. the woman, who appears to be in her early twenties, has a slim body and is sitting on a rocky surface with a planet in the background, featuring a starry night sky and a planet visible in the distance. her blue hair is styled in a short bob cut with pink highlights, and she has blue eyes that seem to be looking straight into the viewer. she has a small smile on her face, and her body is slim with bare shoulders and a toned physique. she is wearing a blue open jacket that is partially unzipped, revealing her bare shoulders, and a black bra that accentuates her medium-sized breasts. the image has a soft, pastel color palette, with a focus on the woman's figure and the space-themed background. 1girl, character:lucy (cyberpunk), rating:sensitive, breasts, solo, looking at viewer, multicolored hair, bra, smile, planet, navel, blue hair, black bra, underwear, space, blue eyes, off shoulder, medium breasts, earth (planet), jacket, cyborg, makeup, short hair, small breasts, <lora:Incase__Vixons_Gothic_Neon__Disney_for_Illustrious_Style:.2>, p0nyd1sney1ncasev1x0n2,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3574703578",
+        "size": "1430x2093",
+        "model": "ilustreal_v50VAE",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a frontal camera angle about a stylized illustration of a  woman with pale skin, styled in two braided pigtails, wearing an orange cropped t-shirt with a graphic design and white panties, standing against an orange background. in the middle of the image, a 20-year-old woman with light skin, blue eyes, and silver hair styled in twin braids stands confidently with her hands in her pockets, looking directly at the viewer with a sultry expression. she has a slim body and is wearing a black choker necklace and a black jacket draped over her left shoulder. her outfit consists of an orange crop top with the text \"AAK\" and \"AAR\" printed on it, along with a black and white graphic design on the front, and a pair of white panties. her hair is styled in a way that accentuates her blue eyes and the vibrant orange background, which complements the bold and bold colors of her outfit. 1girl, solo, rating:sensitive, shirt, underwear, panties, blue eyes, print shirt, jewelry, no pants, looking at viewer, white panties, orange shirt, orange background, parted lips, simple background, braid, twintails, holding, tattoo, necklace, earrings, twin braids, makeup, choker, blonde hair, short sleeves, t-shirt, cowboy shot, pink hair, long hair, red lips, piercing, black nails, crop top, <lora:incase-ilff-v3-4:.2>,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2252800811",
+        "size": "1430x2093",
+        "model": "plantMilkModelSuite_walnut",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a side camera angle about a  woman with silver hair sitting at a table in a cafe, wearing a white tank top and a tight black leather skirt. the image also shows a warm, inviting atmosphere with sunlight filtering through the large windows, creating a cozy ambiance. on the middle of the image, a 1woman, who appears to be in her early twenties, with light skin and silver hair styled in a side braid, is sitting on a wooden table with her chin resting on her hand, looking over her shoulder with a confident expression. she has large breasts, a slim body, and brown eyes that are looking directly at the viewer. she is wearing gold earrings and a necklace, and has a bracelet on her left wrist. the background features a cozy cafe setting with tables and chairs, and a cup of coffee on the table. breasts, rating:sensitive, 1girl, jewelry, skirt, large breasts, looking at viewer, bracelet, black skirt, braid, earrings, bare shoulders, long hair, miniskirt, crop top, white hair, hair over one eye, thighs, necklace, solo, leaning forward, table, smile, parted lips, dark skin, eyes visible through hair, dark-skinned female, cup, tank top, collarbone, shirt, pencil skirt, indoors, braided ponytail, taut clothes, white tank top, midriff, white shirt, arm under breasts, brown eyes, <lora:iLLMythM4gicalL1nes:0.2>, M4gicalL1nes,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "759777778",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A digital illustration shoot from a frontal camera angle about a character with bunny ears standing in a field of flowers, wearing a revealing outfit. the image also shows a  woman with short, wavy purple hair and pink eyes, standing in the middle of the image, looking directly at the viewer with a neutral expression. she has a slender physique and is wearing a white crop top that reveals her bare shoulders and a pair of white shorts with a purple waistband. her hair is styled in a short, messy manner, and she has rabbit ears on her head. the background features a bright blue sky with fluffy white clouds and a field full of colorful flowers, with a soft, pastel color palette. the woman is standing with one hand on her hip and the other hand resting on her thigh, giving a sense of confidence and serenity. 1girl, solo, rating:sensitive, outdoors, flower, animal ears, short hair, shorts, navel, day, sky, grass, breasts, white shorts, rabbit ears, standing, cloud, purple hair, bare shoulders, red eyes, blue sky, looking at viewer, field, midriff, arms at sides, small breasts, parted lips, collarbone, short shorts, pink eyes, white flower, blurry, <lora:Marin_Kitagawa_My_Dress-Up_Darling_-_Illustrious:0.2>, Marin Kitagawa,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "1427677342",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, ((adult woman)), (pretty face), (cute girl), (cute), (beautiful woman), <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, <lora:Face_Enhancer_Illustrious:0.4>, Face Enhancer, rating:explicit, A digital illustration shoot from a portrait angle about a cute anime girl with long brown hair and cat ears, wearing a white cable-knit sweater and black panties, standing in a softly lit room with a soft, warm color palette. the image also shows a  woman in the middle of the image, who appears to be in her early twenties, standing with her upper body facing the viewer and looking directly at them with a gentle smile. she has long, flowing brown hair that falls down her back, and her cat ears are visible, giving her a cute and playful appearance. the woman is wearing a loose, white, long-sleeved sweater that accentuates her large breasts and curvy figure, with a pair of black panties that show off her thighs. her eyes are a deep purple color, and she has a playful expression on her face, with her lips slightly parted and a slight smile. the background is a simple, neutral-colored room with soft, diffused light coming from a window behind her, creating a warm and inviting atmosphere. 1girl, character:raphtalia, animal ears, raccoon girl, raccoon ears, solo, panties, underwear, brown hair, sweater, rating:sensitive, long hair, smile, raccoon tail, tail, looking at viewer, white sweater, black panties, long sleeves, breasts, halo, cowboy shot, animal ear fluff, closed mouth, no pants, cable knit, standing, thighs, indoors, medium breasts, <lora:Marin_Kitagawa_My_Dress-Up_Darling_-_Illustrious:0.2>, Marin Kitagawa,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3722317119",
+        "size": "1430x2093",
+        "model": "ilustreal_v50VAE",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, sitting on the grass, squatting slightly, playful expression, ((star freckles:1.45)) dusted across nose and cheeks, intricate eye details (eyes in perfect focus, sharp pupils, detailed irises, dark limbal ring, long eyelashes, clean eyelids, dark Eyeliner), (flat chest), high-angle downbloause shot from above, (areola visible), (elegant face centered high, shoulders angled, chin slightly raised, eyes looking past camera:1.10), (close-up portrait), (shallow depth of field), (intricately detailed outfit), (elaborate fabric textures), (ornate embroidery), (layered accessories), (realistic folds and seams), (visible stitching), (complex patterns), (subtle fabric sheen), (highly detailed buttons), (zippers), (fasteners), (rich material contrast), (attention to every garment detail), lazypos, SmoothNoob_Quality, Smooth Quality, masterpiece, 8k, 1girl, ((sexy)), ((cute girl)), (pretty face), (cute face), demure, dainty, ((petite)), (slender, lean, fit, athletic:1.5), sharp focus, tack sharp, crisp edges, high microcontrast, eyes in perfect focus, rating:explicit, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora,<lora:114558v4df2fsdf5:0.8>, 15546+456868,  sitting, squatting, playful, star freckles, flat chest, (downblouse), (downbloause shot), (high angle), (shot from above), (areola), elegant, center high, shoulder angle, chin up, eyes averted, look past, (close-up), (portrait), (bokeh), detailed outfit, intricate fabric, ornate embroidery, layered accessories, realistic folds, visible stitching, complex patterns, fabric sheen, detailed buttons, zippers, fasteners, material contrast, garment detail, <lora:Marin_Kitagawa_My_Dress-Up_Darling_-_Illustrious:0.2>, Marin Kitagawa,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "1949471275",
+        "size": "1430x2093",
+        "model": "plantMilkModelSuite_walnut",
+        "denoise": "0.2"
+      }
+    }
+  ],
+  "realistic": [
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A photo-realistic shoot from a front camera angle about a woman posing confidently outdoors in a cropped grey sweater and black thong, standing in the middle of the image. the woman, who appears to be in her early twenties, has long, straight, light brown hair and is wearing black-framed glasses. she is standing with one hand on her head and the other resting on her hip, looking directly at the camera with a confident expression. her body is slim and toned, with a slight curve to her midriff, and she is wearing a grey ribbed long-sleeve crop top that accentuates her toned stomach and curvy figure. she also has a pair of white knee-high socks on, adding a touch of contrast to her outfit. the background features a sandy beach with trees and a hint of snow in the distance, creating a natural setting. the lighting is soft and natural, highlighting her curves and the texture of her skin. 1girl, solo, sunglasses, navel, photo background, rating:sensitive, crop top, brown hair, long hair, photorealistic, cropped sweater, realistic, panties, beach, looking at viewer, underwear, sweater, midriff, smile, over-kneehighs, black panties, outdoors, bikini bottom only, breasts, standing, long sleeves, <lora:dreikoo_style_ilxl_0.1:0.1>, dreikoo style,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "4164720258",
+        "size": "1430x2093",
+        "model": "waiNSFWIllustrious_v150",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A photo-realistic shoot from behind about a woman in a black bikini standing with her back to the camera, showcasing her toned physique. the woman, who appears to be in her mid-twenties, is standing in the middle of the image, facing away from the camera. her blonde hair is styled in a high bun, and she is wearing a black bandeau bikini top with thin straps that accentuate her curves. the bikini bottom has a cut-out design that adds a touch of edginess to her overall look. her skin is smooth and toned, with a few visible scars on her back. she is standing on a grassy area with a modern building in the background, which is slightly blurred. the lighting is bright and natural, highlighting her curves and the texture of her bikini. the image is high quality and has a watermark in the bottom right corner. 1girl, ass, solo, swimsuit, rating:sensitive, jewelry, bikini, bracelet, from behind, brown hair, outdoors, black bikini, back, hair bun, photorealistic, facing away, blurry, single hair bun, contrapposto, blurry background, realistic, standing, bare shoulders, day, cowboy shot, <lora:frostbitev2_Illu_dwnsty:0.5>, frostbite,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3153062573",
+        "size": "1430x2093",
+        "model": "creativitij_v22",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A black and white photo shoot from a bird's eye view about a woman performing a yoga pose on a black mat in a grassy area. the image also shows a woman in the middle of the image, who appears to be in her mid-twenties, with blonde hair tied up in a high bun, wearing a black sports bra and a tight, black skirt that accentuates her curves. she is on all fours on the mat, with her feet in the air, and her legs spread apart, showing off her bare feet. her expression is calm and focused, with a slight smile on her face. her eyes are closed, and she is wearing minimal makeup, with dark eyeliner and mascara. her hair is styled in a single hair bun, which is tied in a neat and tidy manner. her body is slim, with bare shoulders and a toned physique. the grass in the background is lush and green, providing a natural setting for the yoga pose. 1girl, monochrome, greyscale, rating:sensitive, solo, barefoot, feet, soles, closed eyes, grass, smile, toes, hair bun, ass, single hair bun, all fours, sports bra, pants, outdoors, <lora:frostbitev2_Illu_dwnsty:0.5>, frostbite,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2120338951",
+        "size": "1430x2093",
+        "model": "nova3DCGXL_illustriousV60",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A photo-realistic shoot from a frontal camera angle about a  woman in a sheer, light-colored dress with floral patterns, standing confidently in the middle of the image. the woman, who appears to be in her early twenties, has long, wavy brown hair that falls down her back, and her blue eyes are looking directly at the viewer. she has a neutral expression and is wearing a delicate, intricate necklace with a large, purple pendant. her dress is transparent, revealing her bare shoulders and small breasts, and it has a floral pattern in shades of purple and blue. the background is blurred, with other women in similar dresses visible in the distance, and the lighting is soft and diffused, creating a dreamy atmosphere. the image has a watermark in the bottom left corner that reads \"venetianviolet\". 1girl, breasts, dress, jewelry, looking at viewer, realistic, blurry background, see-through, blurry, necklace, bare shoulders, solo, rating:questionable, long hair, blue eyes, lips, solo focus, small breasts, nipples, brown hair, artist name, blonde hair, rating:sensitive, see-through dress, cowboy shot, earrings, medium breasts, off shoulder, photorealistic, <lora:incase-ilff-v3-4:.2>,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2674016925",
+        "size": "1430x2093",
+        "model": "plantMilkModelSuite_walnut",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A seductive tattooed woman lounging on a neon-lit rooftop, her thin fit body under the moonlight, glancing back with a sultry gaze. a pulsating urban skyline at midnight, with vibrant neon signs casting erotic glows over the scene, highlighting hidden desires in the shadows. a tantalizing solo female with a thin fit figure, reclining with her back exposed. cascading fiery red locks tumbling over bare shoulders, adorned with dangling silver earrings that catch the light. a canvas of vibrant ink covering her thin fit frame, with a phoenix tattoo rising from her lower back. intense, pulsating red neon bathing her in a heated aura, highlighting glistening skin and poses with electric intensity. ((rainbow freckles:1.35)) softly scattered, intricate eye details (eyes in perfect focus, sharp pupils, detailed irises, dark limbal ring, long eyelashes, clean eyelids, dark Eyeliner), (flat chest), (perfectly shaped body:1.5), lazypos, SmoothNoob_Quality, Smooth Quality, masterpiece, ultrarealistic, hyperrealistic, 8k, realistic texture, realistic skin, realistic textures, 1girl, (sexy), (adult woman), cute girl, (pretty face), (beautiful face), (youthful face:1.5), demure, dainty, ((petite)), ((naturally fit attractive girl, lean athletic build)), sharp focus, tack sharp, crisp edges, high microcontrast, eyes in perfect focus, detailed skin pores, rating:explicit, <lora:incase-ilff-v3-4:.8>,  tattooed woman, seductive pose, neon lights, rooftop, night, sultry gaze, moonlight, thin body, fit body, urban skyline, midnight, neon signs, erotic glow, shadows, vibrant lights, pulsating city, hidden desires, solo female, thin figure, recline, back exposed, risque silhouette, fiery red hair, wild cascade, bare shoulders, dangling earrings, silver jewelry, tempting flow, bare skin, vibrant tattoos, thin frame, phoenix tattoo, lower back, fierce design, intense neon, pulsating red, heated aura, glistening skin, poses, electric intensity, body highlight, fiery vibe, rainbow freckles, flat chest, (perfect body tone:1.5), <lora:incase-ilff-v3-4:.2>,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "3444060747",
+        "size": "1430x2093",
+        "model": "waiNSFWIllustrious_v150",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "lazypos,  HDR, raytracing, pathtracing, 3d render, realistic skin, realistic textures, detailed skin, masterpiece, best quality, absurdres, amazing quality, 8K, focused subject, (impossible clothing), ((sexy)), perfect breasts, (pretty face), (cute girl), (cute), <lora:- iLL - the_edgy_mech_V3.0:0.7>, <lora:PowerPuffMixLora:0.8>, PowerPuffMixLora, rating:explicit, A photo-realistic shoot from a side camera angle about a woman in a bikini sitting on a blue mat by a river, wearing a red cap. on the middle of the image, a 20-year-old woman with light skin, blonde hair tied in a ponytail, and blue eyes, who appears to be in her mid-twenties, is kneeling on the edge of the water, looking over her shoulder with a contemplative expression. she is wearing a maroon bikini top and matching panties, with her bare shoulders and medium-sized breasts visible. her body is slim and toned, and she has black nail polish on her fingers. in the background, a lush green forest with tall trees and a calm, reflective water surface creates a serene atmosphere. the lighting is soft and natural, casting gentle shadows on her body. the image is high quality and has a watermark in the bottom right corner. 1girl, hat, rating:sensitive, realistic, photorealistic, baseball cap, solo, backwards hat, shorts, swimsuit, photo background, bikini, sitting, outdoors, seiza, jewelry, earrings, black hair, water, short shorts, tree, navel, pool, <lora:dreikoo_style_ilxl_0.1:0.1>, dreikoo style,",
+      "negative": "lazyneg, lowres, ((childs face)), ((childs body)), ((young kid)), ((young kid face)), ((old lady)), ((old face)), ((wrinkles)), worst quality, bad anatomy, bad proportions, distorted hands, extra limbs, missing fingers, deformed, bad feet, duplicate limbs, poor lighting, background visible, simple background, ugly, deformed face, extra features, ((artist signature:2, artist name:2, text, writing, letters, words))",
+      "settings": {
+        "steps": "20",
+        "cfg": "7",
+        "sampler": "Euler a",
+        "seed": "2846876612",
+        "size": "1430x2093",
+        "model": "nova3DCGXL_illustriousV60",
+        "denoise": "0.2"
+      }
+    },
+    {
+      "positive": "Negative Prompt bad anatomy, bad proportions, blurry, cartoonish, deformed hands, missing fingers, extra fingers, fused fingers, poorly drawn hands, disfigured face, distorted features, double vision, exaggerated facial expressions, floating limbs, glowy skin, grainy, gross proportions, lack of detail, low resolution, low quality, missing eyes, mutated hands, out of focus, poorly drawn face, semi-realistic, surrealism, text, watermark, worst quality, unrealistic eyes, unnatural skin texture, visible artifacts, warped face, bad car design, deformed car, unrealistic vehicle, distorted wheels, extra wheels, missing headlights, warped body, cartoon, (nude)"
+    }
+  ],
+  "general": [
+    {
+      "positive": "Lighting is blue hour, soft light, volumetric light, cool light, subtle contrast, light particles, bokeh background, cinematic lighting, soft bloom glow. Colors are monochrome, terracota orange base, pastel orange gradient, and warm grey accent, cold pastels, cool pastels, cold tones, cool tones, low saturation, analog tones, muted colors, retro colors. Dark ink body tattoos, goth, punk, emo, grunge, cyberpunk, alt style, dark motif, dark makeup.From the side, the woman straddles a wide, polished canoe, her bare thighs pressing into the warm, damp wood. She is an Aztec Jaguar Warrior, her powerful frame sheathed in a heavy jaguar pelt, the spotted fur dense and bristling over one shoulder. Her obsidian-edged macuahuitl rests across her lap, its lethal teeth catching the low sun filtering through the thatched roofs of the floating market. Ritualistic paint, stark black and red, streaks her face, a mask of pre-Columbian might. Her free hand rests on a feathered shield propped beside her, fingertips tracing the intricate, vibrant patterns. The humid air carries the scent of lilac and overripe fruit from a nearby stall, a single passion flower twining up a mooring post. Sunlight glints off the sweat beading on her temple and the smooth, dark skin of her arm, highlighting the subtle skindentation where the pelt's strap bites into her flesh.masterpiece, best quality.",
+      "negative": "low quality, worst quality",
+      "settings": {
+        "steps": "35",
+        "cfg": "6",
+        "sampler": "Euler a",
+        "seed": "424100501",
+        "model": "sdxl/Copax_TimeLess_-_XIV_-SDXL-"
+      }
+    }
+  ]
+}

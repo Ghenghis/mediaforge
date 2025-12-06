@@ -1,0 +1,306 @@
+{
+  "user_preferences": {
+    "breast_size": {
+      "preferred": [
+        {
+          "tag": "her breasts",
+          "count": 63
+        }
+      ],
+      "excluded": []
+    },
+    "body_type": {
+      "preferred": [],
+      "excluded": []
+    },
+    "face_type": {
+      "preferred": [
+        {
+          "tag": "her face",
+          "count": 114
+        },
+        {
+          "tag": "s face",
+          "count": 52
+        },
+        {
+          "tag": "face is",
+          "count": 36
+        },
+        {
+          "tag": "face and",
+          "count": 33
+        }
+      ],
+      "excluded": []
+    },
+    "skin_tone": {
+      "preferred": [],
+      "excluded": []
+    },
+    "paint_style": {
+      "preferred": [
+        {
+          "tag": "are painted",
+          "count": 26
+        },
+        {
+          "tag": "a painting",
+          "count": 24
+        },
+        {
+          "tag": "painting on",
+          "count": 12
+        },
+        {
+          "tag": "a tattoo",
+          "count": 27
+        },
+        {
+          "tag": "tattoo on",
+          "count": 17
+        }
+      ],
+      "excluded": []
+    },
+    "pose_angle": {
+      "preferred": [],
+      "excluded": []
+    },
+    "age_range": {
+      "preferred": [],
+      "excluded": []
+    }
+  },
+  "quality_standards": {
+    "image_quality": {
+      "required": [
+        "masterpiece",
+        "best quality",
+        "8k",
+        "high resolution",
+        "detailed",
+        "sharp focus",
+        "realistic"
+      ],
+      "excluded": [
+        "low quality",
+        "worst quality",
+        "blurry",
+        "grainy",
+        "low resolution",
+        "jpeg artifacts",
+        "watermark",
+        "text"
+      ]
+    },
+    "anatomy_standards": {
+      "required": [
+        "realistic anatomy",
+        "correct proportions",
+        "detailed hands",
+        "detailed face",
+        "detailed eyes"
+      ],
+      "excluded": [
+        "bad anatomy",
+        "bad proportions",
+        "deformed hands",
+        "extra fingers",
+        "missing fingers",
+        "fused fingers",
+        "mutated hands",
+        "extra limbs",
+        "missing limbs",
+        "floating limbs",
+        "disconnected limbs"
+      ]
+    },
+    "style_standards": {
+      "required": [
+        "photorealistic",
+        "realistic skin",
+        "realistic textures",
+        "realistic lighting"
+      ],
+      "excluded": [
+        "cartoon",
+        "anime",
+        "3d render",
+        "cgi",
+        "illustration",
+        "painting",
+        "sketch",
+        "drawing",
+        "semi-realistic"
+      ]
+    },
+    "content_boundaries": {
+      "age_minimum": "adult",
+      "age_tags": [
+        "adult woman",
+        "25yo",
+        "22yo",
+        "23yo",
+        "24yo"
+      ],
+      "excluded_ages": [
+        "child",
+        "kid",
+        "young",
+        "teen",
+        "underage",
+        "minor"
+      ]
+    }
+  },
+  "tribal_specific": {
+    "paint_types": {
+      "face_paint": [
+        "face paint",
+        "geometric face paint",
+        "tribal face paint",
+        "war paint",
+        "ritual paint",
+        "ceremonial paint"
+      ],
+      "body_paint": [
+        "body paint",
+        "tribal body paint",
+        "geometric patterns",
+        "ritual symbols",
+        "shamanic symbols",
+        "war paint"
+      ],
+      "colors": [
+        "red paint",
+        "black paint",
+        "white paint",
+        "earth tones",
+        "bold colors",
+        "natural pigments"
+      ]
+    },
+    "accessories": [
+      "feather headdress",
+      "feathers",
+      "bone jewelry",
+      "tribal necklace",
+      "ornamental earrings",
+      "arm bands",
+      "tribal patterns",
+      "leather accessories"
+    ],
+    "themes": [
+      "warrior",
+      "shaman",
+      "tribal beauty",
+      "ceremonial",
+      "primal",
+      "exotic",
+      "mystical",
+      "fierce"
+    ]
+  },
+  "body_standards": {
+    "breast_size": {
+      "preferred": [
+        "medium breast",
+        "medium breasts",
+        "perfect breasts",
+        "perky breasts"
+      ],
+      "weights": {
+        "medium breast": 1.0,
+        "small breast": 0.8,
+        "large breast": 0.6
+      }
+    },
+    "body_type": {
+      "preferred": [
+        "slim body",
+        "slender",
+        "toned",
+        "athletic",
+        "fit",
+        "lithe"
+      ],
+      "excluded": [
+        "obese",
+        "overweight",
+        "fat",
+        "chubby"
+      ]
+    },
+    "face_type": {
+      "preferred": [
+        "beautiful face",
+        "cute face",
+        "oval face",
+        "pretty face",
+        "detailed face"
+      ],
+      "features": [
+        "freckles",
+        "heterochromia",
+        "detailed eyes",
+        "striking makeup"
+      ]
+    },
+    "skin_tone": {
+      "preferred": [
+        "realistic skin",
+        "detailed skin",
+        "natural skin"
+      ],
+      "tones": [
+        "fair skin",
+        "caramel skin",
+        "dark skin",
+        "mahogany skin",
+        "tanned"
+      ]
+    },
+    "age_range": {
+      "minimum": 18,
+      "maximum": 30,
+      "preferred": [
+        "22yo",
+        "23yo",
+        "24yo",
+        "25yo",
+        "adult woman"
+      ]
+    }
+  },
+  "generation_boundaries": {
+    "always_include": [
+      "masterpiece",
+      "best quality",
+      "8k",
+      "detailed",
+      "realistic skin",
+      "sharp focus"
+    ],
+    "always_exclude": [
+      "low quality",
+      "worst quality",
+      "bad anatomy",
+      "deformed",
+      "ugly",
+      "cartoon",
+      "anime",
+      "child",
+      "kid",
+      "young",
+      "teen",
+      "minor"
+    ],
+    "fail_safes": {
+      "anatomy_check": true,
+      "quality_threshold": 0.7,
+      "style_consistency": true,
+      "age_verification": true
+    }
+  }
+}

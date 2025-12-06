@@ -1,0 +1,952 @@
+{
+  "exported_at": "2025-12-04T04:05:19.562570",
+  "positive_tags": [
+    {
+      "tag": "tribal",
+      "category": "general",
+      "weight": 0.9894736842105263,
+      "likes": 93,
+      "dislikes": 0
+    },
+    {
+      "tag": "heterochromia",
+      "category": "general",
+      "weight": 0.9821428571428571,
+      "likes": 54,
+      "dislikes": 0
+    },
+    {
+      "tag": "tribal body paint",
+      "category": "general",
+      "weight": 0.972972972972973,
+      "likes": 35,
+      "dislikes": 0
+    },
+    {
+      "tag": "geometric patterns on body",
+      "category": "general",
+      "weight": 0.9714285714285714,
+      "likes": 33,
+      "dislikes": 0
+    },
+    {
+      "tag": "war paint",
+      "category": "general",
+      "weight": 0.9642857142857143,
+      "likes": 26,
+      "dislikes": 0
+    },
+    {
+      "tag": "war paint on torso",
+      "category": "general",
+      "weight": 0.9629629629629629,
+      "likes": 25,
+      "dislikes": 0
+    },
+    {
+      "tag": "ceremonial paint",
+      "category": "general",
+      "weight": 0.9615384615384616,
+      "likes": 24,
+      "dislikes": 0
+    },
+    {
+      "tag": "geometric face paint",
+      "category": "face",
+      "weight": 0.9615384615384616,
+      "likes": 24,
+      "dislikes": 0
+    },
+    {
+      "tag": "25yo",
+      "category": "general",
+      "weight": 0.9565217391304348,
+      "likes": 21,
+      "dislikes": 0
+    },
+    {
+      "tag": "21yo",
+      "category": "general",
+      "weight": 0.9565217391304348,
+      "likes": 21,
+      "dislikes": 0
+    },
+    {
+      "tag": "backlit",
+      "category": "general",
+      "weight": 0.9523809523809523,
+      "likes": 19,
+      "dislikes": 0
+    },
+    {
+      "tag": "tribal markings",
+      "category": "general",
+      "weight": 0.9523809523809523,
+      "likes": 19,
+      "dislikes": 0
+    },
+    {
+      "tag": "athletic",
+      "category": "general",
+      "weight": 0.9523809523809523,
+      "likes": 19,
+      "dislikes": 0
+    },
+    {
+      "tag": "confident pose",
+      "category": "general",
+      "weight": 0.95,
+      "likes": 18,
+      "dislikes": 0
+    },
+    {
+      "tag": "24yo",
+      "category": "general",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "perky butt",
+      "category": "butt",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "slim legs",
+      "category": "legs",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "22yo",
+      "category": "general",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "round butt",
+      "category": "butt",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "toned legs",
+      "category": "bust",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "23yo",
+      "category": "general",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "firm butt",
+      "category": "butt",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "muscular legs",
+      "category": "legs",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "studio lighting",
+      "category": "general",
+      "weight": 0.9473684210526315,
+      "likes": 17,
+      "dislikes": 0
+    },
+    {
+      "tag": "standing tall",
+      "category": "general",
+      "weight": 0.9444444444444444,
+      "likes": 16,
+      "dislikes": 0
+    },
+    {
+      "tag": "harsh lighting",
+      "category": "general",
+      "weight": 0.9411764705882353,
+      "likes": 15,
+      "dislikes": 0
+    },
+    {
+      "tag": "flat chest",
+      "category": "bust",
+      "weight": 0.9411764705882353,
+      "likes": 15,
+      "dislikes": 0
+    },
+    {
+      "tag": "oval face",
+      "category": "face",
+      "weight": 0.9411764705882353,
+      "likes": 15,
+      "dislikes": 0
+    },
+    {
+      "tag": "hands on hips",
+      "category": "general",
+      "weight": 0.9411764705882353,
+      "likes": 15,
+      "dislikes": 0
+    },
+    {
+      "tag": "relaxed stance",
+      "category": "general",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "toned butt",
+      "category": "bust",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "slender legs",
+      "category": "legs",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "fierce",
+      "category": "general",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "lifted butt",
+      "category": "butt",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "shapely legs",
+      "category": "legs",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "confident",
+      "category": "general",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "D cup",
+      "category": "bust",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "angular face",
+      "category": "face",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "heart shaped butt",
+      "category": "butt",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "athletic legs",
+      "category": "legs",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "AAA cup",
+      "category": "bust",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "round face",
+      "category": "face",
+      "weight": 0.9375,
+      "likes": 14,
+      "dislikes": 0
+    },
+    {
+      "tag": "A cup",
+      "category": "bust",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "square face",
+      "category": "face",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "B cup",
+      "category": "bust",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "diamond face",
+      "category": "face",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "C cup",
+      "category": "bust",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "perky",
+      "category": "general",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "flat stomach",
+      "category": "stomach",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "oblong face",
+      "category": "face",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "pointy",
+      "category": "general",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "toned stomach",
+      "category": "bust",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "soft lighting",
+      "category": "general",
+      "weight": 0.9333333333333333,
+      "likes": 13,
+      "dislikes": 0
+    },
+    {
+      "tag": "teardrop",
+      "category": "general",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "visible abs",
+      "category": "bust",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "six pack abs",
+      "category": "bust",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "natural",
+      "category": "general",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "athletic core",
+      "category": "general",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "standing",
+      "category": "general",
+      "weight": 0.9285714285714286,
+      "likes": 12,
+      "dislikes": 0
+    },
+    {
+      "tag": "wavy hair",
+      "category": "hair",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "natural lighting",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "AA cup",
+      "category": "bust",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "heart face",
+      "category": "face",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "firm",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "washboard abs",
+      "category": "bust",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "ponytail",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "messy hair",
+      "category": "hair",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "dramatic lighting",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "arms crossed",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "smirk",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "round",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "defined abs",
+      "category": "bust",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "bun",
+      "category": "general",
+      "weight": 0.9230769230769231,
+      "likes": 11,
+      "dislikes": 0
+    },
+    {
+      "tag": "twin tails",
+      "category": "general",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "braided hair",
+      "category": "hair",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "olive skin",
+      "category": "skin",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "tan skin",
+      "category": "skin",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "caramel skin",
+      "category": "skin",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "straight hair",
+      "category": "hair",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "dark skin",
+      "category": "skin",
+      "weight": 0.9166666666666666,
+      "likes": 10,
+      "dislikes": 0
+    },
+    {
+      "tag": "neutral",
+      "category": "general",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "pale skin",
+      "category": "skin",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "fair skin",
+      "category": "skin",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "black hair",
+      "category": "hair",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "brown skin",
+      "category": "skin",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "playful",
+      "category": "general",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "brown hair",
+      "category": "hair",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "puffy",
+      "category": "general",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "soft stomach",
+      "category": "stomach",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "ebony skin",
+      "category": "skin",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "mysterious",
+      "category": "general",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "red hair",
+      "category": "hair",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "bronze skin",
+      "category": "skin",
+      "weight": 0.9090909090909091,
+      "likes": 9,
+      "dislikes": 0
+    },
+    {
+      "tag": "auburn hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "white hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "curly hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "silver hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "blue hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "seductive",
+      "category": "general",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "green hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "light skin",
+      "category": "skin",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "pink hair",
+      "category": "hair",
+      "weight": 0.9,
+      "likes": 8,
+      "dislikes": 0
+    },
+    {
+      "tag": "serious",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "petite",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "small frame",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "one hand raised",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "tall",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "very tall",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "rim lighting",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "slim",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "violet eyes",
+      "category": "eyes",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "average",
+      "category": "general",
+      "weight": 0.8888888888888888,
+      "likes": 7,
+      "dislikes": 0
+    },
+    {
+      "tag": "toned",
+      "category": "bust",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "intense",
+      "category": "general",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "fit",
+      "category": "general",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "green eyes",
+      "category": "eyes",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "medium frame",
+      "category": "general",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "slight smile",
+      "category": "general",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "purple hair",
+      "category": "hair",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "skinny",
+      "category": "skin",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "multicolored hair",
+      "category": "hair",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "slender",
+      "category": "general",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "blonde hair",
+      "category": "hair",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "loose hair",
+      "category": "hair",
+      "weight": 0.875,
+      "likes": 6,
+      "dislikes": 0
+    },
+    {
+      "tag": "gray eyes",
+      "category": "eyes",
+      "weight": 0.8571428571428571,
+      "likes": 5,
+      "dislikes": 0
+    },
+    {
+      "tag": "lithe",
+      "category": "general",
+      "weight": 0.8571428571428571,
+      "likes": 5,
+      "dislikes": 0
+    },
+    {
+      "tag": "delicate",
+      "category": "general",
+      "weight": 0.8571428571428571,
+      "likes": 5,
+      "dislikes": 0
+    },
+    {
+      "tag": "styled hair",
+      "category": "hair",
+      "weight": 0.8571428571428571,
+      "likes": 5,
+      "dislikes": 0
+    },
+    {
+      "tag": "amber eyes",
+      "category": "eyes",
+      "weight": 0.8333333333333334,
+      "likes": 4,
+      "dislikes": 0
+    },
+    {
+      "tag": "turquoise eyes",
+      "category": "eyes",
+      "weight": 0.8333333333333334,
+      "likes": 4,
+      "dislikes": 0
+    },
+    {
+      "tag": "muscular",
+      "category": "general",
+      "weight": 0.8333333333333334,
+      "likes": 4,
+      "dislikes": 0
+    },
+    {
+      "tag": "brown eyes",
+      "category": "eyes",
+      "weight": 0.8333333333333334,
+      "likes": 4,
+      "dislikes": 0
+    },
+    {
+      "tag": "blue eyes",
+      "category": "eyes",
+      "weight": 0.8,
+      "likes": 3,
+      "dislikes": 0
+    },
+    {
+      "tag": "hazel eyes",
+      "category": "eyes",
+      "weight": 0.8,
+      "likes": 3,
+      "dislikes": 0
+    },
+    {
+      "tag": "golden eyes",
+      "category": "eyes",
+      "weight": 0.8,
+      "likes": 3,
+      "dislikes": 0
+    }
+  ],
+  "negative_tags": [],
+  "neutral_tags": []
+}

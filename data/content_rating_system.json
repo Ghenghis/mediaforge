@@ -1,0 +1,414 @@
+{
+  "_version": "1.0.0",
+  "_description": "Comprehensive content rating system with historical eras, cultures, and strict guardrails",
+  
+  "content_ratings": {
+    "PG": {
+      "level": 1,
+      "label": "PG",
+      "description": "General audience - Fully clothed, modest coverage",
+      "min_coverage": 95,
+      "allowed_exposure": ["face", "hands", "arms below elbow", "feet"],
+      "forbidden": ["cleavage", "midriff", "upper thigh", "underwear visible"],
+      "guardrails": {
+        "skin_visibility_max": 15,
+        "suggestive_poses": false,
+        "form_fitting": false,
+        "see_through": false
+      }
+    },
+    "PG13": {
+      "level": 2,
+      "label": "PG-13",
+      "description": "Teen appropriate - Light revealing, summer casual",
+      "min_coverage": 85,
+      "allowed_exposure": ["shoulders", "arms", "knees", "light midriff"],
+      "forbidden": ["deep cleavage", "underwear", "upper thigh"],
+      "guardrails": {
+        "skin_visibility_max": 25,
+        "suggestive_poses": false,
+        "form_fitting": true,
+        "see_through": false
+      }
+    },
+    "PG14": {
+      "level": 3,
+      "label": "PG-14",
+      "description": "Slightly mature - Swimwear appropriate",
+      "min_coverage": 75,
+      "allowed_exposure": ["midriff", "back", "thighs", "moderate cleavage"],
+      "forbidden": ["underwear as outerwear", "excessive cleavage", "revealing cuts"],
+      "guardrails": {
+        "skin_visibility_max": 35,
+        "suggestive_poses": false,
+        "form_fitting": true,
+        "see_through": false
+      }
+    },
+    "PG15": {
+      "level": 4,
+      "label": "PG-15",
+      "description": "More mature - Bikini/lingerie hints",
+      "min_coverage": 65,
+      "allowed_exposure": ["cleavage", "hip area", "upper back", "side exposure"],
+      "forbidden": ["explicit exposure", "full underwear display"],
+      "guardrails": {
+        "skin_visibility_max": 45,
+        "suggestive_poses": "mild",
+        "form_fitting": true,
+        "see_through": "subtle"
+      }
+    },
+    "PG16": {
+      "level": 5,
+      "label": "PG-16",
+      "description": "Mature - Lingerie/revealing fashion",
+      "min_coverage": 50,
+      "allowed_exposure": ["lingerie visible", "deep cleavage", "side body"],
+      "forbidden": ["explicit nudity", "exposed private areas"],
+      "guardrails": {
+        "skin_visibility_max": 55,
+        "suggestive_poses": true,
+        "form_fitting": true,
+        "see_through": "moderate"
+      }
+    },
+    "PG17": {
+      "level": 6,
+      "label": "PG-17",
+      "description": "Very mature - Suggestive/risque",
+      "min_coverage": 35,
+      "allowed_exposure": ["underwear", "significant skin", "implied intimacy"],
+      "forbidden": ["explicit nudity", "graphic content"],
+      "guardrails": {
+        "skin_visibility_max": 70,
+        "suggestive_poses": true,
+        "form_fitting": true,
+        "see_through": true
+      }
+    },
+    "18+": {
+      "level": 7,
+      "label": "18+",
+      "description": "Adult - Artistic/partial nudity",
+      "min_coverage": 20,
+      "allowed_exposure": ["artistic nudity", "partial exposure", "implied full"],
+      "forbidden": ["graphic sexual content"],
+      "guardrails": {
+        "skin_visibility_max": 85,
+        "suggestive_poses": true,
+        "artistic_focus": true
+      }
+    },
+    "19+": {
+      "level": 8,
+      "label": "19+",
+      "description": "Adult - Full artistic nudity",
+      "min_coverage": 10,
+      "allowed_exposure": ["full nudity", "figure study", "tasteful explicit"],
+      "guardrails": {
+        "skin_visibility_max": 95,
+        "artistic_context": "required"
+      }
+    },
+    "20+": {
+      "level": 9,
+      "label": "20+",
+      "description": "Adult - Explicit content",
+      "min_coverage": 0,
+      "allowed_exposure": ["explicit", "mature themes"],
+      "guardrails": {
+        "adult_verified": true
+      }
+    },
+    "21+": {
+      "level": 10,
+      "label": "21+",
+      "description": "Adult - Unrestricted",
+      "min_coverage": 0,
+      "allowed_exposure": ["unrestricted"],
+      "guardrails": {
+        "adult_verified": true,
+        "explicit_consent": true
+      }
+    }
+  },
+
+  "historical_eras": {
+    "ancient_bc": {
+      "label": "Ancient (BC)",
+      "period": "Before 0 AD",
+      "fashion_by_rating": {
+        "PG": ["tunic", "toga", "chiton", "wrapped garments", "robes"],
+        "PG13": ["shorter tunic", "draped fabric", "bare arms"],
+        "PG14": ["greek chiton", "roman stola", "draped revealing"],
+        "PG15": ["minimal toga", "slave garments", "dancer outfit"],
+        "PG16": ["sheer fabric", "minimal draping", "bath attire"],
+        "PG17": ["body chains", "minimal coverage", "ritual wear"],
+        "18+": ["classical nude", "venus pose", "artistic ancient"],
+        "19+": ["full classical nude", "bathing scene"],
+        "20+": ["explicit ancient", "fertility ritual"],
+        "21+": ["unrestricted ancient"]
+      },
+      "cultures": ["greek", "roman", "egyptian", "persian", "celtic", "mesopotamian"]
+    },
+    "medieval": {
+      "label": "Medieval (500-1400)",
+      "period": "500-1400 AD",
+      "fashion_by_rating": {
+        "PG": ["long dress", "wimple", "veil", "kirtle", "surcoat"],
+        "PG13": ["fitted bodice", "low neckline", "bare arms"],
+        "PG14": ["corset visible", "off shoulder", "leg slit"],
+        "PG15": ["tavern wench", "peasant blouse low", "bathing shift"],
+        "PG16": ["chemise only", "unlaced bodice", "bath scene"],
+        "PG17": ["sheer chemise", "minimal coverage", "boudoir"],
+        "18+": ["artistic medieval nude", "bathing"],
+        "19+": ["full nude medieval", "private chambers"],
+        "20+": ["explicit medieval"],
+        "21+": ["unrestricted medieval"]
+      },
+      "cultures": ["european", "byzantine", "moorish", "viking", "crusader"]
+    },
+    "renaissance": {
+      "label": "Renaissance (1400-1600)",
+      "period": "1400-1600 AD",
+      "fashion_by_rating": {
+        "PG": ["full gown", "high collar", "elaborate sleeves", "formal dress"],
+        "PG13": ["low square neckline", "fitted bodice", "decorative"],
+        "PG14": ["deep neckline", "corseted", "revealing fashion"],
+        "PG15": ["courtesan style", "venetian fashion", "revealing bodice"],
+        "PG16": ["unlaced corset", "sheer overlay", "intimate wear"],
+        "PG17": ["chemise sheer", "boudoir renaissance", "private"],
+        "18+": ["classical nude pose", "artistic renaissance"],
+        "19+": ["venus style nude", "painter model"],
+        "20+": ["explicit renaissance art"],
+        "21+": ["unrestricted renaissance"]
+      },
+      "cultures": ["italian", "french", "spanish", "german", "english", "flemish"]
+    },
+    "baroque_rococo": {
+      "label": "Baroque/Rococo (1600-1800)",
+      "period": "1600-1800 AD",
+      "fashion_by_rating": {
+        "PG": ["full ball gown", "elaborate dress", "formal court"],
+        "PG13": ["low neckline", "off shoulder", "decorative"],
+        "PG14": ["very low neckline", "tight corset", "revealing"],
+        "PG15": ["shepherd costume", "theatrical", "salon wear"],
+        "PG16": ["boudoir fashion", "negligee", "intimate"],
+        "PG17": ["sheer chemise", "undressed noble", "private"],
+        "18+": ["artistic nude", "painted model"],
+        "19+": ["full nude baroque", "classical pose"],
+        "20+": ["explicit baroque"],
+        "21+": ["unrestricted baroque"]
+      },
+      "cultures": ["french court", "english", "spanish", "dutch", "austrian"]
+    },
+    "victorian": {
+      "label": "Victorian (1800-1900)",
+      "period": "1800-1900 AD",
+      "fashion_by_rating": {
+        "PG": ["full victorian dress", "high collar", "long sleeves", "modest"],
+        "PG13": ["evening gown", "bare shoulders", "elegant"],
+        "PG14": ["low evening wear", "corset fashion", "theatrical"],
+        "PG15": ["burlesque style", "cabaret", "showgirl modest"],
+        "PG16": ["corset only", "bloomers", "boudoir"],
+        "PG17": ["sheer chemise", "pin-up style", "private"],
+        "18+": ["artistic victorian nude", "painter model"],
+        "19+": ["full nude victorian", "classical pose"],
+        "20+": ["explicit victorian"],
+        "21+": ["unrestricted victorian"]
+      },
+      "cultures": ["british", "american", "french", "german", "colonial"]
+    },
+    "early_modern": {
+      "label": "Early Modern (1900-1950)",
+      "period": "1900-1950 AD",
+      "fashion_by_rating": {
+        "PG": ["modest dress", "1920s flapper covered", "1940s dress"],
+        "PG13": ["flapper style", "knee length", "sleeveless"],
+        "PG14": ["swimsuit vintage", "pin-up modest", "shorts"],
+        "PG15": ["bikini vintage", "pin-up classic", "lingerie ad"],
+        "PG16": ["pin-up revealing", "burlesque", "showgirl"],
+        "PG17": ["implied pin-up", "artistic nude", "magazine"],
+        "18+": ["artistic nude vintage", "painted nude"],
+        "19+": ["full nude vintage", "figure study"],
+        "20+": ["explicit vintage"],
+        "21+": ["unrestricted vintage"]
+      },
+      "cultures": ["american", "european", "hollywood", "parisian"]
+    },
+    "modern": {
+      "label": "Modern (1950-2000)",
+      "period": "1950-2000 AD",
+      "fashion_by_rating": {
+        "PG": ["casual dress", "jeans and top", "business casual"],
+        "PG13": ["mini skirt", "crop top", "shorts"],
+        "PG14": ["bikini", "revealing fashion", "club wear"],
+        "PG15": ["lingerie fashion", "swimwear editorial", "revealing"],
+        "PG16": ["lingerie only", "boudoir", "implied"],
+        "PG17": ["sheer lingerie", "artistic implied", "magazine"],
+        "18+": ["artistic nude modern", "figure photography"],
+        "19+": ["full nude photography", "artistic"],
+        "20+": ["explicit modern"],
+        "21+": ["unrestricted modern"]
+      },
+      "cultures": ["western", "asian", "global fashion", "diverse"]
+    },
+    "contemporary": {
+      "label": "Contemporary (2000-Present)",
+      "period": "2000-Present",
+      "fashion_by_rating": {
+        "PG": ["streetwear", "casual modern", "athleisure covered"],
+        "PG13": ["crop top", "shorts", "yoga wear", "summer"],
+        "PG14": ["bikini", "festival wear", "revealing fashion"],
+        "PG15": ["lingerie fashion", "swimwear", "club revealing"],
+        "PG16": ["lingerie editorial", "boudoir modern", "implied"],
+        "PG17": ["sheer fashion", "artistic nude implied", "editorial"],
+        "18+": ["artistic nude contemporary", "fine art"],
+        "19+": ["full nude photography", "figure study"],
+        "20+": ["explicit contemporary"],
+        "21+": ["unrestricted contemporary"]
+      },
+      "cultures": ["global", "diverse", "multicultural", "fusion"]
+    }
+  },
+
+  "cultural_styles": {
+    "tribal": {
+      "label": "Tribal/Indigenous",
+      "fashion_by_rating": {
+        "PG": ["traditional dress full", "ceremonial robes", "decorated garments"],
+        "PG13": ["traditional less coverage", "festival wear", "dance costume"],
+        "PG14": ["warrior outfit", "ritual wear", "body paint clothed"],
+        "PG15": ["minimal traditional", "ceremonial revealing", "tribal bikini"],
+        "PG16": ["body paint artistic", "minimal coverage", "ritual"],
+        "PG17": ["traditional implied", "body art focus", "ceremonial nude"],
+        "18+": ["artistic tribal nude", "cultural figure study"],
+        "19+": ["full tribal nude", "ethnographic artistic"],
+        "20+": ["explicit tribal"],
+        "21+": ["unrestricted tribal"]
+      },
+      "regions": ["african", "polynesian", "native american", "amazon", "australian aboriginal", "southeast asian"]
+    },
+    "western_classic": {
+      "label": "Western Classic",
+      "fashion_by_rating": {
+        "PG": ["full cowgirl outfit", "prairie dress", "rodeo formal"],
+        "PG13": ["daisy dukes", "tied shirt", "boots shorts"],
+        "PG14": ["bikini cowgirl", "festival western", "revealing western"],
+        "PG15": ["lingerie western theme", "implied western"],
+        "PG16": ["boudoir western", "saloon girl revealing"],
+        "PG17": ["western implied nude", "artistic"],
+        "18+": ["artistic western nude"],
+        "19+": ["full western nude"],
+        "20+": ["explicit western"],
+        "21+": ["unrestricted western"]
+      }
+    },
+    "professional": {
+      "label": "Professional/Corporate",
+      "fashion_by_rating": {
+        "PG": ["business suit", "formal office", "professional dress"],
+        "PG13": ["business casual", "pencil skirt", "fitted blouse"],
+        "PG14": ["sexy secretary", "revealing office", "power suit revealing"],
+        "PG15": ["lingerie office theme", "after hours"],
+        "PG16": ["boudoir professional theme", "undressing"],
+        "PG17": ["implied professional theme"],
+        "18+": ["artistic professional theme nude"],
+        "19+": ["full professional theme nude"],
+        "20+": ["explicit professional"],
+        "21+": ["unrestricted professional"]
+      }
+    },
+    "luxury_elite": {
+      "label": "Luxury/High Society",
+      "fashion_by_rating": {
+        "PG": ["haute couture", "gala dress", "formal elegant"],
+        "PG13": ["designer dress", "elegant revealing", "red carpet"],
+        "PG14": ["very revealing gown", "fashion forward", "daring"],
+        "PG15": ["lingerie designer", "boudoir luxury", "intimate elegant"],
+        "PG16": ["sheer luxury", "implied wealthy", "penthouse"],
+        "PG17": ["luxury boudoir revealed", "artistic wealthy"],
+        "18+": ["artistic luxury nude", "fine art wealth"],
+        "19+": ["full luxury nude", "mansion artistic"],
+        "20+": ["explicit luxury"],
+        "21+": ["unrestricted luxury"]
+      }
+    },
+    "casual_everyday": {
+      "label": "Casual/Everyday",
+      "fashion_by_rating": {
+        "PG": ["jeans tshirt", "casual dress", "everyday wear"],
+        "PG13": ["shorts tank top", "summer casual", "crop top jeans"],
+        "PG14": ["bikini casual", "revealing casual", "beach day"],
+        "PG15": ["lingerie home", "bedroom casual", "intimate home"],
+        "PG16": ["implied home", "morning after style", "intimate"],
+        "PG17": ["home boudoir", "casual implied nude"],
+        "18+": ["casual artistic nude", "home figure study"],
+        "19+": ["full casual nude", "everyday artistic"],
+        "20+": ["explicit casual"],
+        "21+": ["unrestricted casual"]
+      }
+    }
+  },
+
+  "socioeconomic_styles": {
+    "ultra_wealthy": ["designer everything", "luxury brands", "high fashion", "exclusive"],
+    "upper_class": ["quality fashion", "tasteful expensive", "country club", "refined"],
+    "middle_class": ["mall fashion", "department store", "practical stylish"],
+    "working_class": ["practical wear", "durable fashion", "everyday functional"],
+    "bohemian": ["artistic fashion", "unique style", "creative expression"],
+    "alternative": ["punk", "goth", "emo", "alternative subculture"]
+  },
+
+  "guardrails": {
+    "global_forbidden": [
+      "child", "minor", "underage", "teen", "kid", "young girl", "loli", "shota",
+      "illegal", "non-consensual", "violence", "gore", "death"
+    ],
+    "rating_enforcement": {
+      "strict_mode": true,
+      "auto_flag_violations": true,
+      "require_age_verification_18plus": true,
+      "blur_unverified_mature": true
+    },
+    "failsafes": {
+      "max_skin_by_rating": {
+        "PG": 15, "PG13": 25, "PG14": 35, "PG15": 45,
+        "PG16": 55, "PG17": 70, "18+": 85, "19+": 95, "20+": 100, "21+": 100
+      },
+      "required_coverage_areas_by_rating": {
+        "PG": ["chest", "groin", "buttocks", "midriff"],
+        "PG13": ["chest", "groin", "buttocks"],
+        "PG14": ["chest fully", "groin", "buttocks"],
+        "PG15": ["chest mostly", "groin", "buttocks"],
+        "PG16": ["groin", "buttocks mostly"],
+        "PG17": ["groin covered"],
+        "18+": ["artistic discretion"],
+        "19+": ["none required"],
+        "20+": ["none required"],
+        "21+": ["none required"]
+      }
+    }
+  },
+
+  "integration": {
+    "rating_system": {
+      "linked": true,
+      "auto_suggest_content_rating": true,
+      "learn_from_user_corrections": true
+    },
+    "tagging_system": {
+      "linked": true,
+      "auto_add_era_tags": true,
+      "auto_add_culture_tags": true,
+      "validate_tags_against_rating": true
+    },
+    "learning_system": {
+      "linked": true,
+      "learn_user_preferences": true,
+      "improve_suggestions_over_time": true,
+      "track_rating_accuracy": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-03T20:22:20.636037",
+  "results": [
+    {
+      "model": "lfm2-vl-1.6b",
+      "success": true,
+      "time_s": 14.2,
+      "tokens": 190,
+      "tok_per_s": 13.4,
+      "length": 913,
+      "content": "This black and white illustration depicts a charming koala bear sitting on a log. The koala has large, expressive eyes that give it an endearing quality, and its ears are perked up attentively. Its nose is round and prominent, adding to its cute appearance.\n\nThe koala is surrounded by a lush environment, with various plants and flowers in the background. This setting creates a peaceful and natural atmosphere for the scene.\n\nThe art style of this illustration is cartoonish and whimsical, with clean lines and a simple color scheme. The use of black and white emphasizes the details of the koala and its surroundings, creating a striking contrast that draws attention to the subject.\n\nOverall, the mood of this illustration is lighthearted and playful, evoking feelings of joy and wonder. The koala's pose and expression, combined with the enchanting setting, make for an engaging and visually appealing image."
+    },
+    {
+      "model": "qwen3-vl-8b-abliterated-caption-it-i1",
+      "success": true,
+      "time_s": 157.8,
+      "tokens": 359,
+      "tok_per_s": 2.3,
+      "length": 1830,
+      "content": "This is a detailed black-and-white line art illustration designed as a coloring page, featuring an adorable koala bear as the central subject.\n\nThe image depicts a cartoon-style koala sitting upright on its hind legs atop a thick log or branch that spans horizontally across the lower portion of the frame. The koala has large, expressive eyes with prominent black pupils and white highlights, conveying innocence and curiosity. Its nose is a simple, rounded shape, and it has small, closed mouth lines, giving it a gentle expression. The koala's ears are oversized relative to its head, with textured inner ear details suggesting fur. A sprig of leaves or flowers adorns the top of its head, adding a whimsical touch.\n\nThe koala\u2019s body is plump and rounded, typical of cartoon depictions, with short arms resting on its lap. Its paws have clearly defined toes and claws, emphasizing its animal nature. The overall pose is one of relaxed curiosity, as if the koala is calmly observing its surroundings.\n\nSurrounding the koala are various plants and foliage elements. To the left and right sides of the image, there are detailed depictions of leaves and branches, creating a sense of natural habitat. These include broad leaves with visible veins and smaller, more delicate leaf shapes. The background features scattered heart shapes in different sizes, adding a playful and affectionate atmosphere to the scene.\n\nThe art style is characterized by clean, bold black lines on a white background, typical of coloring pages designed for children or adults seeking relaxation through artistic expression. There are no colors present as it is intended to be colored in. The mood conveyed is one of innocence, warmth, and natural beauty, with the koala's gentle demeanor complementing the soft, organic shapes of the surrounding foliage."
+    },
+    {
+      "model": "qwen3-vl-8b-nsfw-caption-v4.5",
+      "success": false,
+      "error": "HTTP 400"
+    },
+    {
+      "model": "thesby_qwen2.5-vl-7b-nsfw-caption-v3",
+      "success": false,
+      "error": "timed out"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "test_dataset",
+  "created_at": "2025-12-04T03:50:39.824060",
+  "statistics": {
+    "total_preferences": 6,
+    "total_rated_images": 1,
+    "liked_images": 1,
+    "disliked_images": 0
+  },
+  "preferences": {
+    "liked": [
+      {
+        "category": "body_frame",
+        "subcategory": "size",
+        "item": "petite",
+        "weight": 1.0
+      },
+      {
+        "category": "stomach",
+        "subcategory": "tone",
+        "item": "visible abs",
+        "weight": 1.0
+      },
+      {
+        "category": "body_frame",
+        "subcategory": "build",
+        "item": "toned",
+        "weight": 1.0
+      },
+      {
+        "category": "bust",
+        "subcategory": "shape",
+        "item": "perky",
+        "weight": 1.0
+      },
+      {
+        "category": "bust",
+        "subcategory": "nipples",
+        "item": "perky nipples",
+        "weight": 1.0
+      },
+      {
+        "category": "stomach",
+        "subcategory": "tone",
+        "item": "toned stomach",
+        "weight": 1.0
+      }
+    ],
+    "disliked": []
+  },
+  "tag_weights": {
+    "petite": {
+      "category": "body_frame",
+      "weight": 0.6666666666666666
+    },
+    "A cup": {
+      "category": "bust",
+      "weight": 0.6666666666666666
+    },
+    "perky": {
+      "category": "general",
+      "weight": 0.6666666666666666
+    },
+    "visible abs": {
+      "category": "stomach",
+      "weight": 0.6666666666666666
+    },
+    "oval face": {
+      "category": "face",
+      "weight": 0.6666666666666666
+    },
+    "blue eyes": {
+      "category": "eyes",
+      "weight": 0.6666666666666666
+    }
+  },
+  "training_pairs": [
+    {
+      "prompt": "test prompt",
+      "tags": [
+        "petite",
+        "A cup",
+        "perky",
+        "visible abs",
+        "oval face",
+        "blue eyes"
+      ],
+      "rating": 5,
+      "label": "positive"
+    }
+  ]
+}

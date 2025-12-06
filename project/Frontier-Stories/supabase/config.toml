@@ -1,0 +1,34 @@
+project_id = "pvlqwxkgovjwqhpqnssl"
+
+[functions.text-to-speech]
+verify_jwt = false
+
+[functions.voice-design]
+verify_jwt = false
+
+[functions.voice-clone]
+verify_jwt = false
+
+[functions.export-story]
+verify_jwt = false
+
+[functions.generate-template]
+verify_jwt = false
+
+[functions.generate-actor-portrait]
+verify_jwt = false
+
+[functions.colorize-portrait]
+verify_jwt = false
+
+[functions.style-transfer]
+verify_jwt = false
+
+[functions.generate-scenery]
+verify_jwt = false
+
+[functions.analyze-story-scenes]
+verify_jwt = false
+
+[functions.generate-scene-imagery]
+verify_jwt = false

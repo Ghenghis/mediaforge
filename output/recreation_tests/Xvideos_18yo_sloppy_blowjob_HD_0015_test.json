@@ -1,0 +1,44 @@
+{
+  "source_image": "Xvideos_18yo_sloppy_blowjob_HD_0015.jpg",
+  "extracted_aspects": 28,
+  "tags_count": 4,
+  "test_prompts": {
+    "exact_clone": {
+      "prompt": "(photorealistic:1.3), - Gender: Female, - Age: Late teens to early 30s years old, - Hair: Long brown hair, slightly wavy texture - Hair: Long brown hair, slightly wavy texture hair, - Body type: Slim and athletic body, - Expression: Open mouth, looking surprised or shocked expression, wearing - Top: White tank top with thin straps, revealing a bit of cleavage, in - Location: Outdoor, near a white building with large windows, - Shadows: Soft shadows cast by the subject and objects in the background lighting, - Angle: Eye-level, slightly above the subject's eye level angle, woman, - woman, indoor, outdoor",
+      "must_match": [
+        "pose",
+        "face",
+        "lighting",
+        "framing"
+      ],
+      "tolerance": 0.03
+    },
+    "outfit_change": {
+      "prompt": "(photorealistic:1.3), same person, - Gender: Female, - Age: Late teens to early 30s years old, - Hair: Long brown hair, slightly wavy texture - Hair: Long brown hair, slightly wavy texture hair, - Body type: Slim and athletic body, - Expression: Open mouth, looking surprised or shocked expression, wearing - Top: White tank top with thin straps, revealing a bit of cleavage, in - Location: Outdoor, near a white building with large windows, - Shadows: Soft shadows cast by the subject and objects in the background lighting, - Angle: Eye-level, slightly above the subject's eye level angle, different outfit, casual clothes",
+      "must_match": [
+        "face",
+        "pose",
+        "lighting"
+      ],
+      "tolerance": 0.1
+    },
+    "style_change": {
+      "prompt": "(artistic:1.2), - Gender: Female, - Age: Late teens to early 30s years old, - Hair: Long brown hair, slightly wavy texture - Hair: Long brown hair, slightly wavy texture hair, - Body type: Slim and athletic body, - Expression: Open mouth, looking surprised or shocked expression, wearing - Top: White tank top with thin straps, revealing a bit of cleavage, in - Location: Outdoor, near a white building with large windows, - Shadows: Soft shadows cast by the subject and objects in the background lighting, - Angle: Eye-level, slightly above the subject's eye level angle, oil painting style",
+      "must_match": [
+        "pose",
+        "composition"
+      ],
+      "tolerance": 0.2
+    },
+    "undressed_variation": {
+      "prompt": "(photorealistic:1.3), - Gender: Female, - Age: Late teens to early 30s years old, - Hair: Long brown hair, slightly wavy texture - Hair: Long brown hair, slightly wavy texture hair, - Body type: Slim and athletic body, - Expression: Open mouth, looking surprised or shocked expression, wearing - Top: White tank top with thin straps, revealing a bit of cleavage, in - Location: Outdoor, near a white building with large windows, - Shadows: Soft shadows cast by the subject and objects in the background lighting, - Angle: Eye-level, slightly above the subject's eye level angle, minimal clothing, artistic nude",
+      "must_match": [
+        "face",
+        "pose",
+        "body_type"
+      ],
+      "tolerance": 0.15
+    }
+  },
+  "timestamp": "2025-12-03T17:34:36.921445"
+}

@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Sepia & Aged Leather Palette */
+    --background: 35 30% 85%;
+    --foreground: 30 50% 15%;
+    --card: 40 45% 88%;
+    --card-foreground: 30 50% 15%;
+    --popover: 35 30% 90%;
+    --popover-foreground: 30 40% 12%;
+    
+    /* Rich Burnt Sienna & Copper */
+    --primary: 15 65% 38%;
+    --primary-foreground: 35 20% 98%;
+    
+    /* Turquoise & Native Accents */
+    --secondary: 180 45% 45%;
+    --secondary-foreground: 35 20% 98%;
+    
+    /* Weathered Parchment */
+    --muted: 40 30% 85%;
+    --muted-foreground: 30 30% 35%;
+    
+    /* Aged Copper Accent */
+    --accent: 25 55% 50%;
+    --accent-foreground: 35 15% 10%;
+    
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Weathered Wood Borders */
+    --border: 30 25% 70%;
+    --input: 30 25% 75%;
+    --ring: 15 65% 38%;
+    --radius: 0.25rem;
+    
+    /* Rich Western Gradients */
+    --gradient-western: linear-gradient(135deg, hsl(15 65% 38%) 0%, hsl(25 55% 30%) 50%, hsl(30 45% 25%) 100%);
+    --gradient-sepia: linear-gradient(180deg, hsl(35 35% 88%) 0%, hsl(35 30% 78%) 100%);
+    --gradient-turquoise: linear-gradient(135deg, hsl(180 45% 45%) 0%, hsl(185 50% 35%) 100%);
+    --gradient-aged: radial-gradient(ellipse at center, hsl(40 30% 90%) 0%, hsl(35 30% 82%) 100%);
+    
+    /* Dramatic Vintage Shadows */
+    --shadow-warm: 0 15px 40px -10px hsl(25 60% 25% / 0.6), inset 0 1px 0 hsl(40 30% 95% / 0.5);
+    --shadow-lifted: 0 25px 60px -20px hsl(20 50% 20% / 0.7), 0 10px 25px -10px hsl(15 60% 15% / 0.4);
+    --shadow-inset: inset 0 2px 8px hsl(30 40% 20% / 0.3), inset 0 -1px 2px hsl(40 30% 95% / 0.2);
+    --shadow-photo: 0 8px 20px hsl(0 0% 0% / 0.5), inset 0 1px 0 hsl(0 0% 100% / 0.1);
+
+    /* Sidebar */
+    --sidebar-background: 30 30% 18%;
+    --sidebar-foreground: 35 20% 90%;
+    --sidebar-primary: 15 65% 38%;
+    --sidebar-primary-foreground: 35 20% 98%;
+    --sidebar-accent: 25 45% 35%;
+    --sidebar-accent-foreground: 35 20% 95%;
+    --sidebar-border: 30 25% 25%;
+    --sidebar-ring: 15 65% 38%;
+  }
+
+  .dark {
+    /* Deep Night & Campfire Palette */
+    --background: 30 30% 8%;
+    --foreground: 35 20% 92%;
+    --card: 30 25% 12%;
+    --card-foreground: 35 20% 90%;
+    --popover: 30 30% 10%;
+    --popover-foreground: 35 20% 92%;
+    
+    /* Glowing Embers */
+    --primary: 20 75% 55%;
+    --primary-foreground: 30 20% 5%;
+    
+    /* Moonlit Turquoise */
+    --secondary: 185 50% 55%;
+    --secondary-foreground: 30 20% 5%;
+    
+    /* Smoke & Ash */
+    --muted: 30 15% 20%;
+    --muted-foreground: 35 15% 65%;
+    
+    /* Fire Glow */
+    --accent: 25 70% 60%;
+    --accent-foreground: 30 20% 5%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 30 20% 22%;
+    --input: 30 20% 22%;
+    --ring: 20 75% 55%;
+    
+    --gradient-western: linear-gradient(135deg, hsl(20 75% 45%) 0%, hsl(15 65% 35%) 50%, hsl(10 60% 25%) 100%);
+    --gradient-sepia: linear-gradient(180deg, hsl(30 25% 15%) 0%, hsl(30 20% 10%) 100%);
+    --gradient-turquoise: linear-gradient(135deg, hsl(185 50% 45%) 0%, hsl(180 45% 35%) 100%);
+    --gradient-aged: radial-gradient(ellipse at center, hsl(30 25% 12%) 0%, hsl(30 30% 8%) 100%);
+    
+    --shadow-warm: 0 15px 40px -10px hsl(0 0% 0% / 0.7), inset 0 1px 0 hsl(35 20% 25% / 0.3);
+    --shadow-lifted: 0 25px 60px -20px hsl(0 0% 0% / 0.8), 0 10px 25px -10px hsl(15 60% 10% / 0.5);
+    --shadow-inset: inset 0 2px 8px hsl(0 0% 0% / 0.6), inset 0 -1px 2px hsl(35 20% 30% / 0.2);
+    --shadow-photo: 0 8px 20px hsl(0 0% 0% / 0.7), inset 0 1px 0 hsl(0 0% 100% / 0.05);
+
+    --sidebar-background: 30 30% 10%;
+    --sidebar-foreground: 35 20% 85%;
+    --sidebar-primary: 20 75% 55%;
+    --sidebar-primary-foreground: 30 20% 5%;
+    --sidebar-accent: 30 25% 20%;
+    --sidebar-accent-foreground: 35 20% 90%;
+    --sidebar-border: 30 25% 18%;
+    --sidebar-ring: 20 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

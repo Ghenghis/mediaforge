@@ -1,0 +1,95 @@
+{
+  "body_frame": {
+    "size": ["petite", "small frame", "medium frame", "tall", "very tall"],
+    "build": ["skinny", "slim", "slender", "average", "athletic", "toned", "muscular", "fit", "lithe", "delicate"]
+  },
+  "bust": {
+    "size": ["flat chest", "AAA cup", "AA cup", "A cup", "B cup", "C cup", "D cup"],
+    "shape": ["perky", "pointy", "puffy", "round", "teardrop", "athletic", "firm", "natural"],
+    "nipples": ["small nipples", "perky nipples", "puffy nipples", "pointy nipples", "pink nipples", "dark nipples", "erect nipples"],
+    "quality": ["realistic breasts", "lifelike", "natural shape", "symmetrical", "youthful"]
+  },
+  "stomach": {
+    "tone": ["flat stomach", "toned stomach", "soft stomach", "defined abs", "visible abs", "six pack abs", "washboard abs", "athletic core"],
+    "shape": ["narrow waist", "slim waist", "hourglass", "athletic waist"],
+    "details": ["belly button", "toned obliques", "hip bones visible", "v-line"]
+  },
+  "butt": {
+    "size": ["small butt", "petite butt", "average butt", "round butt", "full butt", "athletic butt"],
+    "shape": ["perky butt", "round butt", "heart shaped butt", "firm butt", "toned butt", "lifted butt"],
+    "quality": ["smooth skin", "toned glutes", "athletic glutes", "shapely"]
+  },
+  "legs": {
+    "length": ["short legs", "average legs", "long legs", "very long legs"],
+    "shape": ["slim legs", "toned legs", "athletic legs", "muscular legs", "slender legs", "shapely legs"],
+    "thighs": ["slim thighs", "toned thighs", "athletic thighs", "thick thighs", "gap between thighs"],
+    "calves": ["toned calves", "slim calves", "muscular calves", "defined calves"]
+  },
+  "hips": {
+    "width": ["narrow hips", "average hips", "wide hips", "curvy hips"],
+    "shape": ["round hips", "angular hips", "feminine hips", "athletic hips"]
+  },
+  "face": {
+    "shape": ["oval face", "round face", "heart face", "square face", "diamond face", "oblong face", "angular face"],
+    "features": ["high cheekbones", "defined cheekbones", "soft features", "sharp features", "delicate features", "strong jawline", "defined jawline", "pointed chin", "round chin"],
+    "skin": ["clear skin", "smooth skin", "porcelain skin", "flawless complexion", "freckles", "beauty marks"],
+    "expression": ["neutral", "slight smile", "smirk", "serious", "fierce", "confident", "seductive", "mysterious", "intense", "playful"]
+  },
+  "eyes": {
+    "color": ["blue eyes", "green eyes", "brown eyes", "hazel eyes", "amber eyes", "gray eyes", "violet eyes", "golden eyes", "turquoise eyes"],
+    "special": ["heterochromia", "different colored eyes", "cat eyes", "almond eyes", "big eyes", "narrow eyes", "doe eyes", "fox eyes"],
+    "details": ["detailed iris", "reflective eyes", "expressive eyes", "long eyelashes", "thick eyelashes", "piercing gaze", "intense stare"],
+    "makeup": ["natural makeup", "smokey eyes", "eyeliner", "mascara", "no makeup"]
+  },
+  "nose": {
+    "shape": ["small nose", "button nose", "straight nose", "aquiline nose", "upturned nose", "defined nose"],
+    "size": ["petite nose", "average nose", "prominent nose"]
+  },
+  "lips": {
+    "shape": ["full lips", "thin lips", "cupid bow lips", "heart shaped lips", "pouty lips"],
+    "size": ["small lips", "medium lips", "plump lips"],
+    "color": ["pink lips", "red lips", "natural lips", "glossy lips"]
+  },
+  "hair": {
+    "length": ["very short hair", "short hair", "medium hair", "long hair", "very long hair", "waist length hair"],
+    "style": ["straight hair", "wavy hair", "curly hair", "braided hair", "ponytail", "bun", "messy hair", "styled hair", "loose hair", "twin tails"],
+    "color": ["black hair", "brown hair", "blonde hair", "red hair", "auburn hair", "white hair", "silver hair", "blue hair", "green hair", "pink hair", "purple hair", "multicolored hair"],
+    "texture": ["silky hair", "shiny hair", "thick hair", "fine hair", "voluminous hair"]
+  },
+  "skin": {
+    "tone": ["pale skin", "fair skin", "light skin", "olive skin", "tan skin", "caramel skin", "brown skin", "dark skin", "ebony skin", "bronze skin"],
+    "texture": ["smooth skin", "soft skin", "realistic skin", "detailed skin", "skin pores", "flawless skin"],
+    "quality": ["glowing skin", "healthy skin", "natural skin", "matte skin", "dewy skin"]
+  },
+  "arms": {
+    "shape": ["slim arms", "toned arms", "athletic arms", "muscular arms", "slender arms"],
+    "details": ["defined biceps", "toned triceps", "smooth arms"]
+  },
+  "hands": {
+    "shape": ["slender hands", "delicate hands", "elegant hands", "small hands"],
+    "details": ["long fingers", "manicured nails", "natural nails", "detailed hands"]
+  },
+  "shoulders": {
+    "shape": ["narrow shoulders", "average shoulders", "broad shoulders", "athletic shoulders"],
+    "details": ["bare shoulders", "defined shoulders", "smooth shoulders"]
+  },
+  "neck": {
+    "shape": ["slender neck", "long neck", "graceful neck", "elegant neck"],
+    "details": ["smooth neck", "visible collarbone", "defined collarbone"]
+  },
+  "poses": {
+    "standing": ["standing", "standing tall", "hands on hips", "arms crossed", "one hand raised", "relaxed stance", "confident pose"],
+    "sitting": ["sitting", "kneeling", "crouching", "seated elegantly", "cross-legged"],
+    "dynamic": ["walking", "action pose", "dancing", "stretching", "turning"],
+    "angles": ["facing viewer", "profile view", "three quarter view", "from behind", "looking over shoulder", "looking up", "looking down", "tilted head"]
+  },
+  "lighting": {
+    "type": ["natural lighting", "studio lighting", "dramatic lighting", "soft lighting", "harsh lighting", "rim lighting", "backlit"],
+    "mood": ["golden hour", "blue hour", "moonlight", "firelight", "candlelight", "neon lighting"],
+    "quality": ["high contrast", "low contrast", "soft shadows", "hard shadows", "diffused light"]
+  },
+  "quality_tags": {
+    "always_positive": ["masterpiece", "best quality", "ultra detailed", "8k resolution", "photorealistic", "RAW photo", "DSLR", "sharp focus", "high detail", "professional photography", "lifelike", "hyperrealistic"],
+    "always_negative": ["low quality", "worst quality", "blurry", "grainy", "watermark", "text", "signature", "bad anatomy", "deformed", "ugly", "disfigured", "cartoon", "anime", "3d render", "cgi", "child", "kid", "teen", "minor", "underage"]
+  }
+}

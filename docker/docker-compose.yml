@@ -1,0 +1,104 @@
+# LoraForge Docker Services
+# Start: docker-compose up -d
+# Stop:  docker-compose down
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: civitai_postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-civitai}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-civitai_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-civitai_learning}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - civitai_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U civitai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: civitai_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - civitai_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # Unified Gateway API Server
+  gateway:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    container_name: civitai_gateway
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://civitai:civitai_secret@postgres:5432/civitai_learning
+      REDIS_URL: redis://redis:6379
+      COMFY_URL: http://host.docker.internal:8188
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      - "8300:8300"
+    volumes:
+      - ../scripts:/app/scripts:ro
+      - ../data:/app/data
+      - gateway_logs:/app/logs
+    networks:
+      - civitai_network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8300/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Supabase Studio (Optional GUI) - disabled by default
+  # Uncomment to enable database GUI
+  # supabase-studio:
+  #   image: supabase/studio:latest
+  #   container_name: civitai_studio
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   environment:
+  #     STUDIO_PG_META_URL: http://postgres:5432
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-civitai_secret}
+  #     DEFAULT_ORGANIZATION_NAME: LoraForge
+  #     DEFAULT_PROJECT_NAME: AI Learning
+  #   ports:
+  #     - "3000:3000"
+  #   networks:
+  #     - civitai_network
+  #   restart: unless-stopped
+
+networks:
+  civitai_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  gateway_logs:

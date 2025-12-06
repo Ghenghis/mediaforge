@@ -1,0 +1,624 @@
+{
+  "version": "2.0",
+  "description": "Comprehensive 22-Level Rating System with Auto-Tagging",
+  "last_updated": "2024-12-04",
+  
+  "rating_categories": {
+    "family_safe": {
+      "name": "Family Safe",
+      "age_range": "0-12",
+      "guardrail_level": 1,
+      "color": "#4CAF50",
+      "icon": "👨‍👩‍👧‍👦",
+      "requires_verification": false,
+      "restrictions_releasable": false
+    },
+    "teen": {
+      "name": "Teen",
+      "age_range": "13-17",
+      "guardrail_level": 2,
+      "color": "#2196F3",
+      "icon": "🎓",
+      "requires_verification": false,
+      "restrictions_releasable": false
+    },
+    "adult_entry": {
+      "name": "Adult Entry",
+      "age_range": "18-20",
+      "guardrail_level": 3,
+      "color": "#FF9800",
+      "icon": "🔞",
+      "requires_verification": true,
+      "restrictions_releasable": false
+    },
+    "adult_soft": {
+      "name": "Adult Soft",
+      "age_range": "21+",
+      "guardrail_level": 4,
+      "color": "#E91E63",
+      "icon": "💋",
+      "requires_verification": true,
+      "restrictions_releasable": true
+    },
+    "adult_explicit": {
+      "name": "Adult Explicit",
+      "age_range": "21+",
+      "guardrail_level": 5,
+      "color": "#9C27B0",
+      "icon": "🔥",
+      "requires_verification": true,
+      "restrictions_releasable": true
+    }
+  },
+  
+  "ratings": {
+    "EL": {
+      "code": "EL",
+      "name": "Extra Light",
+      "full_name": "Extra Light - Toddler Safe",
+      "category": "family_safe",
+      "min_age": 0,
+      "max_age": 3,
+      "description": "Suitable for toddlers and infants",
+      "clothing_coverage_min": 100,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 1,
+      "allowed_themes": ["educational", "simple_shapes", "colors", "animals", "nursery"],
+      "forbidden_themes": ["conflict", "danger", "scary", "adult", "violence"],
+      "auto_tag_keywords": ["baby", "toddler", "nursery", "cartoon", "simple"],
+      "prompt_modifiers": {
+        "add": ["child-safe", "cartoon style", "bright colors", "simple shapes", "friendly"],
+        "remove": ["realistic", "detailed", "adult", "scary", "dark"]
+      }
+    },
+    "L": {
+      "code": "L",
+      "name": "Light",
+      "full_name": "Light - Young Child",
+      "category": "family_safe",
+      "min_age": 4,
+      "max_age": 6,
+      "description": "Suitable for young children",
+      "clothing_coverage_min": 100,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 1,
+      "allowed_themes": ["adventure", "friendship", "learning", "nature", "fantasy"],
+      "forbidden_themes": ["violence", "scary", "adult", "danger"],
+      "auto_tag_keywords": ["child", "young", "innocent", "playful", "colorful"],
+      "prompt_modifiers": {
+        "add": ["child-friendly", "wholesome", "bright", "cheerful"],
+        "remove": ["adult", "mature", "scary", "violent"]
+      }
+    },
+    "G": {
+      "code": "G",
+      "name": "General",
+      "full_name": "General - All Ages",
+      "category": "family_safe",
+      "min_age": 7,
+      "max_age": 9,
+      "description": "General audience content",
+      "clothing_coverage_min": 100,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 1,
+      "allowed_themes": ["adventure", "action", "fantasy", "science", "history"],
+      "forbidden_themes": ["violence", "adult", "romance", "scary"],
+      "auto_tag_keywords": ["general", "family", "adventure", "fun"],
+      "prompt_modifiers": {
+        "add": ["family-friendly", "adventure", "fun", "colorful"],
+        "remove": ["adult", "violent", "scary", "romantic"]
+      }
+    },
+    "PG": {
+      "code": "PG",
+      "name": "PG",
+      "full_name": "Parental Guidance",
+      "category": "family_safe",
+      "min_age": 10,
+      "max_age": 12,
+      "description": "Parental guidance suggested",
+      "clothing_coverage_min": 95,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 1,
+      "allowed_themes": ["adventure", "mild_action", "friendship", "coming_of_age"],
+      "forbidden_themes": ["adult", "romance", "violence", "nudity"],
+      "auto_tag_keywords": ["preteen", "adventure", "school", "friends"],
+      "prompt_modifiers": {
+        "add": ["family-appropriate", "modest", "age-appropriate"],
+        "remove": ["adult", "revealing", "romantic", "violent"]
+      }
+    },
+    "PG-13": {
+      "code": "PG-13",
+      "name": "PG-13",
+      "full_name": "Parents Strongly Cautioned",
+      "category": "family_safe",
+      "min_age": 13,
+      "max_age": 13,
+      "description": "Some material may be inappropriate for children under 13",
+      "clothing_coverage_min": 90,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 1,
+      "allowed_themes": ["teen_drama", "light_romance", "action", "adventure"],
+      "forbidden_themes": ["adult", "explicit", "nudity", "graphic_violence"],
+      "auto_tag_keywords": ["teen", "young_teen", "school", "first_crush"],
+      "prompt_modifiers": {
+        "add": ["teen-appropriate", "modest clothing", "age-appropriate"],
+        "remove": ["adult", "revealing", "explicit", "mature"]
+      }
+    },
+    "NC-14": {
+      "code": "NC-14",
+      "name": "NC-14",
+      "full_name": "No Children Under 14",
+      "category": "teen",
+      "min_age": 14,
+      "max_age": 14,
+      "description": "Not suitable for children under 14",
+      "clothing_coverage_min": 85,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 2,
+      "allowed_themes": ["dating", "romance", "teen_drama", "coming_of_age"],
+      "forbidden_themes": ["explicit", "nudity", "adult_content"],
+      "auto_tag_keywords": ["teen", "dating", "romance", "high_school"],
+      "prompt_modifiers": {
+        "add": ["teen romance", "age-appropriate dating", "modest"],
+        "remove": ["adult", "explicit", "revealing", "mature"]
+      }
+    },
+    "NC-15": {
+      "code": "NC-15",
+      "name": "NC-15",
+      "full_name": "No Children Under 15",
+      "category": "teen",
+      "min_age": 15,
+      "max_age": 15,
+      "description": "Not suitable for children under 15",
+      "clothing_coverage_min": 80,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 2,
+      "allowed_themes": ["romance", "relationships", "teen_drama", "emotional"],
+      "forbidden_themes": ["explicit", "nudity", "graphic_content"],
+      "auto_tag_keywords": ["teen", "romance", "relationship", "emotional"],
+      "prompt_modifiers": {
+        "add": ["romantic", "emotional", "tasteful", "age-appropriate"],
+        "remove": ["explicit", "nude", "adult", "graphic"]
+      }
+    },
+    "NC-16": {
+      "code": "NC-16",
+      "name": "NC-16",
+      "full_name": "No Children Under 16",
+      "category": "teen",
+      "min_age": 16,
+      "max_age": 16,
+      "description": "Not suitable for children under 16",
+      "clothing_coverage_min": 75,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 2,
+      "allowed_themes": ["mature_romance", "relationships", "teen_drama", "emotional"],
+      "forbidden_themes": ["explicit", "nudity", "graphic_adult"],
+      "auto_tag_keywords": ["teen", "mature_teen", "relationship", "drama"],
+      "prompt_modifiers": {
+        "add": ["mature teen", "romantic", "emotional depth"],
+        "remove": ["explicit", "nude", "adult scenes"]
+      }
+    },
+    "NC-17": {
+      "code": "NC-17",
+      "name": "NC-17",
+      "full_name": "No Children Under 17",
+      "category": "teen",
+      "min_age": 17,
+      "max_age": 17,
+      "description": "Adults and older teens only",
+      "clothing_coverage_min": 70,
+      "transparency_allowed": false,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 2,
+      "allowed_themes": ["mature_themes", "romance", "drama", "intense_emotion"],
+      "forbidden_themes": ["explicit_nudity", "graphic_adult", "pornographic"],
+      "auto_tag_keywords": ["mature_teen", "young_adult", "intense", "dramatic"],
+      "prompt_modifiers": {
+        "add": ["mature themes", "dramatic", "intense", "tasteful"],
+        "remove": ["explicit", "pornographic", "graphic nudity"]
+      }
+    },
+    "NC-18": {
+      "code": "NC-18",
+      "name": "NC-18",
+      "full_name": "No One Under 18 - Adult Entry",
+      "category": "adult_entry",
+      "min_age": 18,
+      "max_age": 18,
+      "description": "Legal adult entry - artistic content allowed",
+      "clothing_coverage_min": 60,
+      "transparency_allowed": true,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 3,
+      "allowed_themes": ["adult_romance", "artistic", "sensual_themes", "mature"],
+      "forbidden_themes": ["explicit_nudity", "pornographic", "graphic_sex"],
+      "auto_tag_keywords": ["adult", "artistic", "sensual", "mature"],
+      "prompt_modifiers": {
+        "add": ["artistic", "sensual", "elegant", "tasteful adult"],
+        "remove": ["explicit", "pornographic", "graphic"]
+      },
+      "age_verification_required": true
+    },
+    "NC-19": {
+      "code": "NC-19",
+      "name": "NC-19",
+      "full_name": "No One Under 19",
+      "category": "adult_entry",
+      "min_age": 19,
+      "max_age": 19,
+      "description": "Young adult content",
+      "clothing_coverage_min": 50,
+      "transparency_allowed": true,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 3,
+      "allowed_themes": ["adult_themes", "romance", "sensual", "artistic_nudity"],
+      "forbidden_themes": ["explicit_sex", "pornographic"],
+      "auto_tag_keywords": ["young_adult", "sensual", "romantic_adult"],
+      "prompt_modifiers": {
+        "add": ["sensual", "artistic", "romantic", "adult themes"],
+        "remove": ["explicit sex", "pornographic"]
+      },
+      "age_verification_required": true
+    },
+    "NC-20": {
+      "code": "NC-20",
+      "name": "NC-20",
+      "full_name": "No One Under 20",
+      "category": "adult_entry",
+      "min_age": 20,
+      "max_age": 20,
+      "description": "Full adult entry",
+      "clothing_coverage_min": 40,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "nudity_type": "artistic_only",
+      "explicit_allowed": false,
+      "guardrail_level": 3,
+      "allowed_themes": ["adult", "artistic_nudity", "sensual", "romantic"],
+      "forbidden_themes": ["explicit_sex", "hardcore"],
+      "auto_tag_keywords": ["adult", "artistic_nude", "sensual", "romantic"],
+      "prompt_modifiers": {
+        "add": ["artistic nudity allowed", "sensual", "adult"],
+        "remove": ["explicit", "hardcore", "pornographic"]
+      },
+      "age_verification_required": true
+    },
+    "SOFT": {
+      "code": "SOFT",
+      "name": "Soft",
+      "full_name": "Softcore Entry",
+      "category": "adult_soft",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Softcore content - sheer/transparent allowed, not nude",
+      "clothing_coverage_min": 30,
+      "transparency_allowed": true,
+      "nudity_allowed": false,
+      "explicit_allowed": false,
+      "guardrail_level": 4,
+      "allowed_themes": ["sensual", "sheer_clothing", "lingerie", "artistic"],
+      "forbidden_themes": ["full_nudity", "explicit_sex"],
+      "auto_tag_keywords": ["softcore", "sheer", "lingerie", "sensual"],
+      "prompt_modifiers": {
+        "add": ["sheer fabric", "transparent", "lingerie", "sensual", "elegant"],
+        "remove": ["fully nude", "explicit", "hardcore"]
+      },
+      "special_note": "Sheer/transparent fabrics OK - NOT full nudity",
+      "age_verification_required": true,
+      "restrictions_releasable": true
+    },
+    "SOFTCORE": {
+      "code": "SOFTCORE",
+      "name": "Softcore",
+      "full_name": "Softcore Full",
+      "category": "adult_soft",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Full softcore content - artistic nudity allowed",
+      "clothing_coverage_min": 20,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "nudity_type": "artistic",
+      "explicit_allowed": false,
+      "guardrail_level": 4,
+      "allowed_themes": ["artistic_nudity", "sensual", "erotic_art", "glamour"],
+      "forbidden_themes": ["explicit_sex", "hardcore", "graphic"],
+      "auto_tag_keywords": ["softcore", "artistic_nude", "glamour", "erotic_art"],
+      "prompt_modifiers": {
+        "add": ["artistic nudity", "glamour", "softcore", "sensual"],
+        "remove": ["explicit", "hardcore", "graphic sex"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true
+    },
+    "MED": {
+      "code": "MED",
+      "name": "Medium",
+      "full_name": "Medium Adult",
+      "category": "adult_soft",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Medium adult content",
+      "clothing_coverage_min": 15,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": false,
+      "guardrail_level": 4,
+      "allowed_themes": ["nudity", "sensual", "erotic", "intimate"],
+      "forbidden_themes": ["hardcore", "graphic_sex"],
+      "auto_tag_keywords": ["erotic", "sensual", "intimate", "adult"],
+      "prompt_modifiers": {
+        "add": ["erotic", "sensual", "intimate", "adult themes"],
+        "remove": ["hardcore", "graphic explicit"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true
+    },
+    "R": {
+      "code": "R",
+      "name": "R-Rated",
+      "full_name": "Restricted",
+      "category": "adult_soft",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Restricted adult content",
+      "clothing_coverage_min": 10,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "explicit_level": "light",
+      "guardrail_level": 4,
+      "allowed_themes": ["adult_scenes", "nudity", "erotic", "intimate_scenes"],
+      "forbidden_themes": ["hardcore", "extreme"],
+      "auto_tag_keywords": ["r_rated", "adult", "erotic", "intimate"],
+      "prompt_modifiers": {
+        "add": ["adult scenes", "erotic", "intimate", "restricted"],
+        "remove": ["hardcore", "extreme"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true
+    },
+    "HARD": {
+      "code": "HARD",
+      "name": "Hard",
+      "full_name": "Hard Adult",
+      "category": "adult_explicit",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Hard adult content",
+      "clothing_coverage_min": 5,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "guardrail_level": 5,
+      "allowed_themes": ["explicit", "adult_scenes", "graphic"],
+      "forbidden_themes": ["illegal", "underage"],
+      "auto_tag_keywords": ["hard", "explicit", "adult", "graphic"],
+      "prompt_modifiers": {
+        "add": ["explicit", "graphic", "adult", "unrestricted"],
+        "remove": ["underage", "minor", "child"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true,
+      "requires_restriction_release": true
+    },
+    "HC": {
+      "code": "HC",
+      "name": "Hardcore",
+      "full_name": "Hardcore",
+      "category": "adult_explicit",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Hardcore adult content",
+      "clothing_coverage_min": 0,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "guardrail_level": 5,
+      "allowed_themes": ["hardcore", "explicit", "graphic", "adult"],
+      "forbidden_themes": ["illegal", "underage"],
+      "auto_tag_keywords": ["hardcore", "explicit", "graphic", "unrestricted"],
+      "prompt_modifiers": {
+        "add": ["hardcore", "explicit", "unrestricted"],
+        "remove": ["underage", "minor", "child", "teen"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true,
+      "requires_restriction_release": true
+    },
+    "X": {
+      "code": "X",
+      "name": "X-Rated",
+      "full_name": "X-Rated",
+      "category": "adult_explicit",
+      "min_age": 21,
+      "max_age": null,
+      "description": "X-rated explicit content",
+      "clothing_coverage_min": 0,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "guardrail_level": 5,
+      "allowed_themes": ["x_rated", "explicit", "graphic", "adult"],
+      "forbidden_themes": ["illegal", "underage"],
+      "auto_tag_keywords": ["x_rated", "explicit", "graphic", "adult_only"],
+      "prompt_modifiers": {
+        "add": ["x-rated", "explicit", "adult only"],
+        "remove": ["underage", "minor", "child", "teen"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true,
+      "requires_restriction_release": true
+    },
+    "XXX": {
+      "code": "XXX",
+      "name": "XXX",
+      "full_name": "Triple X",
+      "category": "adult_explicit",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Triple X explicit content",
+      "clothing_coverage_min": 0,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "guardrail_level": 5,
+      "allowed_themes": ["xxx", "explicit", "graphic", "maximum_adult"],
+      "forbidden_themes": ["illegal", "underage"],
+      "auto_tag_keywords": ["xxx", "triple_x", "explicit", "maximum"],
+      "prompt_modifiers": {
+        "add": ["xxx", "explicit", "unrestricted", "adult only"],
+        "remove": ["underage", "minor", "child", "teen"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true,
+      "requires_restriction_release": true
+    },
+    "EXTREME": {
+      "code": "EXTREME",
+      "name": "Extreme",
+      "full_name": "Extreme Adult",
+      "category": "adult_explicit",
+      "min_age": 21,
+      "max_age": null,
+      "description": "Extreme adult content - edge cases",
+      "clothing_coverage_min": 0,
+      "transparency_allowed": true,
+      "nudity_allowed": true,
+      "explicit_allowed": true,
+      "guardrail_level": 5,
+      "allowed_themes": ["extreme", "fetish", "kink", "maximum_explicit"],
+      "forbidden_themes": ["illegal", "underage", "non_consensual_real"],
+      "auto_tag_keywords": ["extreme", "fetish", "kink", "edge"],
+      "prompt_modifiers": {
+        "add": ["extreme", "fetish", "kink", "unrestricted"],
+        "remove": ["underage", "minor", "child", "teen", "non-consensual"]
+      },
+      "age_verification_required": true,
+      "restrictions_releasable": true,
+      "requires_restriction_release": true,
+      "requires_additional_consent": true
+    }
+  },
+  
+  "auto_tagging": {
+    "clothing_detection": {
+      "full_coverage": {"min": 95, "max": 100, "suggested_ratings": ["EL", "L", "G", "PG"]},
+      "mostly_covered": {"min": 80, "max": 94, "suggested_ratings": ["PG-13", "NC-14", "NC-15"]},
+      "partial_coverage": {"min": 60, "max": 79, "suggested_ratings": ["NC-16", "NC-17", "NC-18"]},
+      "minimal_coverage": {"min": 30, "max": 59, "suggested_ratings": ["NC-19", "NC-20", "SOFT"]},
+      "sheer_transparent": {"min": 10, "max": 29, "suggested_ratings": ["SOFTCORE", "MED"]},
+      "nude": {"min": 0, "max": 9, "suggested_ratings": ["R", "HARD", "HC", "X", "XXX"]}
+    },
+    "content_keywords": {
+      "family_safe": ["child", "family", "cartoon", "educational", "school", "innocent", "playful"],
+      "teen": ["teen", "school", "dating", "crush", "young", "romance"],
+      "adult_soft": ["sensual", "lingerie", "sheer", "artistic", "glamour", "elegant"],
+      "adult_explicit": ["explicit", "nude", "erotic", "adult", "graphic", "hardcore"]
+    },
+    "auto_block_keywords": {
+      "always_block": ["child abuse", "underage", "minor explicit", "illegal"],
+      "family_block": ["nude", "naked", "explicit", "sexual", "erotic", "adult"],
+      "teen_block": ["explicit", "hardcore", "xxx", "graphic sex"]
+    }
+  },
+  
+  "guardrails": {
+    "level_1": {
+      "name": "Maximum Protection",
+      "applies_to": ["EL", "L", "G", "PG", "PG-13"],
+      "rules": [
+        "Block ALL adult keywords",
+        "Require 95%+ clothing coverage",
+        "No transparency allowed",
+        "No romantic themes beyond hand-holding",
+        "Block suggestive poses",
+        "Auto-remove any flagged content"
+      ]
+    },
+    "level_2": {
+      "name": "Teen Protection",
+      "applies_to": ["NC-14", "NC-15", "NC-16", "NC-17"],
+      "rules": [
+        "Block explicit keywords",
+        "Allow age-appropriate romance",
+        "No nudity allowed",
+        "Monitor grey areas",
+        "Flag for review if uncertain"
+      ]
+    },
+    "level_3": {
+      "name": "Adult Entry",
+      "applies_to": ["NC-18", "NC-19", "NC-20"],
+      "rules": [
+        "Require age verification",
+        "Allow artistic content",
+        "Block explicit sex",
+        "Artistic nudity OK for NC-20",
+        "Log all content"
+      ]
+    },
+    "level_4": {
+      "name": "Adult Soft",
+      "applies_to": ["SOFT", "SOFTCORE", "MED", "R"],
+      "rules": [
+        "Require 21+ verification",
+        "Full artistic freedom",
+        "Softcore content allowed",
+        "Block only hardcore",
+        "Enable restriction release option"
+      ]
+    },
+    "level_5": {
+      "name": "Adult Explicit",
+      "applies_to": ["HARD", "HC", "X", "XXX", "EXTREME"],
+      "rules": [
+        "Require 21+ strict verification",
+        "Require explicit restriction release",
+        "All content allowed",
+        "Only block illegal content",
+        "Warning labels required"
+      ]
+    }
+  },
+  
+  "ui_config": {
+    "mode_buttons": [
+      {"id": "family", "label": "FAMILY", "color": "#4CAF50", "ratings": ["EL", "L", "G", "PG", "PG-13"]},
+      {"id": "teen", "label": "TEEN", "color": "#2196F3", "ratings": ["NC-14", "NC-15", "NC-16", "NC-17"]},
+      {"id": "adult", "label": "ADULT", "color": "#FF9800", "ratings": ["NC-18", "NC-19", "NC-20", "SOFT", "SOFTCORE", "MED", "R"]},
+      {"id": "explicit", "label": "EXPLICIT", "color": "#9C27B0", "ratings": ["HARD", "HC", "X", "XXX", "EXTREME"], "requires_toggle": true}
+    ],
+    "quick_toggles": [
+      {"id": "auto_tag", "label": "Auto-Tagging", "default": true},
+      {"id": "guardrails", "label": "Guardrails", "default": true},
+      {"id": "age_verify", "label": "Age Verification", "default": true},
+      {"id": "release_restrictions", "label": "Release Restrictions", "default": false, "requires_confirmation": true}
+    ]
+  }
+}

@@ -1,0 +1,1424 @@
+{
+  "extracted": [
+    {
+      "tag": "wearing a",
+      "count": 774
+    },
+    {
+      "tag": "appears to",
+      "count": 760
+    },
+    {
+      "tag": "a white",
+      "count": 697
+    },
+    {
+      "tag": "a woman",
+      "count": 661
+    },
+    {
+      "tag": "is wearing",
+      "count": 622
+    },
+    {
+      "tag": "the background",
+      "count": 603
+    },
+    {
+      "tag": "the woman",
+      "count": 536
+    },
+    {
+      "tag": "the overall",
+      "count": 482
+    },
+    {
+      "tag": "the room",
+      "count": 367
+    },
+    {
+      "tag": "the bottom",
+      "count": 363
+    },
+    {
+      "tag": "blonde hair",
+      "count": 352
+    },
+    {
+      "tag": "with her",
+      "count": 320
+    },
+    {
+      "tag": "woman with",
+      "count": 316
+    },
+    {
+      "tag": "top and",
+      "count": 310
+    },
+    {
+      "tag": "hair and",
+      "count": 304
+    },
+    {
+      "tag": "a bed",
+      "count": 302
+    },
+    {
+      "tag": "the camera",
+      "count": 294
+    },
+    {
+      "tag": "sitting on",
+      "count": 288
+    },
+    {
+      "tag": "long blonde",
+      "count": 284
+    },
+    {
+      "tag": "on her",
+      "count": 282
+    },
+    {
+      "tag": "a pink",
+      "count": 282
+    },
+    {
+      "tag": "the lighting",
+      "count": 265
+    },
+    {
+      "tag": "that reads",
+      "count": 261
+    },
+    {
+      "tag": "has long",
+      "count": 249
+    },
+    {
+      "tag": "with long",
+      "count": 248
+    },
+    {
+      "tag": "a bedroom",
+      "count": 248
+    },
+    {
+      "tag": "visible in",
+      "count": 236
+    },
+    {
+      "tag": "the left",
+      "count": 232
+    },
+    {
+      "tag": "a black",
+      "count": 228
+    },
+    {
+      "tag": "mood of",
+      "count": 221
+    }
+  ],
+  "clothing_color": [
+    {
+      "tag": "pink",
+      "count": 401
+    },
+    {
+      "tag": "gray",
+      "count": 182
+    },
+    {
+      "tag": "red",
+      "count": 123
+    },
+    {
+      "tag": "nude",
+      "count": 121
+    },
+    {
+      "tag": "green",
+      "count": 102
+    },
+    {
+      "tag": "floral dress",
+      "count": 92
+    },
+    {
+      "tag": "floral",
+      "count": 63
+    },
+    {
+      "tag": "yellow",
+      "count": 58
+    },
+    {
+      "tag": "patterned",
+      "count": 48
+    },
+    {
+      "tag": "purple",
+      "count": 47
+    },
+    {
+      "tag": "beige",
+      "count": 42
+    },
+    {
+      "tag": "white dress",
+      "count": 38
+    },
+    {
+      "tag": "gold",
+      "count": 38
+    },
+    {
+      "tag": "pink top",
+      "count": 35
+    },
+    {
+      "tag": "white top",
+      "count": 29
+    },
+    {
+      "tag": "pink dress",
+      "count": 28
+    },
+    {
+      "tag": "orange",
+      "count": 27
+    },
+    {
+      "tag": "white shirt",
+      "count": 21
+    },
+    {
+      "tag": "black top",
+      "count": 16
+    },
+    {
+      "tag": "pink shirt",
+      "count": 14
+    },
+    {
+      "tag": "silver",
+      "count": 13
+    },
+    {
+      "tag": "blue top",
+      "count": 12
+    },
+    {
+      "tag": "patterned dress",
+      "count": 11
+    },
+    {
+      "tag": "striped shirt",
+      "count": 8
+    },
+    {
+      "tag": "striped top",
+      "count": 6
+    },
+    {
+      "tag": "teal",
+      "count": 5
+    },
+    {
+      "tag": "striped",
+      "count": 5
+    },
+    {
+      "tag": "blue shirt",
+      "count": 5
+    },
+    {
+      "tag": "cream",
+      "count": 3
+    },
+    {
+      "tag": "turquoise",
+      "count": 3
+    }
+  ],
+  "location_type": [
+    {
+      "tag": "bedroom",
+      "count": 269
+    },
+    {
+      "tag": "living room",
+      "count": 123
+    },
+    {
+      "tag": "indoor",
+      "count": 96
+    },
+    {
+      "tag": "car",
+      "count": 41
+    },
+    {
+      "tag": "nature",
+      "count": 40
+    },
+    {
+      "tag": "kitchen",
+      "count": 34
+    },
+    {
+      "tag": "outdoor",
+      "count": 22
+    },
+    {
+      "tag": "house",
+      "count": 18
+    },
+    {
+      "tag": "pool",
+      "count": 15
+    },
+    {
+      "tag": "ocean",
+      "count": 15
+    },
+    {
+      "tag": "bathroom",
+      "count": 12
+    },
+    {
+      "tag": "apartment",
+      "count": 8
+    },
+    {
+      "tag": "studio",
+      "count": 6
+    },
+    {
+      "tag": "hotel",
+      "count": 6
+    },
+    {
+      "tag": "office",
+      "count": 5
+    },
+    {
+      "tag": "urban",
+      "count": 5
+    },
+    {
+      "tag": "street",
+      "count": 4
+    },
+    {
+      "tag": "beach",
+      "count": 3
+    },
+    {
+      "tag": "garden",
+      "count": 2
+    },
+    {
+      "tag": "shower",
+      "count": 2
+    }
+  ],
+  "background": [
+    {
+      "tag": "bed",
+      "count": 333
+    },
+    {
+      "tag": "wall",
+      "count": 312
+    },
+    {
+      "tag": "couch",
+      "count": 222
+    },
+    {
+      "tag": "window",
+      "count": 167
+    },
+    {
+      "tag": "door",
+      "count": 116
+    },
+    {
+      "tag": "floor",
+      "count": 113
+    },
+    {
+      "tag": "colored",
+      "count": 86
+    },
+    {
+      "tag": "clean",
+      "count": 63
+    },
+    {
+      "tag": "plain",
+      "count": 57
+    },
+    {
+      "tag": "furniture",
+      "count": 35
+    },
+    {
+      "tag": "blurred",
+      "count": 33
+    },
+    {
+      "tag": "chair",
+      "count": 23
+    },
+    {
+      "tag": "busy",
+      "count": 14
+    },
+    {
+      "tag": "decorated",
+      "count": 9
+    },
+    {
+      "tag": "carpet",
+      "count": 9
+    },
+    {
+      "tag": "artificial",
+      "count": 8
+    },
+    {
+      "tag": "wood",
+      "count": 7
+    },
+    {
+      "tag": "concrete",
+      "count": 5
+    },
+    {
+      "tag": "tile",
+      "count": 2
+    }
+  ],
+  "top_type": [
+    {
+      "tag": "tank top",
+      "count": 185
+    },
+    {
+      "tag": "dress",
+      "count": 162
+    },
+    {
+      "tag": "crop top",
+      "count": 74
+    },
+    {
+      "tag": "halter",
+      "count": 62
+    },
+    {
+      "tag": "sweater",
+      "count": 56
+    },
+    {
+      "tag": "shirt",
+      "count": 53
+    },
+    {
+      "tag": "bikini top",
+      "count": 50
+    },
+    {
+      "tag": "bra",
+      "count": 31
+    },
+    {
+      "tag": "hoodie",
+      "count": 29
+    },
+    {
+      "tag": "lingerie",
+      "count": 13
+    },
+    {
+      "tag": "jacket",
+      "count": 12
+    },
+    {
+      "tag": "tube top",
+      "count": 5
+    },
+    {
+      "tag": "strapless",
+      "count": 4
+    },
+    {
+      "tag": "blouse",
+      "count": 4
+    },
+    {
+      "tag": "t-shirt",
+      "count": 3
+    },
+    {
+      "tag": "coat",
+      "count": 1
+    },
+    {
+      "tag": "gown",
+      "count": 1
+    },
+    {
+      "tag": "cardigan",
+      "count": 1
+    }
+  ],
+  "action": [
+    {
+      "tag": "posing",
+      "count": 42
+    },
+    {
+      "tag": "touching",
+      "count": 36
+    },
+    {
+      "tag": "reading",
+      "count": 35
+    },
+    {
+      "tag": "walking",
+      "count": 12
+    },
+    {
+      "tag": "swimming",
+      "count": 6
+    },
+    {
+      "tag": "sleeping",
+      "count": 5
+    },
+    {
+      "tag": "talking",
+      "count": 5
+    },
+    {
+      "tag": "crying",
+      "count": 3
+    },
+    {
+      "tag": "bathing",
+      "count": 3
+    },
+    {
+      "tag": "stretching",
+      "count": 2
+    },
+    {
+      "tag": "smoking",
+      "count": 2
+    },
+    {
+      "tag": "running",
+      "count": 2
+    },
+    {
+      "tag": "kissing",
+      "count": 1
+    },
+    {
+      "tag": "caressing",
+      "count": 1
+    },
+    {
+      "tag": "modeling",
+      "count": 1
+    },
+    {
+      "tag": "undressing",
+      "count": 1
+    },
+    {
+      "tag": "dancing",
+      "count": 1
+    }
+  ],
+  "bottom_type": [
+    {
+      "tag": "shorts",
+      "count": 190
+    },
+    {
+      "tag": "underwear",
+      "count": 132
+    },
+    {
+      "tag": "stockings",
+      "count": 80
+    },
+    {
+      "tag": "skirt",
+      "count": 52
+    },
+    {
+      "tag": "pants",
+      "count": 47
+    },
+    {
+      "tag": "tights",
+      "count": 22
+    },
+    {
+      "tag": "thong",
+      "count": 15
+    },
+    {
+      "tag": "leggings",
+      "count": 4
+    },
+    {
+      "tag": "bikini bottom",
+      "count": 4
+    },
+    {
+      "tag": "jeans",
+      "count": 3
+    },
+    {
+      "tag": "panties",
+      "count": 3
+    },
+    {
+      "tag": "pantyhose",
+      "count": 3
+    },
+    {
+      "tag": "sweatpants",
+      "count": 3
+    },
+    {
+      "tag": "mini skirt",
+      "count": 1
+    }
+  ],
+  "hair_style": [
+    {
+      "tag": "natural",
+      "count": 248
+    },
+    {
+      "tag": "curly",
+      "count": 66
+    },
+    {
+      "tag": "styled",
+      "count": 60
+    },
+    {
+      "tag": "ponytail",
+      "count": 49
+    },
+    {
+      "tag": "sleek",
+      "count": 19
+    },
+    {
+      "tag": "straight",
+      "count": 13
+    },
+    {
+      "tag": "wavy",
+      "count": 8
+    },
+    {
+      "tag": "bun",
+      "count": 7
+    },
+    {
+      "tag": "bangs",
+      "count": 5
+    },
+    {
+      "tag": "updo",
+      "count": 4
+    },
+    {
+      "tag": "braided",
+      "count": 4
+    },
+    {
+      "tag": "pigtails",
+      "count": 2
+    }
+  ],
+  "facial_expression": [
+    {
+      "tag": "neutral",
+      "count": 129
+    },
+    {
+      "tag": "smiling",
+      "count": 111
+    },
+    {
+      "tag": "playful",
+      "count": 70
+    },
+    {
+      "tag": "eyes closed",
+      "count": 33
+    },
+    {
+      "tag": "laughing",
+      "count": 13
+    },
+    {
+      "tag": "surprised",
+      "count": 11
+    },
+    {
+      "tag": "serious",
+      "count": 10
+    },
+    {
+      "tag": "seductive",
+      "count": 10
+    },
+    {
+      "tag": "happy",
+      "count": 9
+    },
+    {
+      "tag": "shocked",
+      "count": 5
+    },
+    {
+      "tag": "sad",
+      "count": 4
+    }
+  ],
+  "setting_mood": [
+    {
+      "tag": "intimate",
+      "count": 266
+    },
+    {
+      "tag": "warm",
+      "count": 78
+    },
+    {
+      "tag": "simple",
+      "count": 72
+    },
+    {
+      "tag": "cozy",
+      "count": 68
+    },
+    {
+      "tag": "inviting",
+      "count": 21
+    },
+    {
+      "tag": "sensual",
+      "count": 19
+    },
+    {
+      "tag": "artistic",
+      "count": 13
+    },
+    {
+      "tag": "mysterious",
+      "count": 11
+    },
+    {
+      "tag": "luxurious",
+      "count": 8
+    },
+    {
+      "tag": "cool",
+      "count": 7
+    },
+    {
+      "tag": "romantic",
+      "count": 2
+    }
+  ],
+  "body_shape": [
+    {
+      "tag": "short",
+      "count": 57
+    },
+    {
+      "tag": "thin",
+      "count": 26
+    },
+    {
+      "tag": "slender",
+      "count": 7
+    },
+    {
+      "tag": "tall",
+      "count": 3
+    },
+    {
+      "tag": "toned",
+      "count": 3
+    },
+    {
+      "tag": "slim",
+      "count": 1
+    },
+    {
+      "tag": "athletic",
+      "count": 1
+    },
+    {
+      "tag": "muscular",
+      "count": 1
+    },
+    {
+      "tag": "thick",
+      "count": 1
+    },
+    {
+      "tag": "fit",
+      "count": 1
+    }
+  ],
+  "skin_tone": [
+    {
+      "tag": "light",
+      "count": 334
+    },
+    {
+      "tag": "tan",
+      "count": 23
+    },
+    {
+      "tag": "deep",
+      "count": 10
+    },
+    {
+      "tag": "fair skin",
+      "count": 7
+    },
+    {
+      "tag": "fair",
+      "count": 4
+    },
+    {
+      "tag": "light complexion",
+      "count": 3
+    },
+    {
+      "tag": "fair complexion",
+      "count": 3
+    },
+    {
+      "tag": "light skin",
+      "count": 3
+    },
+    {
+      "tag": "dark skin",
+      "count": 2
+    },
+    {
+      "tag": "tanned skin",
+      "count": 2
+    }
+  ],
+  "body_position": [
+    {
+      "tag": "sitting",
+      "count": 332
+    },
+    {
+      "tag": "standing",
+      "count": 294
+    },
+    {
+      "tag": "lying",
+      "count": 228
+    },
+    {
+      "tag": "leaning",
+      "count": 50
+    },
+    {
+      "tag": "lounging",
+      "count": 10
+    },
+    {
+      "tag": "reclining",
+      "count": 4
+    },
+    {
+      "tag": "bending",
+      "count": 4
+    },
+    {
+      "tag": "kneeling",
+      "count": 2
+    },
+    {
+      "tag": "crouching",
+      "count": 1
+    },
+    {
+      "tag": "curled up",
+      "count": 1
+    }
+  ],
+  "clothing_style": [
+    {
+      "tag": "casual",
+      "count": 268
+    },
+    {
+      "tag": "modern",
+      "count": 160
+    },
+    {
+      "tag": "revealing",
+      "count": 49
+    },
+    {
+      "tag": "elegant",
+      "count": 12
+    },
+    {
+      "tag": "professional",
+      "count": 12
+    },
+    {
+      "tag": "formal",
+      "count": 4
+    },
+    {
+      "tag": "vintage",
+      "count": 1
+    },
+    {
+      "tag": "sporty",
+      "count": 1
+    },
+    {
+      "tag": "classic",
+      "count": 1
+    },
+    {
+      "tag": "modest",
+      "count": 1
+    }
+  ],
+  "pose_type": [
+    {
+      "tag": "back",
+      "count": 230
+    },
+    {
+      "tag": "side",
+      "count": 225
+    },
+    {
+      "tag": "candid",
+      "count": 54
+    },
+    {
+      "tag": "from behind",
+      "count": 6
+    },
+    {
+      "tag": "posed",
+      "count": 5
+    },
+    {
+      "tag": "three-quarter",
+      "count": 4
+    },
+    {
+      "tag": "profile",
+      "count": 4
+    },
+    {
+      "tag": "turned away",
+      "count": 4
+    },
+    {
+      "tag": "staged",
+      "count": 3
+    },
+    {
+      "tag": "frontal",
+      "count": 2
+    }
+  ],
+  "light_quality": [
+    {
+      "tag": "soft",
+      "count": 211
+    },
+    {
+      "tag": "bright",
+      "count": 93
+    },
+    {
+      "tag": "flat",
+      "count": 28
+    },
+    {
+      "tag": "harsh",
+      "count": 28
+    },
+    {
+      "tag": "dim",
+      "count": 21
+    },
+    {
+      "tag": "moody",
+      "count": 11
+    },
+    {
+      "tag": "high contrast",
+      "count": 9
+    },
+    {
+      "tag": "sunset",
+      "count": 2
+    }
+  ],
+  "mood": [
+    {
+      "tag": "relaxed",
+      "count": 247
+    },
+    {
+      "tag": "calm",
+      "count": 63
+    },
+    {
+      "tag": "gentle",
+      "count": 32
+    },
+    {
+      "tag": "confident",
+      "count": 11
+    },
+    {
+      "tag": "bored",
+      "count": 7
+    },
+    {
+      "tag": "intense",
+      "count": 3
+    },
+    {
+      "tag": "dreamy",
+      "count": 2
+    },
+    {
+      "tag": "thoughtful",
+      "count": 1
+    }
+  ],
+  "ethnicity": [
+    {
+      "tag": "white",
+      "count": 1003
+    },
+    {
+      "tag": "caucasian",
+      "count": 1
+    },
+    {
+      "tag": "mixed",
+      "count": 1
+    },
+    {
+      "tag": "german",
+      "count": 1
+    },
+    {
+      "tag": "african",
+      "count": 1
+    },
+    {
+      "tag": "european",
+      "count": 1
+    },
+    {
+      "tag": "spanish",
+      "count": 1
+    }
+  ],
+  "clothing_state": [
+    {
+      "tag": "wearing",
+      "count": 953
+    },
+    {
+      "tag": "dressed",
+      "count": 104
+    },
+    {
+      "tag": "naked",
+      "count": 15
+    },
+    {
+      "tag": "removing",
+      "count": 1
+    },
+    {
+      "tag": "clothed",
+      "count": 1
+    },
+    {
+      "tag": "unclothed",
+      "count": 1
+    },
+    {
+      "tag": "undressed",
+      "count": 1
+    }
+  ],
+  "jewelry": [
+    {
+      "tag": "necklace",
+      "count": 165
+    },
+    {
+      "tag": "pendant",
+      "count": 23
+    },
+    {
+      "tag": "earrings",
+      "count": 22
+    },
+    {
+      "tag": "watch",
+      "count": 8
+    },
+    {
+      "tag": "choker",
+      "count": 4
+    },
+    {
+      "tag": "ring",
+      "count": 2
+    },
+    {
+      "tag": "bracelet",
+      "count": 2
+    }
+  ],
+  "leg_position": [
+    {
+      "tag": "legs spread spread",
+      "count": 44
+    },
+    {
+      "tag": "legs crossed crossed",
+      "count": 43
+    },
+    {
+      "tag": "legs bent bent",
+      "count": 13
+    },
+    {
+      "tag": "legs raised raised",
+      "count": 4
+    },
+    {
+      "tag": "legs apart apart",
+      "count": 4
+    },
+    {
+      "tag": "knees bent",
+      "count": 2
+    },
+    {
+      "tag": "legs tucked tucked",
+      "count": 1
+    }
+  ],
+  "light_type": [
+    {
+      "tag": "soft ing",
+      "count": 22
+    },
+    {
+      "tag": "natural ing",
+      "count": 12
+    },
+    {
+      "tag": "ambient",
+      "count": 4
+    },
+    {
+      "tag": "artificial ing",
+      "count": 4
+    },
+    {
+      "tag": "diffused ing",
+      "count": 1
+    },
+    {
+      "tag": "indoor ing",
+      "count": 1
+    }
+  ],
+  "clothing_fit": [
+    {
+      "tag": "cropped",
+      "count": 44
+    },
+    {
+      "tag": "sheer",
+      "count": 5
+    },
+    {
+      "tag": "loose",
+      "count": 5
+    },
+    {
+      "tag": "low-cut",
+      "count": 3
+    },
+    {
+      "tag": "see-through",
+      "count": 1
+    },
+    {
+      "tag": "tight",
+      "count": 1
+    }
+  ],
+  "age_appearance": [
+    {
+      "tag": "young",
+      "count": 109
+    },
+    {
+      "tag": "adult",
+      "count": 94
+    },
+    {
+      "tag": "older",
+      "count": 18
+    },
+    {
+      "tag": "20s",
+      "count": 1
+    },
+    {
+      "tag": "early 30s",
+      "count": 1
+    }
+  ],
+  "makeup_level": [
+    {
+      "tag": "bold",
+      "count": 39
+    },
+    {
+      "tag": "minimal",
+      "count": 24
+    },
+    {
+      "tag": "full",
+      "count": 24
+    },
+    {
+      "tag": "dramatic",
+      "count": 9
+    },
+    {
+      "tag": "minimal makeup",
+      "count": 6
+    }
+  ],
+  "hair_color": [
+    {
+      "tag": "black",
+      "count": 440
+    },
+    {
+      "tag": "blonde",
+      "count": 352
+    },
+    {
+      "tag": "brown",
+      "count": 199
+    },
+    {
+      "tag": "dark",
+      "count": 199
+    }
+  ],
+  "gaze": [
+    {
+      "tag": "looking down",
+      "count": 58
+    },
+    {
+      "tag": "looking up",
+      "count": 19
+    },
+    {
+      "tag": "direct gaze",
+      "count": 6
+    },
+    {
+      "tag": "looking away",
+      "count": 2
+    }
+  ],
+  "camera_angle": [
+    {
+      "tag": "tilted",
+      "count": 30
+    },
+    {
+      "tag": "low angle",
+      "count": 8
+    },
+    {
+      "tag": "overhead",
+      "count": 6
+    },
+    {
+      "tag": "from above",
+      "count": 6
+    }
+  ],
+  "framing": [
+    {
+      "tag": "centered",
+      "count": 18
+    },
+    {
+      "tag": "symmetrical",
+      "count": 6
+    },
+    {
+      "tag": "off-center",
+      "count": 2
+    },
+    {
+      "tag": "asymmetrical",
+      "count": 1
+    }
+  ],
+  "arm_position": [
+    {
+      "tag": "arms outstretched outstretched",
+      "count": 5
+    },
+    {
+      "tag": "hands clasped clasped",
+      "count": 4
+    },
+    {
+      "tag": "arms raised raised",
+      "count": 3
+    },
+    {
+      "tag": "arms crossed crossed",
+      "count": 2
+    }
+  ],
+  "shot_type": [
+    {
+      "tag": "close-up",
+      "count": 102
+    },
+    {
+      "tag": "portrait",
+      "count": 17
+    }
+  ],
+  "head_position": [
+    {
+      "tag": "head tilted tilted",
+      "count": 22
+    },
+    {
+      "tag": "head turned turned",
+      "count": 18
+    }
+  ],
+  "eyewear": [
+    {
+      "tag": "glasses",
+      "count": 32
+    },
+    {
+      "tag": "sunglasses",
+      "count": 2
+    }
+  ],
+  "headwear": [
+    {
+      "tag": "hair tie",
+      "count": 3
+    },
+    {
+      "tag": "bow",
+      "count": 2
+    }
+  ],
+  "lip_makeup": [
+    {
+      "tag": "lipstick",
+      "count": 20
+    },
+    {
+      "tag": "pink lips",
+      "count": 1
+    }
+  ],
+  "shadows": [
+    {
+      "tag": "soft shadows",
+      "count": 8
+    },
+    {
+      "tag": "silhouette",
+      "count": 2
+    }
+  ],
+  "eye_color": [
+    {
+      "tag": "blue",
+      "count": 213
+    }
+  ],
+  "hair_length": [
+    {
+      "tag": "long",
+      "count": 27
+    }
+  ],
+  "eye_makeup": [
+    {
+      "tag": "eyeliner",
+      "count": 2
+    }
+  ],
+  "cleavage": [
+    {
+      "tag": "visible",
+      "count": 1
+    }
+  ],
+  "skin_texture": [
+    {
+      "tag": "smooth",
+      "count": 1
+    }
+  ]
+}

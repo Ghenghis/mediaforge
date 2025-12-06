@@ -1,0 +1,1796 @@
+{
+  "generated": "2025-12-03T12:54:48.783334",
+  "summary": {
+    "total_models": 300,
+    "total_size_gb": 1168.1597066819668,
+    "to_delete": 63,
+    "savings_gb": 200.16811633110046
+  },
+  "protected_new_models": [
+    {
+      "name": "RP_Vision_7B-Q8_0-imat",
+      "size_gb": 7.167325735092163,
+      "age_days": 0
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.i1-Q6_K",
+      "size_gb": 6.263984143733978,
+      "age_days": 0
+    },
+    {
+      "name": "Eris_PrimeV3.05-Vision-7B.i1-Q6_K",
+      "size_gb": 5.533980756998062,
+      "age_days": 0
+    },
+    {
+      "name": "Qwen2.5-VL-3B-Abliterated-Caption-it.i1-Q6_K",
+      "size_gb": 2.3638442158699036,
+      "age_days": 0
+    },
+    {
+      "name": "UNCENSORED-Fusetrix-Dolphin-3.2-1B-GRPO_Creative_RP.Q8_0",
+      "size_gb": 1.2303525507450104,
+      "age_days": 0
+    },
+    {
+      "name": "mmproj-Ministral-3-14B-Reasoning-2512-F16",
+      "size_gb": 0.8177509903907776,
+      "age_days": 0
+    },
+    {
+      "name": "Dolphin3.0-L3.2-1B_RP_UNCENSORED",
+      "size_gb": 0.6921072602272034,
+      "age_days": 0
+    },
+    {
+      "name": "mmproj-model-f16",
+      "size_gb": 0.5815654695034027,
+      "age_days": 0
+    },
+    {
+      "name": "Looking_Glass_Alice_Thinking-NSFW-RP-3.2-1B-imatrix",
+      "size_gb": 0.0012368857860565186,
+      "age_days": 0
+    },
+    {
+      "name": "gemma3-27b-it-abliterated-normpreserve-q5_k_m",
+      "size_gb": 17.948146671056747,
+      "age_days": 1
+    },
+    {
+      "name": "gemma-3-12b-it-abliterated.q8_0",
+      "size_gb": 11.651043385267258,
+      "age_days": 1
+    },
+    {
+      "name": "gemma-2-9b-it-abliterated-Q8_0",
+      "size_gb": 9.152245491743088,
+      "age_days": 1
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.Q8_0",
+      "size_gb": 8.111373096704483,
+      "age_days": 1
+    },
+    {
+      "name": "ggml-model-Q4_K_M",
+      "size_gb": 4.682489514350891,
+      "age_days": 1
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16",
+      "size_gb": 1.0794312059879303,
+      "age_days": 1
+    },
+    {
+      "name": "mmproj-model-f16",
+      "size_gb": 1.0794306695461273,
+      "age_days": 1
+    },
+    {
+      "name": "Gemma-The-Writer-9B-abliterated.Q6_K",
+      "size_gb": 7.067873239517212,
+      "age_days": 3
+    },
+    {
+      "name": "Wizard-Vicuna-7B-Uncensored.Q6_K",
+      "size_gb": 5.149464517831802,
+      "age_days": 3
+    },
+    {
+      "name": "lars1234_Mistral-Small-24B-Instruct-2501-writer-Q6_K_L",
+      "size_gb": 18.320044547319412,
+      "age_days": 4
+    },
+    {
+      "name": "Gemma-The-Writer-J.GutenBerg-10B-D_AU-Q6_k",
+      "size_gb": 7.673709481954575,
+      "age_days": 4
+    },
+    {
+      "name": "Rombos-Qwen2.5-Writer-32b-Q4_1",
+      "size_gb": 19.21903458237648,
+      "age_days": 6
+    },
+    {
+      "name": "praxis-bookwriter-qwen2.5-14b-sft.i1-Q4_K_S",
+      "size_gb": 7.984631329774857,
+      "age_days": 6
+    },
+    {
+      "name": "Gemma-The-Writer-9B-D_AU-Q6_k",
+      "size_gb": 7.067871987819672,
+      "age_days": 6
+    },
+    {
+      "name": "Llama-3.1-8B-BookAdventures.Q4_K_S",
+      "size_gb": 4.370389372110367,
+      "age_days": 6
+    },
+    {
+      "name": "WizardLM-Uncensored-SuperCOT-Storytelling.Q4_K_S",
+      "size_gb": 17.171507328748703,
+      "age_days": 7
+    },
+    {
+      "name": "Gemma-The-Writer-N-Restless-Quill-10B-max-cpu-D_AU-Q8_0",
+      "size_gb": 10.737971812486649,
+      "age_days": 7
+    },
+    {
+      "name": "L3-SMB-Grand-STORY-F32-Ultra-Quality-16_5B-NEO-V2-D_AU-Q4_K_S-imat13",
+      "size_gb": 8.854996681213379,
+      "age_days": 7
+    },
+    {
+      "name": "Qwen3-VL-8B-Instruct-Q8_0",
+      "size_gb": 8.111372083425522,
+      "age_days": 26
+    },
+    {
+      "name": "Qwen3-VL-4B-Instruct-Q6_K",
+      "size_gb": 3.079196482896805,
+      "age_days": 26
+    },
+    {
+      "name": "mmproj-Qwen3-VL-8B-Instruct-F16",
+      "size_gb": 1.079430639743805,
+      "age_days": 26
+    },
+    {
+      "name": "mmproj-Qwen3-VL-4B-Instruct-F16",
+      "size_gb": 0.7787534594535828,
+      "age_days": 26
+    }
+  ],
+  "recommended_deletions": [
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2.5-Vibe-Coder-14B-Instruct-GGUF\\Qwen2.5-Vibe-Coder-14B-Instruct.Q6_K.gguf",
+      "name": "Qwen2.5-Vibe-Coder-14B-Instruct.Q6_K",
+      "size_gb": 11.288864195346832,
+      "age_days": 139,
+      "reason": "Duplicate of Qwen2.5-Vibe-Coder-14B-Instruct.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\leafspark\\Llama-3.2-11B-Vision-Instruct-GGUF\\Llama-3.2-11B-Vision-Instruct.Q8_0.gguf",
+      "name": "Llama-3.2-11B-Vision-Instruct.Q8_0",
+      "size_gb": 9.681070387363434,
+      "age_days": 312,
+      "reason": "Duplicate of Llama-3.2-11B-Vision-Instruct.Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\benxh\\Qwen2.5-VL-7B-Instruct-GGUF\\Qwen2.5-VL-7B-Instruct-q8.gguf",
+      "name": "Qwen2.5-VL-7B-Instruct-q8",
+      "size_gb": 7.542339235544205,
+      "age_days": 300,
+      "reason": "Duplicate of Qwen2.5-VL-7B-Instruct-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\btwitssayan\\llama3_2MentalHealthChatbot-alexandreteles-mental-health-conversational-data\\unsloth.Q4_K_M.gguf",
+      "name": "unsloth.Q4_K_M",
+      "size_gb": 1.8806923031806946,
+      "age_days": 304,
+      "reason": "Duplicate of unsloth.Q5_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\btwitssayan\\llama3_2MentalHealthChatbot-nbertagnolli-counsel-chat\\unsloth.Q4_K_M.gguf",
+      "name": "unsloth.Q4_K_M",
+      "size_gb": 1.8806923031806946,
+      "age_days": 304,
+      "reason": "Duplicate of unsloth.Q5_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\WJ1240424\\Llama-3.1-1B-gsm8k\\unsloth.Q4_K_M.gguf",
+      "name": "unsloth.Q4_K_M",
+      "size_gb": 0.7522200345993042,
+      "age_days": 321,
+      "reason": "Duplicate of unsloth.Q5_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\reedmayhew\\Llama-3.2-1B-claude-3.7-sonnet-reasoning-distilled-1024\\unsloth.Q8_0.gguf",
+      "name": "unsloth.Q8_0",
+      "size_gb": 1.230354756116867,
+      "age_days": 262,
+      "reason": "Duplicate of unsloth.Q5_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\reedmayhew\\Llama-3.2-1B-claude-3.7-sonnet-reasoning-distilled-1024\\unsloth.Q4_0.gguf",
+      "name": "unsloth.Q4_0",
+      "size_gb": 0.7179836928844452,
+      "age_days": 262,
+      "reason": "Duplicate of unsloth.Q5_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2-VL-OCR-2B-Instruct-GGUF\\Qwen2-VL-OCR-2B-Instruct.f16.gguf",
+      "name": "Qwen2-VL-OCR-2B-Instruct.f16",
+      "size_gb": 2.881202608346939,
+      "age_days": 291,
+      "reason": "Duplicate of Qwen2-VL-OCR-2B-Instruct.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2-VL-OCR-2B-Instruct-GGUF\\Qwen2-VL-OCR-2B-Instruct.Q6_K.gguf",
+      "name": "Qwen2-VL-OCR-2B-Instruct.Q6_K",
+      "size_gb": 1.1853298246860504,
+      "age_days": 297,
+      "reason": "Duplicate of Qwen2-VL-OCR-2B-Instruct.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\prithivMLmods\\Qwen2-VL-OCR-2B-Instruct-GGUF\\Qwen2-VL-OCR-2B-Instruct.Q8_0.gguf",
+      "name": "Qwen2-VL-OCR-2B-Instruct.Q8_0",
+      "size_gb": 1.5334891378879547,
+      "age_days": 44,
+      "reason": "Duplicate of Qwen2-VL-OCR-2B-Instruct.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Qwen2.5-VL-7B-Instruct-GGUF\\mmproj-model-f16.gguf",
+      "name": "mmproj-model-f16",
+      "size_gb": 1.2611624896526337,
+      "age_days": 78,
+      "reason": "Duplicate of mmproj-model-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\openbmb\\MiniCPM-o-2_6-gguf\\mmproj-model-f16.gguf",
+      "name": "mmproj-model-f16",
+      "size_gb": 0.9726967215538025,
+      "age_days": 321,
+      "reason": "Duplicate of mmproj-model-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\granite-vision-3.2-2b-GGUF\\mmproj-model-f16.gguf",
+      "name": "mmproj-model-f16",
+      "size_gb": 0.831246942281723,
+      "age_days": 260,
+      "reason": "Duplicate of mmproj-model-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\gemma-3-12b-it-GGUF\\mmproj-model-f16.gguf",
+      "name": "mmproj-model-f16",
+      "size_gb": 0.7955359518527985,
+      "age_days": 142,
+      "reason": "Duplicate of mmproj-model-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\tensorblock\\DeepSeek-R1-Distill-Qwen-1.5B-GGUF\\DeepSeek-R1-Distill-Qwen-1.5B-Q6_K.gguf",
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q6_K",
+      "size_gb": 1.3636229932308197,
+      "age_days": 142,
+      "reason": "Duplicate of DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\DeepSeek-R1-Distill-Qwen-1.5B-GGUF\\DeepSeek-R1-Distill-Qwen-1.5B-Q6_K.gguf",
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q6_K",
+      "size_gb": 1.3636224865913391,
+      "age_days": 311,
+      "reason": "Duplicate of DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\unsloth\\DeepSeek-R1-Distill-Qwen-1.5B-GGUF\\DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf",
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q8_0",
+      "size_gb": 1.7644203901290894,
+      "age_days": 266,
+      "reason": "Duplicate of DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\granite-vision-3.2-2b-GGUF\\granite-vision-3.2-2b-Q6_K.gguf",
+      "name": "granite-vision-3.2-2b-Q6_K",
+      "size_gb": 1.9376722872257233,
+      "age_days": 260,
+      "reason": "Duplicate of granite-vision-3.2-2b-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\granite-vision-3.2-2b-GGUF\\granite-vision-3.2-2b-Q8_0.gguf",
+      "name": "granite-vision-3.2-2b-Q8_0",
+      "size_gb": 2.5090852677822113,
+      "age_days": 260,
+      "reason": "Duplicate of granite-vision-3.2-2b-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\Menlo\\Jan-nano-gguf\\jan-nano-4b-Q8_0.gguf",
+      "name": "jan-nano-4b-Q8_0",
+      "size_gb": 3.986437737941742,
+      "age_days": 166,
+      "reason": "Duplicate of jan-nano-4b-Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\prithivMLmods\\Blitzar-Coder-4B-F.1-GGUF\\ Blitzar-Coder-4B-F.1.Q8_0.gguf",
+      "name": " Blitzar-Coder-4B-F.1.Q8_0",
+      "size_gb": 3.9864374697208405,
+      "age_days": 166,
+      "reason": "Duplicate of  Blitzar-Coder-4B-F.1.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Phi-4-mini-reasoning-GGUF\\Phi-4-mini-reasoning-Q8_0.gguf",
+      "name": "Phi-4-mini-reasoning-Q8_0",
+      "size_gb": 3.804090738296509,
+      "age_days": 179,
+      "reason": "Duplicate of Phi-4-mini-reasoning-Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\RichardErkhov\\JackChew_-_Qwen2-VL-2B-OCR-gguf\\Qwen2-VL-2B-OCR.Q6_K.gguf",
+      "name": "Qwen2-VL-2B-OCR.Q6_K",
+      "size_gb": 1.1853300034999847,
+      "age_days": 275,
+      "reason": "Duplicate of Qwen2-VL-2B-OCR.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\RichardErkhov\\JackChew_-_Qwen2-VL-2B-OCR-gguf\\Qwen2-VL-2B-OCR.Q8_0.gguf",
+      "name": "Qwen2-VL-2B-OCR.Q8_0",
+      "size_gb": 1.533489316701889,
+      "age_days": 275,
+      "reason": "Duplicate of Qwen2-VL-2B-OCR.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\RichardErkhov\\JackChew_-_Qwen2-VL-2B-OCR-gguf\\Qwen2-VL-2B-OCR.Q4_1.gguf",
+      "name": "Qwen2-VL-2B-OCR.Q4_1",
+      "size_gb": 0.9470067918300629,
+      "age_days": 275,
+      "reason": "Duplicate of Qwen2-VL-2B-OCR.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\alpha-ai\\llama-3.2-3B-Reason-Reflect-Lite-GGUF\\llama-3.2-3B-Reason-Reflect-Lite.Q8_0.gguf",
+      "name": "llama-3.2-3B-Reason-Reflect-Lite.Q8_0",
+      "size_gb": 3.1868917047977448,
+      "age_days": 265,
+      "reason": "Duplicate of llama-3.2-3B-Reason-Reflect-Lite.Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\DavidAU\\Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-gguf\\Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-D_AU-Q6_k.gguf",
+      "name": "Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-D_AU-Q6_k",
+      "size_gb": 3.130428522825241,
+      "age_days": 266,
+      "reason": "Duplicate of Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-D_AU-Q4_k_s"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\DeepCoder-1.5B-Preview-GGUF\\DeepCoder-1.5B-Preview-Q6_K.gguf",
+      "name": "DeepCoder-1.5B-Preview-Q6_K",
+      "size_gb": 1.3636236190795898,
+      "age_days": 234,
+      "reason": "Duplicate of DeepCoder-1.5B-Preview-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\DeepCoder-1.5B-Preview-GGUF\\DeepCoder-1.5B-Preview.Q8_0.gguf",
+      "name": "DeepCoder-1.5B-Preview.Q8_0",
+      "size_gb": 1.7644219100475311,
+      "age_days": 237,
+      "reason": "Duplicate of DeepCoder-1.5B-Preview-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Qwen3-4B-GGUF\\Qwen3-4B-Q6_K.gguf",
+      "name": "Qwen3-4B-Q6_K",
+      "size_gb": 3.0791956782341003,
+      "age_days": 48,
+      "reason": "Duplicate of Qwen3-4B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\unsloth\\Qwen2.5-VL-3B-Instruct-GGUF\\mmproj-F32.gguf",
+      "name": "mmproj-F32",
+      "size_gb": 2.488268703222275,
+      "age_days": 48,
+      "reason": "Duplicate of mmproj-F32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\chatpig\\vision\\mmproj-f16.gguf",
+      "name": "mmproj-f16",
+      "size_gb": 0.5815497934818268,
+      "age_days": 304,
+      "reason": "Duplicate of mmproj-F32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2.5-Coder-3B-few-shot-model-GGUF\\Qwen2.5-Coder-3B-few-shot-model.Q8_0.gguf",
+      "name": "Qwen2.5-Coder-3B-few-shot-model.Q8_0",
+      "size_gb": 3.0598381757736206,
+      "age_days": 262,
+      "reason": "Duplicate of Qwen2.5-Coder-3B-few-shot-model.Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\DevQuasar\\prithivMLmods.Qwen2-VL-OCR-2B-Instruct-GGUF\\prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q6_K.gguf",
+      "name": "prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q6_K",
+      "size_gb": 1.1853293776512146,
+      "age_days": 324,
+      "reason": "Duplicate of prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\DevQuasar\\prithivMLmods.Qwen2-VL-OCR-2B-Instruct-GGUF\\prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q8_0.gguf",
+      "name": "prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q8_0",
+      "size_gb": 1.533488690853119,
+      "age_days": 299,
+      "reason": "Duplicate of prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Base-Roblox-coder-Llama-3.2-1B-vLLM-i1-GGUF\\Base-Roblox-coder-Llama-3.2-1B-vLLM.i1-Q6_K.gguf",
+      "name": "Base-Roblox-coder-Llama-3.2-1B-vLLM.i1-Q6_K",
+      "size_gb": 2.4622863233089447,
+      "age_days": 304,
+      "reason": "Duplicate of Base-Roblox-coder-Llama-3.2-1B-vLLM.i1-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\dolphin-2.9.1-yi-1.5-9b-i1-GGUF\\dolphin-2.9.1-yi-1.5-9b.i1-IQ2_XXS.gguf",
+      "name": "dolphin-2.9.1-yi-1.5-9b.i1-IQ2_XXS",
+      "size_gb": 2.2911346554756165,
+      "age_days": 142,
+      "reason": "Duplicate of dolphin-2.9.1-yi-1.5-9b.i1-Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2-VL-OCR-2B-Instruct-i1-GGUF\\Qwen2-VL-OCR-2B-Instruct.i1-Q6_K.gguf",
+      "name": "Qwen2-VL-OCR-2B-Instruct.i1-Q6_K",
+      "size_gb": 1.1853300631046295,
+      "age_days": 297,
+      "reason": "Duplicate of Qwen2-VL-OCR-2B-Instruct.i1-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen2-VL-OCR-2B-Instruct-i1-GGUF\\Qwen2-VL-OCR-2B-Instruct.i1-Q4_1.gguf",
+      "name": "Qwen2-VL-OCR-2B-Instruct.i1-Q4_1",
+      "size_gb": 0.9470068514347076,
+      "age_days": 297,
+      "reason": "Duplicate of Qwen2-VL-OCR-2B-Instruct.i1-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\LiquidAI\\LFM2-1.2B-GGUF\\LFM2-1.2B-Q6_K.gguf",
+      "name": "LFM2-1.2B-Q6_K",
+      "size_gb": 0.8967160582542419,
+      "age_days": 48,
+      "reason": "Duplicate of LFM2-1.2B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\LiquidAI\\LFM2-1.2B-GGUF\\LFM2-1.2B-Q8_0.gguf",
+      "name": "LFM2-1.2B-Q8_0",
+      "size_gb": 1.160662591457367,
+      "age_days": 48,
+      "reason": "Duplicate of LFM2-1.2B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\LiquidAI\\LFM2-2.6B-GGUF\\LFM2-2.6B-Q6_K.gguf",
+      "name": "LFM2-2.6B-Q6_K",
+      "size_gb": 1.9658624827861786,
+      "age_days": 48,
+      "reason": "Duplicate of LFM2-2.6B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\stabilityai\\stable-code-3b\\stable-code-3b-Q5_K_M.gguf",
+      "name": "stable-code-3b-Q5_K_M",
+      "size_gb": 1.856489211320877,
+      "age_days": 49,
+      "reason": "Duplicate of stable-code-3b-q5_k_m"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\reedmayhew\\Llama-3.2-3B-claude-3.7-sonnet-reasoning-distilled\\Llama_3-2_3B_claude_3-7_sonnet_reasoning.Q4_0.gguf",
+      "name": "Llama_3-2_3B_claude_3-7_sonnet_reasoning.Q4_0",
+      "size_gb": 1.7855233252048492,
+      "age_days": 262,
+      "reason": "Duplicate of Llama_3-2_3B_claude_3-7_sonnet_reasoning.Q8_0"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\DeepSeek-R1-Qwen-2.5-1.5b-GGUF\\DeepSeek-R1-Qwen-2.5-1.5b.Q8_0.gguf",
+      "name": "DeepSeek-R1-Qwen-2.5-1.5b.Q8_0",
+      "size_gb": 1.7644217014312744,
+      "age_days": 299,
+      "reason": "Duplicate of DeepSeek-R1-Qwen-2.5-1.5b.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Dolphin3.0-Qwen2.5-3b-i1-GGUF\\Dolphin3.0-Qwen2.5-3b.i1-Q4_0.gguf",
+      "name": "Dolphin3.0-Qwen2.5-3b.i1-Q4_0",
+      "size_gb": 1.7029136419296265,
+      "age_days": 324,
+      "reason": "Duplicate of Dolphin3.0-Qwen2.5-3b.i1-Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored-i1-GGUF\\DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored.i1-Q4_0.gguf",
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored.i1-Q4_0",
+      "size_gb": 0.9948640465736389,
+      "age_days": 304,
+      "reason": "Duplicate of DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored.i1-Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\tensorblock\\Qwen_Qwen3-0.6B-GGUF\\Qwen3-0.6B-Q8_0.gguf",
+      "name": "Qwen3-0.6B-Q8_0",
+      "size_gb": 0.7494851052761078,
+      "age_days": 218,
+      "reason": "Duplicate of Qwen3-0.6B-Q4_K_M"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\LiquidAI\\LFM2-VL-1.6B-GGUF\\LFM2-VL-1.6B-Q4_0.gguf",
+      "name": "LFM2-VL-1.6B-Q4_0",
+      "size_gb": 0.6479677259922028,
+      "age_days": 48,
+      "reason": "Duplicate of LFM2-VL-1.6B-Q8_0"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mixedbread-ai\\mxbai-embed-xsmall-v1\\mxbai-embed-xsmall-v1-f16.gguf",
+      "name": "mxbai-embed-xsmall-v1-f16",
+      "size_gb": 0.048172980546951294,
+      "age_days": 299,
+      "reason": "Duplicate of mxbai-embed-xsmall-v1-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mixedbread-ai\\mxbai-embed-xsmall-v1\\mxbai-embed-xsmall-v1-q8_0.gguf",
+      "name": "mxbai-embed-xsmall-v1-q8_0",
+      "size_gb": 0.02866998314857483,
+      "age_days": 299,
+      "reason": "Duplicate of mxbai-embed-xsmall-v1-f32"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\LiuHao03322\\qwen2vl-vision.gguf",
+      "name": "qwen2vl-vision",
+      "size_gb": 0.0,
+      "age_days": 305,
+      "reason": "Duplicate of qwen2vl-vision"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\ct-test\\llama-3.1_1b-chat_2024-01-15_12-43.Q4_K_S.gguf",
+      "name": "llama-3.1_1b-chat_2024-01-15_12-43.Q4_K_S",
+      "size_gb": 0.0,
+      "age_days": 310,
+      "reason": "Duplicate of llama-3.1_1b-chat_2024-01-15_12-43.Q4_K_S"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\zzen0008\\DeepCoder-14B-Preview-Q8_0.gguf",
+      "name": "DeepCoder-14B-Preview-Q8_0",
+      "size_gb": 0.0,
+      "age_days": 211,
+      "reason": "Duplicate of DeepCoder-14B-Preview-Q6_K"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen-2-VL-7B-OCR-GGUF\\Qwen-2-VL-7B-OCR.Q6_K.gguf",
+      "name": "Qwen-2-VL-7B-OCR.Q6_K",
+      "size_gb": 5.824676007032394,
+      "age_days": 44,
+      "reason": "Outdated version (v2)"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\second-state\\Qwen2-VL-7B-Instruct-GGUF\\Qwen2-VL-7B-Instruct-Q6_K.gguf",
+      "name": "Qwen2-VL-7B-Instruct-Q6_K",
+      "size_gb": 5.824675470590591,
+      "age_days": 230,
+      "reason": "Outdated version (v2)"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\ryanlu522\\Qwen2-VL-7B-Instruct-Q4_K_M-GGUF\\qwen2-vl-7b-instruct-q4_k_m.gguf",
+      "name": "qwen2-vl-7b-instruct-q4_k_m",
+      "size_gb": 4.361451059579849,
+      "age_days": 299,
+      "reason": "Outdated version (v2)"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\mradermacher\\Qwen-2-VL-7B-OCR-GGUF\\Qwen-2-VL-7B-OCR.mmproj-fp16.gguf",
+      "name": "Qwen-2-VL-7B-OCR.mmproj-fp16",
+      "size_gb": 1.2597403526306152,
+      "age_days": 44,
+      "reason": "Outdated version (v2)"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\yairpatch\\Qwen3-VL-30B-A3B-Instruct-GGUF\\Qwen3-VL-30B-A3B-Instruct-Q5_K_M.gguf",
+      "name": "Qwen3-VL-30B-A3B-Instruct-Q5_K_M",
+      "size_gb": 20.233525037765503,
+      "age_days": 49,
+      "reason": "Large and unused for 49 days"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Qwen3-Coder-30B-A3B-Instruct-GGUF\\Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+      "name": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+      "size_gb": 17.352575600147247,
+      "age_days": 102,
+      "reason": "Large and unused for 102 days"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Qwen3-30B-A3B-GGUF\\Qwen3-30B-A3B-Q4_K_M.gguf",
+      "name": "Qwen3-30B-A3B-Q4_K_M",
+      "size_gb": 17.35257339477539,
+      "age_days": 91,
+      "reason": "Large and unused for 91 days"
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lmstudio\\models\\lmstudio-community\\Qwen3-30B-A3B-Instruct-2507-GGUF\\Qwen3-30B-A3B-Instruct-2507-Q4_K_M.gguf",
+      "name": "Qwen3-30B-A3B-Instruct-2507-Q4_K_M",
+      "size_gb": 17.282260417938232,
+      "age_days": 49,
+      "reason": "Large and unused for 49 days"
+    }
+  ],
+  "keep_list": [
+    {
+      "name": "Rombos-Qwen2.5-Writer-32b-Q4_1",
+      "size_gb": 19.21903458237648,
+      "tested": false
+    },
+    {
+      "name": "lars1234_Mistral-Small-24B-Instruct-2501-writer-Q6_K_L",
+      "size_gb": 18.320044547319412,
+      "tested": false
+    },
+    {
+      "name": "gemma3-27b-it-abliterated-normpreserve-q5_k_m",
+      "size_gb": 17.948146671056747,
+      "tested": false
+    },
+    {
+      "name": "WizardLM-Uncensored-SuperCOT-Storytelling.Q4_K_S",
+      "size_gb": 17.171507328748703,
+      "tested": false
+    },
+    {
+      "name": "GPT-OSS-Code-Reasoning-20B.Q4_K_M",
+      "size_gb": 14.719679981470108,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-CompositeFlow-Coder-14B-Instruct.Q8_0",
+      "size_gb": 14.619202762842178,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Flow-Coder-14B-Instruct.Q8_0",
+      "size_gb": 14.619202494621277,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Sharp-Coder-14B-Instruct.Q8_0",
+      "size_gb": 14.619202017784119,
+      "tested": false
+    },
+    {
+      "name": "L3.2-8X3B-MOE-Dark-Champion-Inst-18.4B-uncen-ablit_D_AU-Q6_k",
+      "size_gb": 14.110520392656326,
+      "tested": false
+    },
+    {
+      "name": "OlympicCoder-32B-q3_k_s",
+      "size_gb": 13.494540482759476,
+      "tested": false
+    },
+    {
+      "name": "Magistral-Small-2509-Q4_K_M",
+      "size_gb": 13.349494993686676,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-14B-UD-Q6_K_XL",
+      "size_gb": 12.3735431432724,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-16B-A3B-Q6_K",
+      "size_gb": 12.271586120128632,
+      "tested": false
+    },
+    {
+      "name": "gemma-3-12b-it-abliterated.q8_0",
+      "size_gb": 11.651043385267258,
+      "tested": false
+    },
+    {
+      "name": "claude-3.7-sonnet-reasoning-gemma3-12B.Q8_0",
+      "size_gb": 11.651043146848679,
+      "tested": false
+    },
+    {
+      "name": "Qwen-1M-DeepSeek-R1-14B.Q6_K",
+      "size_gb": 11.291992664337158,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-14B-Instruct-1M-Q6_K",
+      "size_gb": 11.291991978883743,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Wicked-Coder-14B-Instruct.i1-Q6_K",
+      "size_gb": 11.288865357637405,
+      "tested": false
+    },
+    {
+      "name": "Phi-4-reasoning-plus-Q6_K",
+      "size_gb": 11.204045981168747,
+      "tested": false
+    },
+    {
+      "name": "wan2.2_i2v_low_noise_14B_Q6_K",
+      "size_gb": 11.179272174835205,
+      "tested": false
+    },
+    {
+      "name": "Wan2.2-T2V-A14B-LowNoise-Q6_K",
+      "size_gb": 11.177746295928955,
+      "tested": false
+    },
+    {
+      "name": "OpenAI-20B-NEO-CODEPlus-Uncensored-IQ4_NL",
+      "size_gb": 11.004283517599106,
+      "tested": false
+    },
+    {
+      "name": "Gemma-The-Writer-N-Restless-Quill-10B-max-cpu-D_AU-Q8_0",
+      "size_gb": 10.737971812486649,
+      "tested": false
+    },
+    {
+      "name": "hunyuan-video-t2v-720p-Q6_K",
+      "size_gb": 10.201441526412964,
+      "tested": false
+    },
+    {
+      "name": "hunyuan-video-i2v-720p-Q6_K",
+      "size_gb": 10.201441526412964,
+      "tested": false
+    },
+    {
+      "name": "WizardLM-13B-Uncensored.Q6_K",
+      "size_gb": 9.945733398199081,
+      "tested": false
+    },
+    {
+      "name": "WizardLM-13B-V1.0-Uncensored.i1-Q6_K",
+      "size_gb": 9.945725828409195,
+      "tested": false
+    },
+    {
+      "name": "qwen2.5-14b-instruct-uncensored-q5_k_m",
+      "size_gb": 9.787151128053665,
+      "tested": false
+    },
+    {
+      "name": "mistral-community_pixtral-12b-Q6_K_L",
+      "size_gb": 9.668310046195984,
+      "tested": false
+    },
+    {
+      "name": "chroma-unlocked-v29-Q8_0",
+      "size_gb": 9.585727840662003,
+      "tested": false
+    },
+    {
+      "name": "flux1-kontext-dev-Q6_K",
+      "size_gb": 9.171990662813187,
+      "tested": false
+    },
+    {
+      "name": "gemma-2-9b-it-abliterated-Q8_0",
+      "size_gb": 9.152245491743088,
+      "tested": false
+    },
+    {
+      "name": "amoral-gemma3-12B-vision.i1-Q6_K",
+      "size_gb": 8.997332692146301,
+      "tested": false
+    },
+    {
+      "name": "gemma-3-12b-it-Q6_K",
+      "size_gb": 8.997142553329468,
+      "tested": false
+    },
+    {
+      "name": "L3-SMB-Grand-STORY-F32-Ultra-Quality-16_5B-NEO-V2-D_AU-Q4_K_S-imat13",
+      "size_gb": 8.854996681213379,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-14B-Q4_K_M",
+      "size_gb": 8.383536130189896,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-14B-DeepSeek-R1-1M-Q4_K_M",
+      "size_gb": 8.37082988023758,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.Q8_0",
+      "size_gb": 8.111373096704483,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-VL-8B-Instruct-Q8_0",
+      "size_gb": 8.111372083425522,
+      "tested": false
+    },
+    {
+      "name": "praxis-bookwriter-qwen2.5-14b-sft.i1-Q4_K_S",
+      "size_gb": 7.984631329774857,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-14B-Blunt-Uncensored-Blunt-Reflective.Q4_K_S",
+      "size_gb": 7.98463037610054,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-14B-Q4_K_S",
+      "size_gb": 7.9846300184726715,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Vibe-Coder-14B-Instruct.Q4_K_S",
+      "size_gb": 7.981993079185486,
+      "tested": false
+    },
+    {
+      "name": "glm-4-9b-chat-1m.Q6_K",
+      "size_gb": 7.758774936199188,
+      "tested": false
+    },
+    {
+      "name": "GLM-Z1-9B-0414.i1-Q6_K",
+      "size_gb": 7.69891169667244,
+      "tested": false
+    },
+    {
+      "name": "Gemma-The-Writer-J.GutenBerg-10B-D_AU-Q6_k",
+      "size_gb": 7.673709481954575,
+      "tested": false
+    },
+    {
+      "name": "OlympicCoder-7B-Q8_0",
+      "size_gb": 7.54233992099762,
+      "tested": false
+    },
+    {
+      "name": "hunyuan-video-avatar-Q4_K_S",
+      "size_gb": 7.287159591913223,
+      "tested": false
+    },
+    {
+      "name": "mistral-7b-ivy-4m-5.1.Q8_0",
+      "size_gb": 7.173573076725006,
+      "tested": false
+    },
+    {
+      "name": "RP_Vision_7B-Q8_0-imat",
+      "size_gb": 7.167325735092163,
+      "tested": false
+    },
+    {
+      "name": "Gemma-The-Writer-9B-abliterated.Q6_K",
+      "size_gb": 7.067873239517212,
+      "tested": false
+    },
+    {
+      "name": "Dirty-Shirley-Writer-v2-9B-Uncensored.Q6_K",
+      "size_gb": 7.067873030900955,
+      "tested": false
+    },
+    {
+      "name": "Gemma-The-Writer-9B-D_AU-Q6_k",
+      "size_gb": 7.067871987819672,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-0528-Qwen3-8B-UD-Q6_K_XL",
+      "size_gb": 6.976118564605713,
+      "tested": false
+    },
+    {
+      "name": "dolphin-2.9.1-yi-1.5-9b.i1-Q6_K",
+      "size_gb": 6.748028576374054,
+      "tested": false
+    },
+    {
+      "name": "LFM2-8B-A1B-UD-Q6_K_XL",
+      "size_gb": 6.408904135227203,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.i1-Q6_K",
+      "size_gb": 6.263984143733978,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-8B-Jailbroken.i1-Q6_K",
+      "size_gb": 6.263982683420181,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-0528-Qwen3-8B-Q6_K",
+      "size_gb": 6.26398092508316,
+      "tested": false
+    },
+    {
+      "name": "replit-code-v1_5-3b-bf16",
+      "size_gb": 6.189285576343536,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.1-Nemotron-8B-UltraLong-4M-Instruct.Q6_K",
+      "size_gb": 6.147837400436401,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Medical-COT-ReasoningV2.Q6_K",
+      "size_gb": 6.1430127918720245,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-7B-Q6_K_L",
+      "size_gb": 6.070529907941818,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Wolverine-CODER-11B-Q4_K_S",
+      "size_gb": 5.877250075340271,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Coder-7B-Instruct-Uncensored.i1-Q6_K",
+      "size_gb": 5.8246771693229675,
+      "tested": false
+    },
+    {
+      "name": "Fluxi_AI_Small_Vision.i1-Q6_K",
+      "size_gb": 5.824676930904388,
+      "tested": false
+    },
+    {
+      "name": "vLLM-fast-apply-4bit-v0.12-7B.Q6_K",
+      "size_gb": 5.82467457652092,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.2-11B-Vision-Instruct.Q4_K_M",
+      "size_gb": 5.553529798984528,
+      "tested": false
+    },
+    {
+      "name": "Eris_PrimeV3.05-Vision-7B.i1-Q6_K",
+      "size_gb": 5.533980756998062,
+      "tested": false
+    },
+    {
+      "name": "Wizard-Vicuna-7B-Uncensored.Q6_K",
+      "size_gb": 5.149464517831802,
+      "tested": false
+    },
+    {
+      "name": "glm-4.1v-text-9b-base-q4_0",
+      "size_gb": 5.084957391023636,
+      "tested": false
+    },
+    {
+      "name": "Dolphin3.0-Llama3.1-8B-Q4_1",
+      "size_gb": 4.777931571006775,
+      "tested": false
+    },
+    {
+      "name": "ggml-model-Q4_K_M",
+      "size_gb": 4.682489514350891,
+      "tested": false
+    },
+    {
+      "name": "samantha-test-2-notrecomended-q4_k_m",
+      "size_gb": 4.582795560359955,
+      "tested": false
+    },
+    {
+      "name": "Andy-4.Q4_K_M",
+      "size_gb": 4.582792907953262,
+      "tested": false
+    },
+    {
+      "name": "LFM2-8B-A1B-UD-Q4_K_XL",
+      "size_gb": 4.417845785617828,
+      "tested": false
+    },
+    {
+      "name": "Reasoning-Llama-3.1-CoT-RE1-NMT-V2-ORPO.i1-Q4_K_S",
+      "size_gb": 4.370393931865692,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.1-8B-Instruct-AgenticLU.i1-Q4_K_S",
+      "size_gb": 4.370393455028534,
+      "tested": false
+    },
+    {
+      "name": "Deepseek-R1-Distill-NSFW-RP-vRedux-Proper.Q4_K_S",
+      "size_gb": 4.370390564203262,
+      "tested": false
+    },
+    {
+      "name": "ArxivLlama-3.1-8B-4096.Q4_K_S",
+      "size_gb": 4.370389968156815,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.1-8B-BookAdventures.Q4_K_S",
+      "size_gb": 4.370389372110367,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-7B-Instruct-1M-Q4_K_M",
+      "size_gb": 4.361452430486679,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-VL-7B-Instruct-Q4_K_M",
+      "size_gb": 4.361452013254166,
+      "tested": false
+    },
+    {
+      "name": "Absolute_Zero_Reasoner-Coder-7b-q4_k_s",
+      "size_gb": 4.315801620483398,
+      "tested": false
+    },
+    {
+      "name": "Viper-Coder-7B-Elite14.Q4_K_S",
+      "size_gb": 4.151621758937836,
+      "tested": false
+    },
+    {
+      "name": "visionparser-vl-expert.Q4_K_S",
+      "size_gb": 4.1516203582286835,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-plain-ocr.Q4_K_S",
+      "size_gb": 4.151619762182236,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-7B-Uncensored-Reasoner.Q4_K_S",
+      "size_gb": 4.149771511554718,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-7B-Uncensored.Q4_K_S",
+      "size_gb": 4.149771481752396,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-7B-Uncensored.i1-Q4_0",
+      "size_gb": 4.137061148881912,
+      "tested": false
+    },
+    {
+      "name": "qwen3-4b-base-q8_0",
+      "size_gb": 3.98643758893013,
+      "tested": false
+    },
+    {
+      "name": "granite-4.0-h-tiny-Q4_K_M",
+      "size_gb": 3.940403401851654,
+      "tested": false
+    },
+    {
+      "name": "Phi-3.5-3.8B-vision-instruct-Q8_0",
+      "size_gb": 3.782308131456375,
+      "tested": false
+    },
+    {
+      "name": "qwen2.5-coder-32b-instruct-q4_k_m-00003-of-00003",
+      "size_gb": 3.648353099822998,
+      "tested": false
+    },
+    {
+      "name": "llava-v1.5-7b-Q4_0",
+      "size_gb": 3.56306055188179,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored.f16",
+      "size_gb": 3.314340502023697,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.2-3B-Fluxed-uncensored.Q8_0",
+      "size_gb": 3.186893254518509,
+      "tested": false
+    },
+    {
+      "name": "Base-Roblox-coder-Llama-3.2-3B-vLLM-Q8_0",
+      "size_gb": 3.1868930757045746,
+      "tested": false
+    },
+    {
+      "name": "Llama_3-2_3B_claude_3-7_sonnet_reasoning.Q8_0",
+      "size_gb": 3.186892420053482,
+      "tested": false
+    },
+    {
+      "name": "Reason-With-Choice-3B.Q8_0",
+      "size_gb": 3.1868917047977448,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-VL-4B-Instruct-Q6_K",
+      "size_gb": 3.079196482896805,
+      "tested": false
+    },
+    {
+      "name": "dolphin3.0-qwen2.5-3b-q8_0",
+      "size_gb": 3.0598408579826355,
+      "tested": false
+    },
+    {
+      "name": "AutoCareBrain-3B.Q8_0",
+      "size_gb": 3.059838443994522,
+      "tested": false
+    },
+    {
+      "name": "Phi-4-mini-reasoning-Q6_K",
+      "size_gb": 2.9389030933380127,
+      "tested": false
+    },
+    {
+      "name": "AGR1",
+      "size_gb": 2.871367633342743,
+      "tested": false
+    },
+    {
+      "name": "llama-3.2-3b-instruct-uncensored-q6_k",
+      "size_gb": 2.7632886171340942,
+      "tested": false
+    },
+    {
+      "name": "Absolute_Zero_Reasoner-Coder-3b-f16_q6_k",
+      "size_gb": 2.7057098150253296,
+      "tested": false
+    },
+    {
+      "name": "granite-3b-code-instruct-128k.i1-Q6_K",
+      "size_gb": 2.665825456380844,
+      "tested": false
+    },
+    {
+      "name": "Agente-GPT-Qwen2.5-3B-Instruct-Asistant-16bit-v2.Q6_K",
+      "size_gb": 2.6015679836273193,
+      "tested": false
+    },
+    {
+      "name": "mmproj-F32",
+      "size_gb": 2.543826252222061,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-VL-7B-Instruct-mmproj-f32",
+      "size_gb": 2.5203754901885986,
+      "tested": false
+    },
+    {
+      "name": "mmproj-model-f32",
+      "size_gb": 2.4783568382263184,
+      "tested": false
+    },
+    {
+      "name": "qwen2vl-vision",
+      "size_gb": 2.4783568382263184,
+      "tested": false
+    },
+    {
+      "name": "Deep-Reasoning-Llama-3.2-BlackSheep-3B.i1-Q6_K",
+      "size_gb": 2.4622813761234283,
+      "tested": false
+    },
+    {
+      "name": "Dolphin3.0-Qwen2.5-3b.i1-Q6_K",
+      "size_gb": 2.363848090171814,
+      "tested": false
+    },
+    {
+      "name": "qwen2.5-3b-r1-arc-train-thinker.Q6_K",
+      "size_gb": 2.3638448417186737,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-3B-instruct-argus-v3.Q6_K",
+      "size_gb": 2.363844782114029,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-Coder-3B-few-shot-model.Q6_K",
+      "size_gb": 2.3638447523117065,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-VL-3B-Abliterated-Caption-it.i1-Q6_K",
+      "size_gb": 2.3638442158699036,
+      "tested": false
+    },
+    {
+      "name": "Nanonets-OCR2-3B.Q6_K",
+      "size_gb": 2.3638437390327454,
+      "tested": false
+    },
+    {
+      "name": "llava",
+      "size_gb": 2.3589131236076355,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-4B-Q4_K_M",
+      "size_gb": 2.3257738947868347,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-4B-Thinking-2507-Q4_K_M",
+      "size_gb": 2.3257736563682556,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-Embedding-4B-Q4_K_M",
+      "size_gb": 2.325236588716507,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-4B-Instruct-2507-Q4_K_S",
+      "size_gb": 2.21963033080101,
+      "tested": false
+    },
+    {
+      "name": "jan-nano-4b-Q4_K_S",
+      "size_gb": 2.21962970495224,
+      "tested": false
+    },
+    {
+      "name": " Blitzar-Coder-4B-F.1.Q4_K_S",
+      "size_gb": 2.2196294367313385,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-D_AU-Q4_k_s",
+      "size_gb": 2.2192570865154266,
+      "tested": false
+    },
+    {
+      "name": "gemma-3-4b-it-sanskrit-ocr.Q4_K_S",
+      "size_gb": 2.2146207988262177,
+      "tested": false
+    },
+    {
+      "name": "GRMR-V3-G4B-Q4_K_S",
+      "size_gb": 2.2146187722682953,
+      "tested": false
+    },
+    {
+      "name": "EXAONE-Deep-2.4B-f16-q6_k",
+      "size_gb": 2.1299947798252106,
+      "tested": false
+    },
+    {
+      "name": "qwen3-1.7b.q8_0",
+      "size_gb": 2.016349881887436,
+      "tested": false
+    },
+    {
+      "name": "starcoder2-3b-Q5_K_S",
+      "size_gb": 1.9451189637184143,
+      "tested": false
+    },
+    {
+      "name": "AgentRAG-3B.Q4_K_S",
+      "size_gb": 1.9225911796092987,
+      "tested": false
+    },
+    {
+      "name": "Base-Roblox-coder-Llama-3.2-1B-vLLM.i1-Q4_K_M",
+      "size_gb": 1.8806975781917572,
+      "tested": false
+    },
+    {
+      "name": "llama-3.2-3B-Reason-Reflect-Lite.Q4_K_M",
+      "size_gb": 1.8806916773319244,
+      "tested": false
+    },
+    {
+      "name": "granite-3b-code-instruct.Q4_K_S",
+      "size_gb": 1.875417411327362,
+      "tested": false
+    },
+    {
+      "name": "qwen2.5-coder-3b-instruct-q4_0",
+      "size_gb": 1.8606705069541931,
+      "tested": false
+    },
+    {
+      "name": "stable-code-3b-q5_k_m",
+      "size_gb": 1.8564898669719696,
+      "tested": false
+    },
+    {
+      "name": "rocket-3b.Q5_K_S",
+      "size_gb": 1.8085002303123474,
+      "tested": false
+    },
+    {
+      "name": "Llama-3.2-11B-Vision-Instruct-mmproj.f16",
+      "size_gb": 1.8056142926216125,
+      "tested": false
+    },
+    {
+      "name": "llama-3.2-11B-vision_f16_projector",
+      "size_gb": 1.8056142926216125,
+      "tested": false
+    },
+    {
+      "name": "dria-agent-a-3b.Q4_K_M",
+      "size_gb": 1.7973617613315582,
+      "tested": false
+    },
+    {
+      "name": "jina-embeddings-v4-text-retrieval-Q4_K_M",
+      "size_gb": 1.7973594665527344,
+      "tested": false
+    },
+    {
+      "name": "llama-3.2-3b-parser.Q4_0",
+      "size_gb": 1.7855225205421448,
+      "tested": false
+    },
+    {
+      "name": "SmolLM3-Q4_K_M",
+      "size_gb": 1.7837670743465424,
+      "tested": false
+    },
+    {
+      "name": "qwen2.5-1.5b-instruct-q8_0",
+      "size_gb": 1.7644205391407013,
+      "tested": false
+    },
+    {
+      "name": "Gemmasutra-Mini-2B-v1-Q5_K_S",
+      "size_gb": 1.753255307674408,
+      "tested": false
+    },
+    {
+      "name": "Tiny-Agent-a-3B.Q4_K_S",
+      "size_gb": 1.708404004573822,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-VL-3B-Instruct-Q4_K_S",
+      "size_gb": 1.708402007818222,
+      "tested": false
+    },
+    {
+      "name": "SmolLM3-3B-128K-Q4_K_S",
+      "size_gb": 1.6927877366542816,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5-1.5B-Instruct.Q8_0",
+      "size_gb": 1.5334908664226532,
+      "tested": false
+    },
+    {
+      "name": "qwen2-vl-2b-instruct-q8_0",
+      "size_gb": 1.5334891974925995,
+      "tested": false
+    },
+    {
+      "name": "Yi-Coder-1.5B-Q8_0",
+      "size_gb": 1.462699294090271,
+      "tested": false
+    },
+    {
+      "name": "LFM2-2.6B-Q4_K_M",
+      "size_gb": 1.4562799632549286,
+      "tested": false
+    },
+    {
+      "name": "granite-vision-3.2-2b-Q4_K_M",
+      "size_gb": 1.4391676485538483,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-uncensored.Q6_K",
+      "size_gb": 1.3636229932308197,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Fully-Uncensored.i1-Q6_K",
+      "size_gb": 1.36298206448555,
+      "tested": false
+    },
+    {
+      "name": "Janus-Pro-1B-LM.i1-Q6_K",
+      "size_gb": 1.2665975987911224,
+      "tested": false
+    },
+    {
+      "name": "ui-tars-1.5-7b-idm-full-sft-12-frames-videos.mmproj-f16",
+      "size_gb": 1.2611629366874695,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-plain-ocr.mmproj-fp16",
+      "size_gb": 1.2597403526306152,
+      "tested": false
+    },
+    {
+      "name": "visionparser-vl-expert.mmproj-fp16",
+      "size_gb": 1.2597403526306152,
+      "tested": false
+    },
+    {
+      "name": "Nanonets-OCR2-3B.mmproj-f16",
+      "size_gb": 1.2465087175369263,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-OCR-2B-Instruct.mmproj-fp16",
+      "size_gb": 1.240201473236084,
+      "tested": false
+    },
+    {
+      "name": "Qari-OCR-0.3-SNAPSHOT-VL-2B-Instruct-merged.mmproj-f16",
+      "size_gb": 1.240201085805893,
+      "tested": false
+    },
+    {
+      "name": "UNCENSORED-Fusetrix-Dolphin-3.2-1B-GRPO_Creative_RP.Q8_0",
+      "size_gb": 1.2303525507450104,
+      "tested": false
+    },
+    {
+      "name": "llama-3.2-1b-instruct-q8_0",
+      "size_gb": 1.2303508818149567,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-1.7B-Q4_K_M",
+      "size_gb": 1.1943646371364594,
+      "tested": false
+    },
+    {
+      "name": "Blazer.1-2B-Vision.Q6_K",
+      "size_gb": 1.1853304207324982,
+      "tested": false
+    },
+    {
+      "name": "VLAA-Thinker-Qwen2VL-2B.i1-Q6_K",
+      "size_gb": 1.185330182313919,
+      "tested": false
+    },
+    {
+      "name": "LFM2-VL-1.6B-Q8_0",
+      "size_gb": 1.1606630384922028,
+      "tested": false
+    },
+    {
+      "name": "ggml-model-i2_s",
+      "size_gb": 1.1062261462211609,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16",
+      "size_gb": 1.0794312059879303,
+      "tested": false
+    },
+    {
+      "name": "mmproj-model-f16",
+      "size_gb": 1.0794306695461273,
+      "tested": false
+    },
+    {
+      "name": "mmproj-Qwen3-VL-8B-Instruct-F16",
+      "size_gb": 1.079430639743805,
+      "tested": false
+    },
+    {
+      "name": "DeepCoder-1.5B-Preview-Q4_K_M",
+      "size_gb": 1.0405869483947754,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M",
+      "size_gb": 1.0405858755111694,
+      "tested": false
+    },
+    {
+      "name": "agentica-org_DeepScaleR-1.5B-Preview-Q4_K_S",
+      "size_gb": 0.9979924261569977,
+      "tested": false
+    },
+    {
+      "name": "DeepSeek-R1-Qwen-2.5-1.5b.Q4_K_S",
+      "size_gb": 0.9979922771453857,
+      "tested": false
+    },
+    {
+      "name": "Yi-Coder-1.5B-Chat.Q5_K_S",
+      "size_gb": 0.9790346026420593,
+      "tested": false
+    },
+    {
+      "name": "Dolphin3.0-Llama3.2-1B.Q4_1",
+      "size_gb": 0.9275220036506653,
+      "tested": false
+    },
+    {
+      "name": "dria-agent-a-1.5b.Q4_K_M",
+      "size_gb": 0.9183287918567657,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-OCR-2B-Instruct.i1-Q4_K_M",
+      "size_gb": 0.9183279573917389,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-2B-Instruct-Q4_K_M",
+      "size_gb": 0.9183277785778046,
+      "tested": false
+    },
+    {
+      "name": "prithivMLmods.Qwen2-VL-OCR-2B-Instruct.Q4_K_M",
+      "size_gb": 0.918327271938324,
+      "tested": false
+    },
+    {
+      "name": "OuteTTS-0.3-1B-Q6_K",
+      "size_gb": 0.9118238091468811,
+      "tested": false
+    },
+    {
+      "name": "model-q2k",
+      "size_gb": 0.8991791307926178,
+      "tested": false
+    },
+    {
+      "name": "Tiny-Agent-a-1.5B.Q4_K_S",
+      "size_gb": 0.8757347166538239,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-2B-OCR.Q4_K_S",
+      "size_gb": 0.8757329881191254,
+      "tested": false
+    },
+    {
+      "name": "Qari-OCR-0.3-SNAPSHOT-VL-2B-Instruct-merged.Q4_K_S",
+      "size_gb": 0.8757329881191254,
+      "tested": false
+    },
+    {
+      "name": "Qwen2-VL-OCR-2B-Instruct.Q4_K_S",
+      "size_gb": 0.875732809305191,
+      "tested": false
+    },
+    {
+      "name": "unsloth.Q5_K_M",
+      "size_gb": 0.8489033877849579,
+      "tested": false
+    },
+    {
+      "name": "mmproj-mistralai_Mistral-Small-3.1-24B-Instruct-2503-f16",
+      "size_gb": 0.8177516460418701,
+      "tested": false
+    },
+    {
+      "name": "mmproj-Ministral-3-14B-Reasoning-2512-F16",
+      "size_gb": 0.8177509903907776,
+      "tested": false
+    },
+    {
+      "name": "mmproj-Magistral-Small-2509-F16",
+      "size_gb": 0.8177509009838104,
+      "tested": false
+    },
+    {
+      "name": "mmproj-mistral-community_pixtral-12b-f16",
+      "size_gb": 0.8103160858154297,
+      "tested": false
+    },
+    {
+      "name": "gemma-3-4b-it-sanskrit-ocr.mmproj-f16",
+      "size_gb": 0.7927905023097992,
+      "tested": false
+    },
+    {
+      "name": "mmproj-Qwen3-VL-4B-Instruct-F16",
+      "size_gb": 0.7787534594535828,
+      "tested": false
+    },
+    {
+      "name": "mmproj-LFM2-VL-1.6B-F16",
+      "size_gb": 0.7733134627342224,
+      "tested": false
+    },
+    {
+      "name": "Nanonets-OCR2-1.5B-exp.i1-Q6_K",
+      "size_gb": 0.756112277507782,
+      "tested": false
+    },
+    {
+      "name": "llama-3.1_1b-chat_2024-01-15_12-43.Q4_K_S",
+      "size_gb": 0.722378134727478,
+      "tested": false
+    },
+    {
+      "name": "Dolphin3.0-L3.2-1B_RP_UNCENSORED",
+      "size_gb": 0.6921072602272034,
+      "tested": false
+    },
+    {
+      "name": "LFM2-1.2B-Q4_K_M",
+      "size_gb": 0.6806973814964294,
+      "tested": false
+    },
+    {
+      "name": "gemma-3-1B-it-QAT-Q4_0",
+      "size_gb": 0.6709485054016113,
+      "tested": false
+    },
+    {
+      "name": "mxbai-embed-large-v1-f16",
+      "size_gb": 0.6236170530319214,
+      "tested": false
+    },
+    {
+      "name": "Phi-3.5-3.8B-vision-instruct-mmproj-F16",
+      "size_gb": 0.6073927581310272,
+      "tested": false
+    },
+    {
+      "name": "bge-reranker-v2-m3-q8_0",
+      "size_gb": 0.5920178294181824,
+      "tested": false
+    },
+    {
+      "name": "ger-RAG-bge-M3-merg-snowf-artic-hessian-AI.Q8_0",
+      "size_gb": 0.5909756720066071,
+      "tested": false
+    },
+    {
+      "name": "bge-m3-q8_0",
+      "size_gb": 0.5909742116928101,
+      "tested": false
+    },
+    {
+      "name": "mmproj-model-f16",
+      "size_gb": 0.5815654695034027,
+      "tested": false
+    },
+    {
+      "name": "llava-v1.5-7b-mmproj-model-f16",
+      "size_gb": 0.5815498232841492,
+      "tested": false
+    },
+    {
+      "name": "llava-llama-3.1-8b-mmproj-f16",
+      "size_gb": 0.5815498232841492,
+      "tested": false
+    },
+    {
+      "name": "dria-agent-a-0.5b.Q8_0",
+      "size_gb": 0.49459537863731384,
+      "tested": false
+    },
+    {
+      "name": "Qwen3-0.6B-Q4_K_M",
+      "size_gb": 0.450965017080307,
+      "tested": false
+    },
+    {
+      "name": "snowflake-arctic-embed-l-v2.0-q5_k_m",
+      "size_gb": 0.435545951128006,
+      "tested": false
+    },
+    {
+      "name": "t3_cfg-q6_k",
+      "size_gb": 0.40706947445869446,
+      "tested": false
+    },
+    {
+      "name": "SmolVLM2-500M-Video-Instruct-Q8_0",
+      "size_gb": 0.40680980682373047,
+      "tested": false
+    },
+    {
+      "name": "s3gen-q8_0",
+      "size_gb": 0.3825918436050415,
+      "tested": false
+    },
+    {
+      "name": "Qwen2.5_Uncensored_V2_Sexting",
+      "size_gb": 0.37048572301864624,
+      "tested": false
+    },
+    {
+      "name": "smollm-360m-instruct-add-basics-q8_0",
+      "size_gb": 0.3598681092262268,
+      "tested": false
+    },
+    {
+      "name": "Tiny-Agent-a-0.5B.Q4_K_S",
+      "size_gb": 0.358998566865921,
+      "tested": false
+    },
+    {
+      "name": "jina-embedding-l-v1-q8",
+      "size_gb": 0.33253201842308044,
+      "tested": false
+    },
+    {
+      "name": "granite_multilingualQ8_0",
+      "size_gb": 0.28231921792030334,
+      "tested": false
+    },
+    {
+      "name": "bce-embedding-base_v1-q8_0",
+      "size_gb": 0.28231900930404663,
+      "tested": false
+    },
+    {
+      "name": "nomic-embed-text-v1.5.f16",
+      "size_gb": 0.2554529905319214,
+      "tested": false
+    },
+    {
+      "name": "gist-large-embedding-v0-q5_k_m",
+      "size_gb": 0.2287832796573639,
+      "tested": false
+    },
+    {
+      "name": "granite-embedding-278m-multilingual-Q6_K",
+      "size_gb": 0.21985498070716858,
+      "tested": false
+    },
+    {
+      "name": "conan-embedding-v1-q4_k_m",
+      "size_gb": 0.19335082173347473,
+      "tested": false
+    },
+    {
+      "name": "codebert-base-cd-ft.Q8_0",
+      "size_gb": 0.12582170963287354,
+      "tested": false
+    },
+    {
+      "name": "snowflake-arctic-embed-m-v1.5-q8_0",
+      "size_gb": 0.10975885391235352,
+      "tested": false
+    },
+    {
+      "name": "sexyGPT-Uncensored.i1-Q6_K",
+      "size_gb": 0.09941354393959045,
+      "tested": false
+    },
+    {
+      "name": "mxbai-embed-xsmall-v1-f32",
+      "size_gb": 0.08977940678596497,
+      "tested": false
+    },
+    {
+      "name": "WavTokenizer-Large-75-Q4_0",
+      "size_gb": 0.06050223112106323,
+      "tested": false
+    },
+    {
+      "name": "mxbai-embed-xsmall-v1-bf16",
+      "size_gb": 0.048172980546951294,
+      "tested": false
+    },
+    {
+      "name": "deepseek-r1-medical-cot-merged_16bit-q4_k_m",
+      "size_gb": 0.005524277687072754,
+      "tested": false
+    },
+    {
+      "name": "Looking_Glass_Alice_Thinking-NSFW-RP-3.2-1B-imatrix",
+      "size_gb": 0.0012368857860565186,
+      "tested": false
+    },
+    {
+      "name": "DeepCoder-14B-Preview-Q6_K",
+      "size_gb": 0.0,
+      "tested": false
+    }
+  ]
+}

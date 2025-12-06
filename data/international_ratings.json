@@ -1,0 +1,560 @@
+{
+  "version": "1.0",
+  "description": "International Rating Standards - 195 Countries + Territories",
+  "total_countries": 250,
+  "default_language": "en",
+  "last_updated": "2024-12-04",
+  
+  "rating_systems": {
+    "MPAA": {
+      "name": "Motion Picture Association of America",
+      "countries": ["US", "CA"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance Suggested"},
+        "PG-13": {"min_age": 13, "our_equivalent": "PG-13", "description": "Parents Strongly Cautioned"},
+        "R": {"min_age": 17, "our_equivalent": "NC-17", "description": "Restricted"},
+        "NC-17": {"min_age": 18, "our_equivalent": "NC-18", "description": "No One 17 and Under Admitted"}
+      }
+    },
+    "BBFC": {
+      "name": "British Board of Film Classification",
+      "countries": ["GB", "IE"],
+      "ratings": {
+        "U": {"min_age": 0, "our_equivalent": "G", "description": "Universal"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "12A": {"min_age": 12, "our_equivalent": "PG", "description": "12A Cinema"},
+        "12": {"min_age": 12, "our_equivalent": "PG", "description": "12 Home Video"},
+        "15": {"min_age": 15, "our_equivalent": "NC-15", "description": "15"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18"},
+        "R18": {"min_age": 18, "our_equivalent": "XXX", "description": "Restricted 18"}
+      }
+    },
+    "FSK": {
+      "name": "Freiwillige Selbstkontrolle der Filmwirtschaft",
+      "countries": ["DE", "AT"],
+      "ratings": {
+        "FSK 0": {"min_age": 0, "our_equivalent": "G", "description": "Released without age restriction"},
+        "FSK 6": {"min_age": 6, "our_equivalent": "L", "description": "Released to ages 6 and older"},
+        "FSK 12": {"min_age": 12, "our_equivalent": "PG", "description": "Released to ages 12 and older"},
+        "FSK 16": {"min_age": 16, "our_equivalent": "NC-16", "description": "Released to ages 16 and older"},
+        "FSK 18": {"min_age": 18, "our_equivalent": "NC-18", "description": "No youth admitted"}
+      }
+    },
+    "PEGI": {
+      "name": "Pan European Game Information",
+      "countries": ["GB", "DE", "FR", "IT", "ES", "NL", "BE", "AT", "CH", "PT", "PL", "SE", "NO", "DK", "FI", "IE", "GR", "CZ", "HU", "SK", "SI", "HR", "BG", "RO", "LT", "LV", "EE", "CY", "MT", "LU", "IS"],
+      "ratings": {
+        "PEGI 3": {"min_age": 3, "our_equivalent": "EL", "description": "Suitable for all ages"},
+        "PEGI 7": {"min_age": 7, "our_equivalent": "G", "description": "Suitable for ages 7 and older"},
+        "PEGI 12": {"min_age": 12, "our_equivalent": "PG", "description": "Suitable for ages 12 and older"},
+        "PEGI 16": {"min_age": 16, "our_equivalent": "NC-16", "description": "Suitable for ages 16 and older"},
+        "PEGI 18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Suitable for ages 18 and older"}
+      }
+    },
+    "EIRIN": {
+      "name": "Film Classification and Rating Organization",
+      "countries": ["JP"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "PG12": {"min_age": 12, "our_equivalent": "PG", "description": "Parental Guidance for under 12"},
+        "R15+": {"min_age": 15, "our_equivalent": "NC-15", "description": "15 and older only"},
+        "R18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older only"}
+      }
+    },
+    "KMRB": {
+      "name": "Korea Media Rating Board",
+      "countries": ["KR"],
+      "ratings": {
+        "ALL": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "12": {"min_age": 12, "our_equivalent": "PG", "description": "12 and older"},
+        "15": {"min_age": 15, "our_equivalent": "NC-15", "description": "15 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older only"},
+        "RESTRICTED": {"min_age": 19, "our_equivalent": "XXX", "description": "Restricted screening"}
+      }
+    },
+    "CBFC": {
+      "name": "Central Board of Film Certification",
+      "countries": ["IN"],
+      "ratings": {
+        "U": {"min_age": 0, "our_equivalent": "G", "description": "Unrestricted Public Exhibition"},
+        "U/A": {"min_age": 12, "our_equivalent": "PG", "description": "Parental Guidance for under 12"},
+        "A": {"min_age": 18, "our_equivalent": "NC-18", "description": "Adults Only"},
+        "S": {"min_age": 18, "our_equivalent": "R", "description": "Restricted to specialized audiences"}
+      }
+    },
+    "DJCTQ": {
+      "name": "Department of Justice Rating",
+      "countries": ["BR"],
+      "ratings": {
+        "L": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "10": {"min_age": 10, "our_equivalent": "PG", "description": "Not recommended for under 10"},
+        "12": {"min_age": 12, "our_equivalent": "PG", "description": "Not recommended for under 12"},
+        "14": {"min_age": 14, "our_equivalent": "NC-14", "description": "Not recommended for under 14"},
+        "16": {"min_age": 16, "our_equivalent": "NC-16", "description": "Not recommended for under 16"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Not recommended for under 18"}
+      }
+    },
+    "IFCO": {
+      "name": "Irish Film Classification Office",
+      "countries": ["IE"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "12A": {"min_age": 12, "our_equivalent": "PG", "description": "12A"},
+        "15A": {"min_age": 15, "our_equivalent": "NC-15", "description": "15A"},
+        "16": {"min_age": 16, "our_equivalent": "NC-16", "description": "16"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18"}
+      }
+    },
+    "ACB": {
+      "name": "Australian Classification Board",
+      "countries": ["AU", "NZ"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "M": {"min_age": 15, "our_equivalent": "NC-15", "description": "Mature"},
+        "MA15+": {"min_age": 15, "our_equivalent": "NC-15", "description": "Mature Accompanied"},
+        "R18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "Restricted"},
+        "X18+": {"min_age": 18, "our_equivalent": "XXX", "description": "Restricted - Explicit"}
+      }
+    },
+    "RTC": {
+      "name": "Direccion General de Radio Television y Cinematografia",
+      "countries": ["MX"],
+      "ratings": {
+        "AA": {"min_age": 0, "our_equivalent": "EL", "description": "All ages"},
+        "A": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "B": {"min_age": 12, "our_equivalent": "PG", "description": "Adolescents 12+"},
+        "B-15": {"min_age": 15, "our_equivalent": "NC-15", "description": "Adolescents 15+"},
+        "C": {"min_age": 18, "our_equivalent": "NC-18", "description": "Adults Only"},
+        "D": {"min_age": 18, "our_equivalent": "XXX", "description": "Adults with explicit content"}
+      }
+    },
+    "CNC": {
+      "name": "Centre National du Cinema",
+      "countries": ["FR"],
+      "ratings": {
+        "U": {"min_age": 0, "our_equivalent": "G", "description": "All audiences"},
+        "-10": {"min_age": 10, "our_equivalent": "PG", "description": "Discouraged for under 10"},
+        "-12": {"min_age": 12, "our_equivalent": "PG", "description": "Prohibited for under 12"},
+        "-16": {"min_age": 16, "our_equivalent": "NC-16", "description": "Prohibited for under 16"},
+        "-18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Prohibited for under 18"},
+        "X": {"min_age": 18, "our_equivalent": "XXX", "description": "Pornographic"}
+      }
+    },
+    "RUSSIA": {
+      "name": "Russian Age Rating",
+      "countries": ["RU", "BY", "KZ"],
+      "ratings": {
+        "0+": {"min_age": 0, "our_equivalent": "EL", "description": "For all ages"},
+        "6+": {"min_age": 6, "our_equivalent": "L", "description": "6 years and older"},
+        "12+": {"min_age": 12, "our_equivalent": "PG", "description": "12 years and older"},
+        "16+": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 years and older"},
+        "18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 years and older"}
+      }
+    },
+    "CHINA": {
+      "name": "China Film Administration",
+      "countries": ["CN"],
+      "ratings": {
+        "APPROVED": {"min_age": 0, "our_equivalent": "PG", "description": "Approved for all"},
+        "RESTRICTED": {"min_age": 18, "our_equivalent": "NC-18", "description": "Restricted content"}
+      },
+      "notes": "China has strict content censorship. Adult content is banned."
+    },
+    "MIDDLE_EAST": {
+      "name": "Middle East Standard",
+      "countries": ["SA", "AE", "QA", "KW", "BH", "OM", "YE", "JO", "LB", "SY", "IQ", "PS"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "PG-13": {"min_age": 13, "our_equivalent": "PG-13", "description": "Parental Guidance 13+"},
+        "15": {"min_age": 15, "our_equivalent": "NC-15", "description": "15 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"},
+        "21": {"min_age": 21, "our_equivalent": "SOFT", "description": "21 and older - artistic"}
+      },
+      "notes": "Explicit adult content is generally banned. Strict modesty requirements."
+    },
+    "AFRICA": {
+      "name": "African Standard Rating",
+      "countries": ["ZA", "NG", "EG", "KE", "TZ", "UG", "GH", "ET", "CI", "CM", "SN", "ZW", "ZM", "MW", "MZ", "AO", "NA", "BW", "RW", "BI", "SD", "SS", "LY", "TN", "DZ", "MA", "MR", "ML", "NE", "TD", "CF", "CG", "CD", "GA", "GQ", "ST", "CV", "GM", "GN", "GW", "SL", "LR", "TG", "BJ", "BF", "ER", "DJ", "SO", "MG", "MU", "SC", "KM", "RE", "YT", "LS", "SZ"],
+      "ratings": {
+        "A": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "10": {"min_age": 10, "our_equivalent": "PG", "description": "10 and older"},
+        "13": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "16": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"},
+        "X18": {"min_age": 18, "our_equivalent": "XXX", "description": "Explicit adult"}
+      }
+    },
+    "SOUTH_AMERICA": {
+      "name": "South American Standard",
+      "countries": ["AR", "CL", "CO", "PE", "VE", "EC", "BO", "PY", "UY", "GY", "SR"],
+      "ratings": {
+        "ATP": {"min_age": 0, "our_equivalent": "G", "description": "Suitable for all ages"},
+        "+7": {"min_age": 7, "our_equivalent": "G", "description": "7 and older"},
+        "+13": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "+16": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "+18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"}
+      }
+    },
+    "SOUTHEAST_ASIA": {
+      "name": "Southeast Asian Standard",
+      "countries": ["TH", "VN", "PH", "ID", "MY", "SG", "MM", "KH", "LA", "BN", "TL"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "P": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "13": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "15": {"min_age": 15, "our_equivalent": "NC-15", "description": "15 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"},
+        "21": {"min_age": 21, "our_equivalent": "R", "description": "21 and older"}
+      }
+    },
+    "CARIBBEAN": {
+      "name": "Caribbean Standard",
+      "countries": ["JM", "TT", "BB", "BS", "CU", "DO", "HT", "PR", "VI", "AG", "KN", "LC", "VC", "GD", "DM", "AW", "CW", "SX", "BQ", "AI", "VG", "TC", "KY", "BM"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "13": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "16": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Adults Only"}
+      }
+    },
+    "NORDIC": {
+      "name": "Nordic Rating Standard",
+      "countries": ["SE", "NO", "DK", "FI", "IS", "FO", "GL", "AX", "SJ"],
+      "ratings": {
+        "A": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "7": {"min_age": 7, "our_equivalent": "G", "description": "7 and older"},
+        "11": {"min_age": 11, "our_equivalent": "PG", "description": "11 and older"},
+        "15": {"min_age": 15, "our_equivalent": "NC-15", "description": "15 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"}
+      }
+    },
+    "EASTERN_EUROPE": {
+      "name": "Eastern European Standard",
+      "countries": ["UA", "MD", "GE", "AM", "AZ", "MK", "AL", "RS", "ME", "BA", "XK"],
+      "ratings": {
+        "0+": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "6+": {"min_age": 6, "our_equivalent": "L", "description": "6 and older"},
+        "12+": {"min_age": 12, "our_equivalent": "PG", "description": "12 and older"},
+        "16+": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"},
+        "21+": {"min_age": 21, "our_equivalent": "R", "description": "21 and older"}
+      }
+    },
+    "TAIWAN": {
+      "name": "Taiwan Rating",
+      "countries": ["TW"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "P": {"min_age": 6, "our_equivalent": "PG", "description": "Protected"},
+        "PG-12": {"min_age": 12, "our_equivalent": "PG", "description": "Parental Guidance 12"},
+        "R-15": {"min_age": 15, "our_equivalent": "NC-15", "description": "Restricted 15"},
+        "R-18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Restricted 18"}
+      }
+    },
+    "HONG_KONG": {
+      "name": "Hong Kong Rating",
+      "countries": ["HK"],
+      "ratings": {
+        "I": {"min_age": 0, "our_equivalent": "G", "description": "Suitable for all ages"},
+        "IIA": {"min_age": 0, "our_equivalent": "PG", "description": "Not suitable for children"},
+        "IIB": {"min_age": 0, "our_equivalent": "PG-13", "description": "Not suitable for young persons"},
+        "III": {"min_age": 18, "our_equivalent": "NC-18", "description": "For persons aged 18 and above only"}
+      }
+    },
+    "TURKEY": {
+      "name": "Turkish Rating",
+      "countries": ["TR"],
+      "ratings": {
+        "GENEL": {"min_age": 0, "our_equivalent": "G", "description": "General Audiences"},
+        "7+": {"min_age": 7, "our_equivalent": "L", "description": "7 and older"},
+        "13+": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"}
+      }
+    },
+    "ISRAEL": {
+      "name": "Israeli Film Council",
+      "countries": ["IL"],
+      "ratings": {
+        "ALL": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "12": {"min_age": 12, "our_equivalent": "PG", "description": "12 and older"},
+        "14": {"min_age": 14, "our_equivalent": "NC-14", "description": "14 and older"},
+        "16": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "18": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"}
+      }
+    },
+    "PAKISTAN": {
+      "name": "Central Board of Film Censors Pakistan",
+      "countries": ["PK"],
+      "ratings": {
+        "U": {"min_age": 0, "our_equivalent": "G", "description": "Unrestricted"},
+        "UA": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "A": {"min_age": 18, "our_equivalent": "NC-18", "description": "Adults Only"}
+      },
+      "notes": "Strict content censorship. Adult/explicit content banned."
+    },
+    "INDONESIA": {
+      "name": "Lembaga Sensor Film",
+      "countries": ["ID"],
+      "ratings": {
+        "SU": {"min_age": 0, "our_equivalent": "G", "description": "All Ages"},
+        "BO": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "R13": {"min_age": 13, "our_equivalent": "PG-13", "description": "13 and older"},
+        "D17": {"min_age": 17, "our_equivalent": "NC-17", "description": "17 and older"},
+        "D21": {"min_age": 21, "our_equivalent": "R", "description": "21 and older"}
+      }
+    },
+    "CENTRAL_ASIA": {
+      "name": "Central Asian Standard",
+      "countries": ["UZ", "TM", "TJ", "KG", "MN"],
+      "ratings": {
+        "0+": {"min_age": 0, "our_equivalent": "G", "description": "All ages"},
+        "6+": {"min_age": 6, "our_equivalent": "L", "description": "6 and older"},
+        "12+": {"min_age": 12, "our_equivalent": "PG", "description": "12 and older"},
+        "16+": {"min_age": 16, "our_equivalent": "NC-16", "description": "16 and older"},
+        "18+": {"min_age": 18, "our_equivalent": "NC-18", "description": "18 and older"}
+      }
+    },
+    "PACIFIC": {
+      "name": "Pacific Islands Standard",
+      "countries": ["FJ", "PG", "SB", "VU", "NC", "PF", "WS", "TO", "KI", "FM", "MH", "PW", "NR", "TV", "WF", "TK", "NU", "CK", "AS", "GU", "MP"],
+      "ratings": {
+        "G": {"min_age": 0, "our_equivalent": "G", "description": "General"},
+        "PG": {"min_age": 0, "our_equivalent": "PG", "description": "Parental Guidance"},
+        "M": {"min_age": 15, "our_equivalent": "NC-15", "description": "Mature"},
+        "R18": {"min_age": 18, "our_equivalent": "NC-18", "description": "Restricted"}
+      }
+    }
+  },
+  
+  "countries": {
+    "AF": {"name": "Afghanistan", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true, "modesty_strict": true},
+    "AL": {"name": "Albania", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "DZ": {"name": "Algeria", "system": "AFRICA", "adult_legal_age": 19, "explicit_banned": true},
+    "AD": {"name": "Andorra", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "AO": {"name": "Angola", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "AG": {"name": "Antigua and Barbuda", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "AR": {"name": "Argentina", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "AM": {"name": "Armenia", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "AU": {"name": "Australia", "system": "ACB", "adult_legal_age": 18, "explicit_banned": false, "x18_legal": true},
+    "AT": {"name": "Austria", "system": "FSK", "adult_legal_age": 18, "explicit_banned": false},
+    "AZ": {"name": "Azerbaijan", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "BS": {"name": "Bahamas", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "BH": {"name": "Bahrain", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true},
+    "BD": {"name": "Bangladesh", "system": "CBFC", "adult_legal_age": 18, "explicit_banned": true},
+    "BB": {"name": "Barbados", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "BY": {"name": "Belarus", "system": "RUSSIA", "adult_legal_age": 18, "explicit_banned": false},
+    "BE": {"name": "Belgium", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "BZ": {"name": "Belize", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "BJ": {"name": "Benin", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "BT": {"name": "Bhutan", "system": "CBFC", "adult_legal_age": 18, "explicit_banned": true},
+    "BO": {"name": "Bolivia", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "BA": {"name": "Bosnia and Herzegovina", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "BW": {"name": "Botswana", "system": "AFRICA", "adult_legal_age": 21, "explicit_banned": false},
+    "BR": {"name": "Brazil", "system": "DJCTQ", "adult_legal_age": 18, "explicit_banned": false},
+    "BN": {"name": "Brunei", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "BG": {"name": "Bulgaria", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "BF": {"name": "Burkina Faso", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "BI": {"name": "Burundi", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "KH": {"name": "Cambodia", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "CM": {"name": "Cameroon", "system": "AFRICA", "adult_legal_age": 21, "explicit_banned": false},
+    "CA": {"name": "Canada", "system": "MPAA", "adult_legal_age": 18, "explicit_banned": false},
+    "CV": {"name": "Cape Verde", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "CF": {"name": "Central African Republic", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "TD": {"name": "Chad", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "CL": {"name": "Chile", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "CN": {"name": "China", "system": "CHINA", "adult_legal_age": 18, "explicit_banned": true, "strict_censorship": true},
+    "CO": {"name": "Colombia", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "KM": {"name": "Comoros", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "CG": {"name": "Congo", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "CD": {"name": "Congo (DRC)", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "CR": {"name": "Costa Rica", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "HR": {"name": "Croatia", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "CU": {"name": "Cuba", "system": "CARIBBEAN", "adult_legal_age": 16, "explicit_banned": false},
+    "CY": {"name": "Cyprus", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "CZ": {"name": "Czech Republic", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "DK": {"name": "Denmark", "system": "NORDIC", "adult_legal_age": 18, "explicit_banned": false},
+    "DJ": {"name": "Djibouti", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "DM": {"name": "Dominica", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "DO": {"name": "Dominican Republic", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "EC": {"name": "Ecuador", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "EG": {"name": "Egypt", "system": "AFRICA", "adult_legal_age": 21, "explicit_banned": true},
+    "SV": {"name": "El Salvador", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GQ": {"name": "Equatorial Guinea", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "ER": {"name": "Eritrea", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "EE": {"name": "Estonia", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "SZ": {"name": "Eswatini", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "ET": {"name": "Ethiopia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "FJ": {"name": "Fiji", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "FI": {"name": "Finland", "system": "NORDIC", "adult_legal_age": 18, "explicit_banned": false},
+    "FR": {"name": "France", "system": "CNC", "adult_legal_age": 18, "explicit_banned": false},
+    "GA": {"name": "Gabon", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GM": {"name": "Gambia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GE": {"name": "Georgia", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "DE": {"name": "Germany", "system": "FSK", "adult_legal_age": 18, "explicit_banned": false},
+    "GH": {"name": "Ghana", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GR": {"name": "Greece", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "GD": {"name": "Grenada", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "GT": {"name": "Guatemala", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GN": {"name": "Guinea", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GW": {"name": "Guinea-Bissau", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "GY": {"name": "Guyana", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "HT": {"name": "Haiti", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "HN": {"name": "Honduras", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "HK": {"name": "Hong Kong", "system": "HONG_KONG", "adult_legal_age": 18, "explicit_banned": false},
+    "HU": {"name": "Hungary", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "IS": {"name": "Iceland", "system": "NORDIC", "adult_legal_age": 18, "explicit_banned": false},
+    "IN": {"name": "India", "system": "CBFC", "adult_legal_age": 18, "explicit_banned": true},
+    "ID": {"name": "Indonesia", "system": "INDONESIA", "adult_legal_age": 21, "explicit_banned": true},
+    "IR": {"name": "Iran", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true, "strict_censorship": true},
+    "IQ": {"name": "Iraq", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "IE": {"name": "Ireland", "system": "IFCO", "adult_legal_age": 18, "explicit_banned": false},
+    "IL": {"name": "Israel", "system": "ISRAEL", "adult_legal_age": 18, "explicit_banned": false},
+    "IT": {"name": "Italy", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "JM": {"name": "Jamaica", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "JP": {"name": "Japan", "system": "EIRIN", "adult_legal_age": 18, "explicit_banned": false, "mosaic_required": true},
+    "JO": {"name": "Jordan", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "KZ": {"name": "Kazakhstan", "system": "RUSSIA", "adult_legal_age": 18, "explicit_banned": false},
+    "KE": {"name": "Kenya", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "KI": {"name": "Kiribati", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "KP": {"name": "North Korea", "system": "CHINA", "adult_legal_age": 17, "explicit_banned": true, "strict_censorship": true},
+    "KR": {"name": "South Korea", "system": "KMRB", "adult_legal_age": 19, "explicit_banned": false},
+    "KW": {"name": "Kuwait", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true},
+    "KG": {"name": "Kyrgyzstan", "system": "CENTRAL_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "LA": {"name": "Laos", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "LV": {"name": "Latvia", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "LB": {"name": "Lebanon", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": false},
+    "LS": {"name": "Lesotho", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "LR": {"name": "Liberia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "LY": {"name": "Libya", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "LI": {"name": "Liechtenstein", "system": "FSK", "adult_legal_age": 18, "explicit_banned": false},
+    "LT": {"name": "Lithuania", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "LU": {"name": "Luxembourg", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "MO": {"name": "Macau", "system": "HONG_KONG", "adult_legal_age": 18, "explicit_banned": false},
+    "MG": {"name": "Madagascar", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MW": {"name": "Malawi", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MY": {"name": "Malaysia", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "MV": {"name": "Maldives", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "ML": {"name": "Mali", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MT": {"name": "Malta", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "MH": {"name": "Marshall Islands", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "MR": {"name": "Mauritania", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "MU": {"name": "Mauritius", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MX": {"name": "Mexico", "system": "RTC", "adult_legal_age": 18, "explicit_banned": false},
+    "FM": {"name": "Micronesia", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "MD": {"name": "Moldova", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "MC": {"name": "Monaco", "system": "CNC", "adult_legal_age": 18, "explicit_banned": false},
+    "MN": {"name": "Mongolia", "system": "CENTRAL_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "ME": {"name": "Montenegro", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "MA": {"name": "Morocco", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "MZ": {"name": "Mozambique", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MM": {"name": "Myanmar", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "NA": {"name": "Namibia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "NR": {"name": "Nauru", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "NP": {"name": "Nepal", "system": "CBFC", "adult_legal_age": 18, "explicit_banned": true},
+    "NL": {"name": "Netherlands", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "NZ": {"name": "New Zealand", "system": "ACB", "adult_legal_age": 18, "explicit_banned": false},
+    "NI": {"name": "Nicaragua", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "NE": {"name": "Niger", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "NG": {"name": "Nigeria", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "MK": {"name": "North Macedonia", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "NO": {"name": "Norway", "system": "NORDIC", "adult_legal_age": 18, "explicit_banned": false},
+    "OM": {"name": "Oman", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true},
+    "PK": {"name": "Pakistan", "system": "PAKISTAN", "adult_legal_age": 18, "explicit_banned": true},
+    "PW": {"name": "Palau", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "PS": {"name": "Palestine", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "PA": {"name": "Panama", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "PG": {"name": "Papua New Guinea", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "PY": {"name": "Paraguay", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "PE": {"name": "Peru", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "PH": {"name": "Philippines", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "PL": {"name": "Poland", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "PT": {"name": "Portugal", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "QA": {"name": "Qatar", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true},
+    "RO": {"name": "Romania", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "RU": {"name": "Russia", "system": "RUSSIA", "adult_legal_age": 18, "explicit_banned": false},
+    "RW": {"name": "Rwanda", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "KN": {"name": "Saint Kitts and Nevis", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "LC": {"name": "Saint Lucia", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "VC": {"name": "Saint Vincent", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "WS": {"name": "Samoa", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "SM": {"name": "San Marino", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "ST": {"name": "Sao Tome and Principe", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "SA": {"name": "Saudi Arabia", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true, "strict_censorship": true},
+    "SN": {"name": "Senegal", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "RS": {"name": "Serbia", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "SC": {"name": "Seychelles", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "SL": {"name": "Sierra Leone", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "SG": {"name": "Singapore", "system": "SOUTHEAST_ASIA", "adult_legal_age": 21, "explicit_banned": true},
+    "SK": {"name": "Slovakia", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "SI": {"name": "Slovenia", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "SB": {"name": "Solomon Islands", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "SO": {"name": "Somalia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "ZA": {"name": "South Africa", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false, "x18_legal": true},
+    "SS": {"name": "South Sudan", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "ES": {"name": "Spain", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "LK": {"name": "Sri Lanka", "system": "CBFC", "adult_legal_age": 18, "explicit_banned": true},
+    "SD": {"name": "Sudan", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "SR": {"name": "Suriname", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "SE": {"name": "Sweden", "system": "NORDIC", "adult_legal_age": 18, "explicit_banned": false},
+    "CH": {"name": "Switzerland", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": false},
+    "SY": {"name": "Syria", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "TW": {"name": "Taiwan", "system": "TAIWAN", "adult_legal_age": 18, "explicit_banned": false},
+    "TJ": {"name": "Tajikistan", "system": "CENTRAL_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "TZ": {"name": "Tanzania", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "TH": {"name": "Thailand", "system": "SOUTHEAST_ASIA", "adult_legal_age": 20, "explicit_banned": false},
+    "TL": {"name": "Timor-Leste", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": false},
+    "TG": {"name": "Togo", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "TO": {"name": "Tonga", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "TT": {"name": "Trinidad and Tobago", "system": "CARIBBEAN", "adult_legal_age": 18, "explicit_banned": false},
+    "TN": {"name": "Tunisia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "TR": {"name": "Turkey", "system": "TURKEY", "adult_legal_age": 18, "explicit_banned": true},
+    "TM": {"name": "Turkmenistan", "system": "CENTRAL_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "TV": {"name": "Tuvalu", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "UG": {"name": "Uganda", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": true},
+    "UA": {"name": "Ukraine", "system": "EASTERN_EUROPE", "adult_legal_age": 18, "explicit_banned": false},
+    "AE": {"name": "United Arab Emirates", "system": "MIDDLE_EAST", "adult_legal_age": 21, "explicit_banned": true},
+    "GB": {"name": "United Kingdom", "system": "BBFC", "adult_legal_age": 18, "explicit_banned": false, "r18_licensed": true},
+    "US": {"name": "United States", "system": "MPAA", "adult_legal_age": 18, "explicit_banned": false},
+    "UY": {"name": "Uruguay", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "UZ": {"name": "Uzbekistan", "system": "CENTRAL_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "VU": {"name": "Vanuatu", "system": "PACIFIC", "adult_legal_age": 18, "explicit_banned": false},
+    "VA": {"name": "Vatican City", "system": "PEGI", "adult_legal_age": 18, "explicit_banned": true},
+    "VE": {"name": "Venezuela", "system": "SOUTH_AMERICA", "adult_legal_age": 18, "explicit_banned": false},
+    "VN": {"name": "Vietnam", "system": "SOUTHEAST_ASIA", "adult_legal_age": 18, "explicit_banned": true},
+    "YE": {"name": "Yemen", "system": "MIDDLE_EAST", "adult_legal_age": 18, "explicit_banned": true},
+    "ZM": {"name": "Zambia", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false},
+    "ZW": {"name": "Zimbabwe", "system": "AFRICA", "adult_legal_age": 18, "explicit_banned": false}
+  },
+  
+  "content_restrictions": {
+    "nudity": {
+      "banned_countries": ["AF", "BH", "BD", "BN", "CN", "DJ", "ER", "ID", "IR", "IQ", "JO", "KP", "KW", "LA", "LY", "MY", "MV", "MR", "MA", "MM", "NP", "OM", "PK", "PS", "QA", "SA", "SG", "SO", "LK", "SD", "SY", "TN", "TR", "TM", "UG", "AE", "UZ", "VA", "VN", "YE"],
+      "restricted_countries": ["EG", "IN", "JP"],
+      "notes": "Countries where nudity in media is banned or heavily restricted"
+    },
+    "explicit_adult": {
+      "banned_countries": ["AF", "DZ", "BH", "BD", "BT", "BN", "CN", "KM", "DJ", "ER", "IN", "ID", "IR", "IQ", "JO", "KP", "KW", "LA", "LY", "MY", "MV", "MR", "MA", "MM", "NP", "OM", "PK", "PS", "QA", "SA", "SG", "SO", "LK", "SD", "SY", "TN", "TR", "TM", "UG", "AE", "UZ", "VA", "VN", "YE"],
+      "notes": "Countries where explicit adult content is completely banned"
+    },
+    "lgbtq": {
+      "banned_countries": ["AF", "BN", "IR", "MR", "NG", "PK", "QA", "SA", "SO", "SD", "AE", "YE"],
+      "restricted_countries": ["DZ", "BD", "BH", "CM", "EG", "ET", "GH", "GY", "ID", "JM", "JO", "KE", "KW", "LB", "LY", "MY", "MV", "MM", "OM", "PS", "SN", "SG", "SY", "TZ", "TG", "TN", "TM", "UG", "UZ", "ZM", "ZW"],
+      "notes": "Countries with restrictions on LGBTQ+ content"
+    }
+  },
+  
+  "age_of_majority": {
+    "21": ["AE", "BH", "BW", "CM", "EG", "ID", "KW", "OM", "QA", "SA", "SG"],
+    "20": ["TH"],
+    "19": ["DZ", "KR"],
+    "18": ["Most countries - default"],
+    "17": ["KP"],
+    "16": ["CU", "NP", "PH"]
+  }
+}

@@ -1,0 +1,262 @@
+<Window x:Class="AIStudioDashboard.Views.GenerationPipelineView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Generation Pipeline - ComfyUI Integration" Height="850" Width="1200"
+        Background="#1a1a2e" WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style x:Key="PipelineCard" TargetType="Border">
+            <Setter Property="Background" Value="#252547"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#16213e" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel>
+                    <TextBlock Text="Generation Pipeline" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="ComfyUI Integration | Playwright Automation | Rating Compliance" 
+                               FontSize="12" Foreground="#8892b0" Margin="0,5,0,0"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Border Background="#252547" CornerRadius="5" Padding="10,5" Margin="5,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse x:Name="ComfyUIIndicator" Width="10" Height="10" Fill="#F44336" Margin="0,0,8,0"/>
+                            <TextBlock Text="ComfyUI" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Background="#252547" CornerRadius="5" Padding="10,5" Margin="5,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse x:Name="PlaywrightIndicator" Width="10" Height="10" Fill="#F44336" Margin="0,0,8,0"/>
+                            <TextBlock Text="Playwright" Foreground="#8892b0"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="350"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Left Panel - Generation Form -->
+            <Border Grid.Column="0" Style="{StaticResource PipelineCard}" Margin="0,0,10,0">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock Text="GENERATION SETTINGS" FontSize="14" FontWeight="Bold" 
+                                   Foreground="#64ffda" Margin="0,0,0,20"/>
+                        
+                        <!-- Prompt -->
+                        <TextBlock Text="Prompt" Foreground="#8892b0" Margin="0,0,0,5"/>
+                        <TextBox x:Name="PromptInput" Height="100" Background="#1a1a2e" Foreground="White"
+                                 BorderBrush="#333" TextWrapping="Wrap" AcceptsReturn="True" Padding="10"
+                                 Text="beautiful landscape, mountains, sunset, highly detailed, 8k"/>
+                        
+                        <!-- Negative Prompt -->
+                        <TextBlock Text="Negative Prompt" Foreground="#8892b0" Margin="0,15,0,5"/>
+                        <TextBox x:Name="NegativeInput" Height="60" Background="#1a1a2e" Foreground="White"
+                                 BorderBrush="#333" TextWrapping="Wrap" AcceptsReturn="True" Padding="10"
+                                 Text="blurry, low quality, watermark, text"/>
+                        
+                        <!-- Model Selection -->
+                        <TextBlock Text="Model" Foreground="#8892b0" Margin="0,15,0,5"/>
+                        <ComboBox x:Name="ModelSelector" Background="#1a1a2e" Foreground="White">
+                            <ComboBoxItem Content="SDXL Base 1.0" IsSelected="True"/>
+                            <ComboBoxItem Content="Stable Diffusion 1.5"/>
+                            <ComboBoxItem Content="DreamShaper XL"/>
+                            <ComboBoxItem Content="RealVisXL"/>
+                        </ComboBox>
+                        
+                        <!-- Workflow -->
+                        <TextBlock Text="Workflow" Foreground="#8892b0" Margin="0,15,0,5"/>
+                        <ComboBox x:Name="WorkflowSelector" Background="#1a1a2e" Foreground="White">
+                            <ComboBoxItem Content="txt2img_basic" IsSelected="True"/>
+                            <ComboBoxItem Content="txt2img_hires"/>
+                            <ComboBoxItem Content="img2img"/>
+                            <ComboBoxItem Content="inpaint"/>
+                        </ComboBox>
+                        
+                        <!-- Rating -->
+                        <TextBlock Text="Content Rating" Foreground="#8892b0" Margin="0,15,0,5"/>
+                        <ComboBox x:Name="RatingSelector" Background="#1a1a2e" Foreground="White" SelectionChanged="Rating_Changed">
+                            <ComboBoxItem Content="PG - Family Safe" Tag="PG" IsSelected="True"/>
+                            <ComboBoxItem Content="PG-13 - Teen" Tag="PG-13"/>
+                            <ComboBoxItem Content="NC-17 - Mature" Tag="NC-17"/>
+                            <ComboBoxItem Content="NC-18 - Adult" Tag="NC-18"/>
+                            <ComboBoxItem Content="R - Restricted" Tag="R"/>
+                        </ComboBox>
+                        
+                        <!-- Country -->
+                        <TextBlock Text="Country Compliance" Foreground="#8892b0" Margin="0,15,0,5"/>
+                        <ComboBox x:Name="CountrySelector" Background="#1a1a2e" Foreground="White">
+                            <ComboBoxItem Content="United States (US)" Tag="US" IsSelected="True"/>
+                            <ComboBoxItem Content="United Kingdom (GB)" Tag="GB"/>
+                            <ComboBoxItem Content="Germany (DE)" Tag="DE"/>
+                            <ComboBoxItem Content="Japan (JP)" Tag="JP"/>
+                        </ComboBox>
+                        
+                        <!-- Parameters -->
+                        <Grid Margin="0,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,10,10">
+                                <TextBlock Text="Width" Foreground="#8892b0"/>
+                                <TextBox x:Name="WidthInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="512"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="0" Grid.Column="1" Margin="10,0,0,10">
+                                <TextBlock Text="Height" Foreground="#8892b0"/>
+                                <TextBox x:Name="HeightInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="512"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,10,10">
+                                <TextBlock Text="Steps" Foreground="#8892b0"/>
+                                <TextBox x:Name="StepsInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="20"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="1" Grid.Column="1" Margin="10,0,0,10">
+                                <TextBlock Text="CFG Scale" Foreground="#8892b0"/>
+                                <TextBox x:Name="CFGInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="7"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,10,0">
+                                <TextBlock Text="Seed (-1 = random)" Foreground="#8892b0"/>
+                                <TextBox x:Name="SeedInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="-1"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,0,0,0">
+                                <TextBlock Text="Batch Size" Foreground="#8892b0"/>
+                                <TextBox x:Name="BatchInput" Background="#1a1a2e" Foreground="White" 
+                                         BorderBrush="#333" Padding="8" Text="1"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <!-- Generate Button -->
+                        <Button Content="Generate" Background="#4CAF50" Foreground="White" 
+                                FontSize="16" FontWeight="Bold" Padding="20,15" Margin="0,20,0,0"
+                                Cursor="Hand" Click="Generate_Click"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            
+            <!-- Right Panel - Queue & Status -->
+            <StackPanel Grid.Column="1">
+                <!-- Queue Status -->
+                <Border Style="{StaticResource PipelineCard}">
+                    <StackPanel>
+                        <TextBlock Text="QUEUE STATUS" FontSize="14" FontWeight="Bold" 
+                                   Foreground="#64ffda" Margin="0,0,0,15"/>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                                <TextBlock x:Name="QueuePending" Text="0" FontSize="28" FontWeight="Bold" 
+                                           Foreground="#FF9800" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Pending" FontSize="11" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                                <TextBlock x:Name="QueueRunning" Text="0" FontSize="28" FontWeight="Bold" 
+                                           Foreground="#2196F3" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Running" FontSize="11" Foreground="#8892b0" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                            <Button Content="Refresh" Background="#2196F3" Foreground="White" 
+                                    Padding="15,8" Margin="5,0" Cursor="Hand" Click="RefreshQueue_Click"/>
+                            <Button Content="Clear" Background="#F44336" Foreground="White" 
+                                    Padding="15,8" Margin="5,0" Cursor="Hand" Click="ClearQueue_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Guardrails Status -->
+                <Border Style="{StaticResource PipelineCard}">
+                    <StackPanel>
+                        <TextBlock Text="GUARDRAILS STATUS" FontSize="14" FontWeight="Bold" 
+                                   Foreground="#FF9800" Margin="0,0,0,15"/>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0,5">
+                            <Ellipse x:Name="GuardrailsActive" Width="10" Height="10" Fill="#4CAF50" Margin="0,0,10,0"/>
+                            <TextBlock Text="Guardrails Active" Foreground="White"/>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0,5">
+                            <Ellipse Width="10" Height="10" Fill="#4CAF50" Margin="0,0,10,0"/>
+                            <TextBlock Text="Country Compliance" Foreground="White"/>
+                        </StackPanel>
+                        
+                        <TextBlock x:Name="CurrentRatingDisplay" Text="Current: PG (Family Safe)" 
+                                   Foreground="#64ffda" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Recent Generations -->
+                <Border Style="{StaticResource PipelineCard}">
+                    <StackPanel>
+                        <TextBlock Text="RECENT GENERATIONS" FontSize="14" FontWeight="Bold" 
+                                   Foreground="#64ffda" Margin="0,0,0,15"/>
+                        
+                        <ListBox x:Name="RecentGenerations" Height="200" Background="#1a1a2e" 
+                                 BorderThickness="0" Foreground="#8892b0">
+                            <ListBoxItem Content="No generations yet"/>
+                        </ListBox>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+        
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="#16213e" Padding="15">
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:Name="StatusText" Text="Ready" Foreground="#8892b0" VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Connect ComfyUI" Background="#2196F3" Foreground="White" 
+                            Padding="15,8" Margin="5,0" Cursor="Hand" Click="ConnectComfyUI_Click"/>
+                    <Button Content="Start Playwright" Background="#9C27B0" Foreground="White" 
+                            Padding="15,8" Margin="5,0" Cursor="Hand" Click="StartPlaywright_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

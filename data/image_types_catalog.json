@@ -1,0 +1,705 @@
+{
+  "catalog_version": "1.0",
+  "clothes_toggle": {
+    "on": {
+      "label": "Clothed",
+      "tags": [
+        "dressed",
+        "wearing clothes",
+        "clothed",
+        "outfit",
+        "tribal attire",
+        "ceremonial dress",
+        "beaded clothing",
+        "leather garments",
+        "feather accessories",
+        "cowboy hat",
+        "leather vest",
+        "boots",
+        "bandana",
+        "chaps",
+        "duster coat",
+        "flannel shirt",
+        "corset",
+        "saloon dress",
+        "prairie dress",
+        "buckskin dress"
+      ]
+    },
+    "off": {
+      "label": "Unclothed",
+      "tags": [
+        "nude",
+        "naked",
+        "unclothed",
+        "bare skin",
+        "exposed",
+        "body paint only",
+        "minimal coverage",
+        "nude ritual",
+        "bathing scene",
+        "natural state"
+      ]
+    }
+  },
+  "types": {
+    "tribal": {
+      "name": "Tribal",
+      "description": "African, Pacific, Amazon tribal women with ceremonial paint and accessories",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "tribal woman",
+        "tribal beauty",
+        "exotic",
+        "primal"
+      ],
+      "characters": [
+        "tribal warrior",
+        "priestess",
+        "dancer",
+        "healer",
+        "maiden",
+        "queen",
+        "huntress"
+      ],
+      "settings": [
+        "jungle",
+        "savanna",
+        "waterfall",
+        "sacred grove",
+        "tribal village",
+        "river bank",
+        "cave",
+        "ancient temple"
+      ],
+      "clothing": {
+        "on": [
+          "tribal attire",
+          "ceremonial dress",
+          "beaded clothing",
+          "leather garments",
+          "feather accessories"
+        ],
+        "off": [
+          "body paint only",
+          "minimal coverage",
+          "nude ritual",
+          "bathing scene",
+          "natural state"
+        ]
+      },
+      "accessories": [
+        "feather headdress",
+        "bone jewelry",
+        "tribal necklace",
+        "arm bands",
+        "ankle bands",
+        "face paint",
+        "body paint",
+        "war paint"
+      ],
+      "style_tags": [
+        "tribal aesthetic",
+        "primal beauty",
+        "ceremonial",
+        "dramatic lighting",
+        "exotic atmosphere"
+      ]
+    },
+    "western": {
+      "name": "Western",
+      "description": "Wild West era - Cowboys, Native Americans, Outlaws, Ranchers, Saloon girls",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "includes_types": [
+        "tribal",
+        "native_american"
+      ],
+      "base_tags": [
+        "western",
+        "wild west",
+        "frontier",
+        "old west",
+        "american west"
+      ],
+      "characters": {
+        "cowboys": [
+          "cowboy",
+          "cowgirl",
+          "rancher",
+          "ranch hand",
+          "cattle driver",
+          "trail boss"
+        ],
+        "outlaws": [
+          "outlaw woman",
+          "bandit",
+          "gunslinger",
+          "wanted woman",
+          "desperado"
+        ],
+        "lawmen": [
+          "sheriff",
+          "deputy",
+          "marshal",
+          "bounty hunter"
+        ],
+        "townsfolk": [
+          "saloon girl",
+          "saloon dancer",
+          "bartender",
+          "shopkeeper",
+          "schoolteacher",
+          "doctor",
+          "preacher's wife"
+        ],
+        "natives": [
+          "native american woman",
+          "indian maiden",
+          "chief's daughter",
+          "medicine woman",
+          "tribal princess"
+        ],
+        "pioneers": [
+          "pioneer woman",
+          "settler",
+          "homesteader",
+          "frontier woman",
+          "prairie woman"
+        ]
+      },
+      "settings": [
+        "saloon",
+        "desert",
+        "ranch",
+        "canyon",
+        "frontier town",
+        "campfire",
+        "stable",
+        "sunset prairie",
+        "dusty street",
+        "general store",
+        "sheriff office",
+        "mountain pass",
+        "river crossing",
+        "teepee camp"
+      ],
+      "clothing": {
+        "on": [
+          "cowboy hat",
+          "leather vest",
+          "boots",
+          "bandana",
+          "chaps",
+          "duster coat",
+          "flannel shirt",
+          "corset",
+          "saloon dress",
+          "prairie dress",
+          "buckskin dress"
+        ],
+        "off": [
+          "bathing in river",
+          "private moment",
+          "intimate scene",
+          "nude bathing",
+          "undressing"
+        ]
+      },
+      "accessories": [
+        "cowboy hat",
+        "holster",
+        "lasso",
+        "spurs",
+        "sheriff badge",
+        "feathers",
+        "turquoise jewelry",
+        "leather belt"
+      ],
+      "style_tags": [
+        "western aesthetic",
+        "wild west atmosphere",
+        "dusty",
+        "golden hour",
+        "frontier lighting",
+        "sepia tones"
+      ]
+    },
+    "native_american": {
+      "name": "Native American",
+      "description": "All Native American tribes - historical and ceremonial",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "native american",
+        "indigenous",
+        "first nations",
+        "american indian"
+      ],
+      "tribes": {
+        "plains": [
+          "Sioux",
+          "Lakota",
+          "Cheyenne",
+          "Comanche",
+          "Blackfoot",
+          "Crow",
+          "Arapaho",
+          "Kiowa",
+          "Pawnee"
+        ],
+        "southwest": [
+          "Apache",
+          "Navajo",
+          "Hopi",
+          "Pueblo",
+          "Zuni",
+          "Tohono O'odham"
+        ],
+        "eastern": [
+          "Cherokee",
+          "Iroquois",
+          "Mohawk",
+          "Seminole",
+          "Creek",
+          "Shawnee",
+          "Powhatan"
+        ],
+        "northwest": [
+          "Nez Perce",
+          "Chinook",
+          "Haida",
+          "Tlingit",
+          "Salish",
+          "Yakama"
+        ],
+        "california": [
+          "Chumash",
+          "Miwok",
+          "Pomo",
+          "Yurok",
+          "Ohlone"
+        ],
+        "great_basin": [
+          "Shoshone",
+          "Paiute",
+          "Ute",
+          "Bannock"
+        ]
+      },
+      "characters": [
+        "native woman",
+        "maiden",
+        "princess",
+        "medicine woman",
+        "warrior woman",
+        "chief's daughter",
+        "elder woman",
+        "weaver",
+        "gatherer"
+      ],
+      "settings": [
+        "teepee camp",
+        "prairie",
+        "sacred mountain",
+        "river crossing",
+        "hunting grounds",
+        "council fire",
+        "medicine lodge",
+        "vision quest site",
+        "burial grounds"
+      ],
+      "clothing": {
+        "on": [
+          "buckskin dress",
+          "beaded regalia",
+          "moccasins",
+          "buffalo robe",
+          "ceremonial dress",
+          "war bonnet",
+          "elk tooth dress"
+        ],
+        "off": [
+          "sweat lodge",
+          "vision quest",
+          "river bathing",
+          "private ceremony",
+          "natural state"
+        ]
+      },
+      "accessories": [
+        "feather headdress",
+        "beaded jewelry",
+        "turquoise",
+        "bone hairpipe",
+        "medicine pouch",
+        "dream catcher",
+        "war paint",
+        "ceremonial paint"
+      ],
+      "style_tags": [
+        "native american aesthetic",
+        "spiritual",
+        "connection to nature",
+        "dignified",
+        "proud",
+        "historical"
+      ]
+    },
+    "fantasy": {
+      "name": "Fantasy",
+      "description": "Elves, Fairies, Witches, Sorceresses, Magical beings",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "fantasy",
+        "magical",
+        "mystical",
+        "enchanted"
+      ],
+      "characters": [
+        "elf woman",
+        "fairy",
+        "witch",
+        "sorceress",
+        "dryad",
+        "nymph",
+        "enchantress",
+        "forest spirit",
+        "moon goddess",
+        "dragon rider"
+      ],
+      "settings": [
+        "enchanted forest",
+        "crystal cave",
+        "fairy glen",
+        "wizard tower",
+        "ancient ruins",
+        "moonlit glade",
+        "magical waterfall",
+        "elven kingdom"
+      ],
+      "clothing": {
+        "on": [
+          "flowing robes",
+          "elven dress",
+          "witch attire",
+          "magical gown",
+          "fairy wings dress",
+          "armored corset"
+        ],
+        "off": [
+          "bathing in moonlight",
+          "forest ritual",
+          "magical transformation",
+          "natural form"
+        ]
+      },
+      "accessories": [
+        "pointed ears",
+        "magical staff",
+        "crystal pendant",
+        "crown of flowers",
+        "fairy wings",
+        "glowing markings"
+      ],
+      "style_tags": [
+        "fantasy aesthetic",
+        "magical lighting",
+        "ethereal",
+        "mystical atmosphere",
+        "enchanted"
+      ]
+    },
+    "scifi": {
+      "name": "Sci-Fi",
+      "description": "Futuristic, Space, Cyberpunk, Android, Alien",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "sci-fi",
+        "futuristic",
+        "cyberpunk",
+        "space"
+      ],
+      "characters": [
+        "space pilot",
+        "cyberpunk woman",
+        "android",
+        "alien woman",
+        "bounty hunter",
+        "space marine",
+        "hacker",
+        "rebel fighter"
+      ],
+      "settings": [
+        "spaceship",
+        "space station",
+        "cyberpunk city",
+        "neon streets",
+        "alien planet",
+        "dystopian future",
+        "tech lab"
+      ],
+      "clothing": {
+        "on": [
+          "space suit",
+          "cyberpunk outfit",
+          "futuristic armor",
+          "neon clothing",
+          "tech wear",
+          "pilot suit"
+        ],
+        "off": [
+          "cryo chamber",
+          "decontamination",
+          "alien ritual",
+          "android maintenance"
+        ]
+      },
+      "accessories": [
+        "cybernetic implants",
+        "glowing eyes",
+        "holographic display",
+        "laser weapon",
+        "tech visor"
+      ],
+      "style_tags": [
+        "sci-fi aesthetic",
+        "neon lighting",
+        "futuristic",
+        "cyberpunk atmosphere",
+        "tech glow"
+      ]
+    },
+    "medieval": {
+      "name": "Medieval",
+      "description": "Knights, Queens, Peasants, Vikings, Celtic warriors",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "medieval",
+        "historical",
+        "ancient",
+        "period"
+      ],
+      "characters": [
+        "queen",
+        "princess",
+        "knight",
+        "viking woman",
+        "celtic warrior",
+        "peasant girl",
+        "noble lady",
+        "tavern wench",
+        "shieldmaiden"
+      ],
+      "settings": [
+        "castle",
+        "throne room",
+        "medieval village",
+        "tavern",
+        "battlefield",
+        "forest clearing",
+        "viking ship",
+        "stone circle"
+      ],
+      "clothing": {
+        "on": [
+          "medieval dress",
+          "armor",
+          "viking attire",
+          "noble gown",
+          "peasant dress",
+          "celtic garb",
+          "chainmail"
+        ],
+        "off": [
+          "bathing chamber",
+          "private quarters",
+          "ritual bath",
+          "captive scene"
+        ]
+      },
+      "accessories": [
+        "crown",
+        "sword",
+        "shield",
+        "celtic jewelry",
+        "viking braids",
+        "war paint"
+      ],
+      "style_tags": [
+        "medieval aesthetic",
+        "historical lighting",
+        "dramatic",
+        "period atmosphere"
+      ]
+    },
+    "asian": {
+      "name": "Asian",
+      "description": "Japanese, Chinese, Korean, Thai, Indian traditional",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "asian",
+        "oriental",
+        "eastern"
+      ],
+      "subtypes": {
+        "japanese": [
+          "geisha",
+          "samurai woman",
+          "shrine maiden",
+          "ninja",
+          "kimono woman"
+        ],
+        "chinese": [
+          "empress",
+          "warrior",
+          "courtesan",
+          "martial artist",
+          "silk dress woman"
+        ],
+        "korean": [
+          "hanbok woman",
+          "gisaeng",
+          "warrior princess"
+        ],
+        "thai": [
+          "thai dancer",
+          "temple maiden",
+          "traditional dress"
+        ],
+        "indian": [
+          "apsara",
+          "goddess",
+          "dancer",
+          "princess",
+          "temple dancer"
+        ]
+      },
+      "settings": [
+        "temple",
+        "palace",
+        "bamboo forest",
+        "cherry blossom garden",
+        "traditional house",
+        "hot spring",
+        "silk road"
+      ],
+      "clothing": {
+        "on": [
+          "kimono",
+          "hanbok",
+          "cheongsam",
+          "sari",
+          "traditional dress",
+          "silk robes"
+        ],
+        "off": [
+          "hot spring bathing",
+          "onsen",
+          "private chamber",
+          "ritual bath"
+        ]
+      },
+      "style_tags": [
+        "asian aesthetic",
+        "oriental beauty",
+        "elegant",
+        "traditional lighting"
+      ]
+    },
+    "modern": {
+      "name": "Modern",
+      "description": "Contemporary fashion, fitness, casual, professional",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "modern",
+        "contemporary",
+        "fashion",
+        "lifestyle"
+      ],
+      "characters": [
+        "model",
+        "athlete",
+        "businesswoman",
+        "artist",
+        "dancer",
+        "influencer",
+        "fitness model"
+      ],
+      "settings": [
+        "studio",
+        "gym",
+        "city street",
+        "penthouse",
+        "beach",
+        "cafe",
+        "gallery"
+      ],
+      "clothing": {
+        "on": [
+          "fashion outfit",
+          "business attire",
+          "athletic wear",
+          "casual clothes",
+          "designer dress"
+        ],
+        "off": [
+          "boudoir",
+          "artistic nude",
+          "fitness photography",
+          "beach photography"
+        ]
+      },
+      "style_tags": [
+        "modern aesthetic",
+        "studio lighting",
+        "fashion photography",
+        "contemporary"
+      ]
+    },
+    "steampunk": {
+      "name": "Steampunk",
+      "description": "Victorian era with steam-powered technology",
+      "enabled": true,
+      "created_at": "2025-12-04",
+      "base_tags": [
+        "steampunk",
+        "victorian",
+        "mechanical",
+        "brass"
+      ],
+      "characters": [
+        "inventor",
+        "pilot",
+        "aristocrat",
+        "engineer"
+      ],
+      "settings": [
+        "airship",
+        "clockwork factory",
+        "victorian city",
+        "brass laboratory"
+      ],
+      "clothing": {
+        "on": [
+          "dressed",
+          "wearing clothes"
+        ],
+        "off": [
+          "nude",
+          "unclothed"
+        ]
+      },
+      "accessories": [],
+      "style_tags": [],
+      "includes_types": []
+    }
+  },
+  "user_custom_types": {}
+}

@@ -1,0 +1,12 @@
+[general]
+shuffle_caption = true
+caption_extension = '.txt'
+keep_tokens = 1
+
+[[datasets]]
+resolution = [512, 768]
+batch_size = 1
+
+[[datasets.subsets]]
+image_dir = 'c:\Users\Admin\civitai\data\lora_training\lora_dataset_20251204_0405\images'
+num_repeats = 10

@@ -1,0 +1,388 @@
+<Window x:Class="AIStudioDashboard.Views.StoryGeneratorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Western Stories - Actor Generator" 
+        Height="900" Width="1400"
+        WindowStartupLocation="CenterScreen"
+        Background="#1a1a2e">
+    
+    <Window.Resources>
+        <!-- Color Palette -->
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#00d4ff"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#00ff88"/>
+        <SolidColorBrush x:Key="WarningBrush" Color="#ffcc00"/>
+        <SolidColorBrush x:Key="ErrorBrush" Color="#ff6b6b"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#2a2a4a"/>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#1a1a2e"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#ffffff"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#888888"/>
+        
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource SurfaceBrush}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="8"/>
+        </Style>
+        
+        <!-- Button Style -->
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Foreground" Value="#000000"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <!-- Content Rating Button Style -->
+        <Style x:Key="RatingButton" TargetType="ToggleButton">
+            <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+            <Setter Property="BorderBrush" Value="#4a4a6a"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border x:Name="border" 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource SuccessBrush}"/>
+                                <Setter TargetName="border" Property="Background" Value="#1a3a2a"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Border Grid.Row="0" Background="{StaticResource SurfaceBrush}" Padding="20,16">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <TextBlock Text="🤠" FontSize="28" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                    <StackPanel>
+                        <TextBlock Text="WESTERN STORIES" FontSize="20" FontWeight="Bold" 
+                                   Foreground="{StaticResource PrimaryBrush}"/>
+                        <TextBlock Text="525 Actors &amp; Families • 12 Content Ratings • 8K Quality" 
+                                   Foreground="{StaticResource TextSecondaryBrush}" FontSize="12"/>
+                    </StackPanel>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource SuccessBrush}" 
+                             VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <TextBlock Text="API Connected" Foreground="{StaticResource SuccessBrush}" 
+                               VerticalAlignment="Center" FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Main Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Grid Margin="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <!-- Statistics Row -->
+                <Border Grid.Row="0" Style="{StaticResource CardStyle}">
+                    <StackPanel>
+                        <TextBlock Text="📊 STATISTICS" FontWeight="Bold" FontSize="14" 
+                                   Foreground="{StaticResource PrimaryBrush}" Margin="0,0,0,16"/>
+                        <UniformGrid Rows="1" Columns="5">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock x:Name="StatActors" Text="0" FontSize="32" FontWeight="Bold" 
+                                           Foreground="{StaticResource PrimaryBrush}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Actors" Foreground="{StaticResource TextSecondaryBrush}" 
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock x:Name="StatFamilies" Text="0" FontSize="32" FontWeight="Bold" 
+                                           Foreground="{StaticResource SuccessBrush}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Families" Foreground="{StaticResource TextSecondaryBrush}" 
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock x:Name="StatImages" Text="0" FontSize="32" FontWeight="Bold" 
+                                           Foreground="{StaticResource WarningBrush}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Images" Foreground="{StaticResource TextSecondaryBrush}" 
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock x:Name="StatDialogs" Text="0" FontSize="32" FontWeight="Bold" 
+                                           Foreground="#a29bfe" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Dialogs" Foreground="{StaticResource TextSecondaryBrush}" 
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock x:Name="StatQueue" Text="0" FontSize="32" FontWeight="Bold" 
+                                           Foreground="{StaticResource ErrorBrush}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="In Queue" Foreground="{StaticResource TextSecondaryBrush}" 
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </UniformGrid>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Content Rating Selection -->
+                <Border Grid.Row="1" Style="{StaticResource CardStyle}">
+                    <StackPanel>
+                        <TextBlock Text="🎭 CONTENT RATING SELECTION" FontWeight="Bold" FontSize="14" 
+                                   Foreground="{StaticResource PrimaryBrush}" Margin="0,0,0,16"/>
+                        
+                        <!-- Family Safe Ratings -->
+                        <StackPanel Margin="0,0,0,12">
+                            <TextBlock Text="✅ Family Safe (Children &amp; Families)" 
+                                       Foreground="{StaticResource SuccessBrush}" FontWeight="Bold" Margin="0,0,0,8"/>
+                            <WrapPanel>
+                                <ToggleButton x:Name="RatingEL" Style="{StaticResource RatingButton}" IsChecked="False">
+                                    <StackPanel>
+                                        <TextBlock Text="EL" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Extra Light" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingL" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="L" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Light" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingPG" Style="{StaticResource RatingButton}" IsChecked="True">
+                                    <StackPanel>
+                                        <TextBlock Text="PG" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Parental Guidance" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingPG13" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="PG-13" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Teen" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingPG17" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="PG-17" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Older Teen" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                            </WrapPanel>
+                        </StackPanel>
+                        
+                        <!-- Adult Ratings (Separated) -->
+                        <StackPanel>
+                            <TextBlock Text="🔒 Adult Content (Age Verified Only)" 
+                                       Foreground="{StaticResource ErrorBrush}" FontWeight="Bold" Margin="0,0,0,8"/>
+                            <WrapPanel>
+                                <ToggleButton x:Name="RatingSOFT" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="SOFT" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Sheer Fabrics" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingMED" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="MED" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Medium" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingR" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="R" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Restricted" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingHARD" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="HARD" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Hard" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingHC" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="HC" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Hardcore" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingX" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="X" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="X-Rated" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                                <ToggleButton x:Name="RatingXXX" Style="{StaticResource RatingButton}">
+                                    <StackPanel>
+                                        <TextBlock Text="XXX" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="Extreme" FontSize="10" Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+                                </ToggleButton>
+                            </WrapPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Action Panels -->
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Actor Management -->
+                    <Border Grid.Column="0" Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="🎭 ACTOR MANAGEMENT" FontWeight="Bold" FontSize="14" 
+                                       Foreground="{StaticResource PrimaryBrush}" Margin="0,0,0,16"/>
+                            
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                <TextBlock Text="Number of Actors:" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                                <TextBox x:Name="ActorCount" Text="525" Width="100" Padding="8" 
+                                         Background="{StaticResource BackgroundBrush}" 
+                                         Foreground="{StaticResource TextPrimaryBrush}"
+                                         BorderBrush="#4a4a6a"/>
+                            </StackPanel>
+                            
+                            <WrapPanel>
+                                <Button Style="{StaticResource PrimaryButton}" Click="GenerateActors_Click">
+                                    🎭 Generate 525 Actors
+                                </Button>
+                                <Button Style="{StaticResource PrimaryButton}" Background="{StaticResource SuccessBrush}" 
+                                        Click="ViewActors_Click">
+                                    📜 View All Actors
+                                </Button>
+                                <Button Style="{StaticResource PrimaryButton}" Background="{StaticResource WarningBrush}"
+                                        Click="ViewFamilies_Click">
+                                    👨‍👩‍👧 View Families
+                                </Button>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!-- Image Generation -->
+                    <Border Grid.Column="1" Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="📸 IMAGE GENERATION" FontWeight="Bold" FontSize="14" 
+                                       Foreground="{StaticResource PrimaryBrush}" Margin="0,0,0,16"/>
+                            
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                <TextBlock Text="Batch Size:" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                                <TextBox x:Name="BatchSize" Text="50" Width="100" Padding="8" 
+                                         Background="{StaticResource BackgroundBrush}" 
+                                         Foreground="{StaticResource TextPrimaryBrush}"
+                                         BorderBrush="#4a4a6a"/>
+                            </StackPanel>
+                            
+                            <WrapPanel>
+                                <Button Style="{StaticResource PrimaryButton}" Click="GenerateAll_Click">
+                                    📸 Generate All Images
+                                </Button>
+                                <Button Style="{StaticResource PrimaryButton}" Background="{StaticResource SuccessBrush}"
+                                        Click="GenerateFamily_Click">
+                                    👨‍👩‍👧 Generate Family
+                                </Button>
+                                <Button Style="{StaticResource PrimaryButton}" Background="#a29bfe"
+                                        Click="ViewQueue_Click">
+                                    📋 View Queue
+                                </Button>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+                
+                <!-- Actor Grid -->
+                <Border Grid.Row="3" Style="{StaticResource CardStyle}" MinHeight="300">
+                    <StackPanel>
+                        <TextBlock Text="🎬 ACTOR GALLERY" FontWeight="Bold" FontSize="14" 
+                                   Foreground="{StaticResource PrimaryBrush}" Margin="0,0,0,16"/>
+                        
+                        <ListBox x:Name="ActorList" Background="Transparent" BorderThickness="0"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel/>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="{StaticResource BackgroundBrush}" 
+                                            BorderBrush="#4a4a6a" BorderThickness="1"
+                                            CornerRadius="6" Padding="12" Margin="4" Width="180">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding full_name}" FontWeight="Bold" 
+                                                       Foreground="{StaticResource PrimaryBrush}"/>
+                                            <TextBlock Foreground="{StaticResource TextSecondaryBrush}" FontSize="11">
+                                                <Run Text="{Binding role_title}"/> • <Run Text="{Binding gender}"/>
+                                            </TextBlock>
+                                            <TextBlock Foreground="{StaticResource TextSecondaryBrush}" FontSize="11">
+                                                <Run Text="{Binding age_group}"/> • <Run Text="{Binding family_role}"/>
+                                            </TextBlock>
+                                            <Border Background="{StaticResource SuccessBrush}" CornerRadius="3" 
+                                                    Padding="6,2" Margin="0,6,0,0" HorizontalAlignment="Left">
+                                                <TextBlock Text="{Binding content_rating}" FontSize="10" 
+                                                           Foreground="#000" FontWeight="Bold"/>
+                                            </Border>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+        
+        <!-- Status Bar -->
+        <Border Grid.Row="2" Background="{StaticResource SurfaceBrush}" Padding="16,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock x:Name="StatusText" Grid.Column="0" 
+                           Text="Ready - Select content rating and generate actors" 
+                           Foreground="{StaticResource TextSecondaryBrush}"/>
+                <TextBlock Grid.Column="1" Foreground="{StaticResource TextSecondaryBrush}">
+                    <Run Text="API: http://localhost:8197"/>
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

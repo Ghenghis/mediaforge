@@ -1,0 +1,50 @@
+{
+  "tags": {
+    "columns": [
+      "id",
+      "tag",
+      "category",
+      "count",
+      "first_seen",
+      "last_seen",
+      "source"
+    ],
+    "count": 17591
+  },
+  "sqlite_sequence": {
+    "columns": [
+      "name",
+      "seq"
+    ],
+    "count": 3
+  },
+  "image_tags": {
+    "columns": [
+      "id",
+      "image_path",
+      "tag_id",
+      "confidence",
+      "timestamp"
+    ],
+    "count": 106171
+  },
+  "categories": {
+    "columns": [
+      "id",
+      "name",
+      "tag_count"
+    ],
+    "count": 41
+  },
+  "stats": {
+    "columns": [
+      "id",
+      "total_tags",
+      "total_images",
+      "video_tags",
+      "image_tags",
+      "last_updated"
+    ],
+    "count": 1
+  }
+}

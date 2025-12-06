@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaForge AI Chat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .subtitle { color: #8892b0; font-size: 1.1em; }
+        
+        .chat-container {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 18px;
+            border-radius: 15px;
+            max-width: 80%;
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .user-msg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-left: auto;
+            text-align: right;
+        }
+        .ai-msg {
+            background: rgba(255,255,255,0.1);
+            margin-right: auto;
+        }
+        .ai-msg .learned {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.9em;
+        }
+        .likes { color: #4ade80; }
+        .dislikes { color: #f87171; }
+        
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: all 0.3s;
+        }
+        input[type="text"]:focus {
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 20px rgba(0,212,255,0.3);
+        }
+        input::placeholder { color: rgba(255,255,255,0.5); }
+        
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-label { color: #8892b0; margin-top: 5px; }
+        
+        .generate-btn {
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d) !important;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 10px rgba(255,107,107,0.5); }
+            50% { box-shadow: 0 0 25px rgba(255,215,61,0.8); }
+        }
+        
+        .generated-images {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .generated-image {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .generated-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .generated-image img:hover {
+            transform: scale(1.05);
+        }
+        .generating {
+            text-align: center;
+            padding: 40px;
+            color: #ffd93d;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #333;
+            border-top: 4px solid #ffd93d;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .quick-btn {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .quick-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .service-status {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .online { background: #4ade80; }
+        .offline { background: #f87171; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 MediaForge AI Chat</h1>
+            <p class="subtitle">Train the AI with your preferences through natural conversation</p>
+            <div class="service-status" id="serviceStatus">
+                <span><span class="status-dot" id="brainStatus"></span>AI Brain</span>
+                <span><span class="status-dot" id="ratingStatus"></span>Rating Studio</span>
+                <span><span class="status-dot" id="trainingStatus"></span>LoRA Training</span>
+            </div>
+        </header>
+        
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message ai-msg">
+                    <strong>AI Assistant:</strong> Hello! Tell me about your preferences for generated images. 
+                    For example: "I like petite women with blue eyes" or "I don't like large breasts".
+                    I'll learn from your feedback to improve future generations!
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Type your preferences here..." onkeypress="if(event.key==='Enter')sendMessage()">
+                <button onclick="sendMessage()" id="sendBtn">Send</button>
+            </div>
+        </div>
+        
+        <div class="quick-actions">
+            <button class="quick-btn" onclick="quickSend('I like petite body frames')">👍 Petite</button>
+            <button class="quick-btn" onclick="quickSend('I prefer toned abs and athletic build')">💪 Athletic</button>
+            <button class="quick-btn" onclick="quickSend('I like blue or green eyes')">👁️ Light Eyes</button>
+            <button class="quick-btn" onclick="quickSend('I prefer smaller breasts')">📉 Smaller</button>
+            <button class="quick-btn" onclick="quickSend('I do not like saggy or large breasts')">❌ No Large</button>
+            <button class="quick-btn" onclick="generatePrompt()">✨ Generate Prompt</button>
+            <button class="quick-btn generate-btn" onclick="generateImage()">🎨 Generate Image</button>
+        </div>
+        
+        <div id="generatedImages" class="generated-images" style="display:none;">
+            <h3 style="color:#ffd93d;">🖼️ Generated Images</h3>
+            <div id="imageGrid" class="image-grid"></div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="statImages">-</div>
+                <div class="stat-label">Total Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statRated">-</div>
+                <div class="stat-label">Rated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statTags">-</div>
+                <div class="stat-label">Learned Tags</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statChats">-</div>
+                <div class="stat-label">Chat Sessions</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8225';
+        
+        async function checkServices() {
+            // Check AI Brain
+            try {
+                const resp = await fetch(`${API_BASE}/api/stats`);
+                document.getElementById('brainStatus').className = 'status-dot ' + (resp.ok ? 'online' : 'offline');
+                if (resp.ok) {
+                    const data = await resp.json();
+                    document.getElementById('statImages').textContent = data.total_images || 0;
+                    document.getElementById('statRated').textContent = data.rated_images || 0;
+                    document.getElementById('statTags').textContent = data.learned_tags || 0;
+                    document.getElementById('statChats').textContent = data.chat_interactions || 0;
+                }
+            } catch {
+                document.getElementById('brainStatus').className = 'status-dot offline';
+            }
+            
+            // Check Rating Studio
+            try {
+                const resp = await fetch('http://localhost:8196/');
+                document.getElementById('ratingStatus').className = 'status-dot ' + (resp.ok ? 'online' : 'offline');
+            } catch {
+                document.getElementById('ratingStatus').className = 'status-dot offline';
+            }
+            
+            // Check Training
+            try {
+                const resp = await fetch('http://localhost:8230/api/status');
+                document.getElementById('trainingStatus').className = 'status-dot ' + (resp.ok ? 'online' : 'offline');
+            } catch {
+                document.getElementById('trainingStatus').className = 'status-dot offline';
+            }
+        }
+        
+        function addMessage(content, isUser = false, learned = null) {
+            const messages = document.getElementById('messages');
+            const div = document.createElement('div');
+            div.className = 'message ' + (isUser ? 'user-msg' : 'ai-msg');
+            
+            let html = isUser ? content : `<strong>AI:</strong> ${content}`;
+            
+            if (learned) {
+                html += '<div class="learned">';
+                if (learned.likes && learned.likes.length > 0) {
+                    html += `<span class="likes">✓ Learned likes: ${learned.likes.join(', ')}</span><br>`;
+                }
+                if (learned.dislikes && learned.dislikes.length > 0) {
+                    html += `<span class="dislikes">✗ Learned dislikes: ${learned.dislikes.join(', ')}</span>`;
+                }
+                html += '</div>';
+            }
+            
+            div.innerHTML = html;
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('userInput');
+            const message = input.value.trim();
+            if (!message) return;
+            
+            addMessage(message, true);
+            input.value = '';
+            document.getElementById('sendBtn').disabled = true;
+            
+            try {
+                const resp = await fetch(`${API_BASE}/api/learn/chat`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message})
+                });
+                
+                const data = await resp.json();
+                
+                if (data.success) {
+                    const likes = data.learned?.likes || [];
+                    const dislikes = data.learned?.dislikes || [];
+                    const total = likes.length + dislikes.length;
+                    
+                    if (total > 0) {
+                        addMessage(`Got it! I've learned ${total} preference${total > 1 ? 's' : ''} from your message.`, false, data.learned);
+                    } else {
+                        addMessage("I understood your message, but couldn't extract specific preferences. Try being more specific about body features, colors, or styles.", false);
+                    }
+                } else {
+                    addMessage("Sorry, I couldn't process that. Please try again.", false);
+                }
+                
+                checkServices(); // Refresh stats
+            } catch (e) {
+                addMessage("Error connecting to AI service. Make sure it's running on port 8225.", false);
+            }
+            
+            document.getElementById('sendBtn').disabled = false;
+        }
+        
+        function quickSend(message) {
+            document.getElementById('userInput').value = message;
+            sendMessage();
+        }
+        
+        async function generatePrompt() {
+            try {
+                const resp = await fetch(`${API_BASE}/api/suggest`);
+                const data = await resp.json();
+                
+                if (data.suggestions && data.suggestions.length > 0) {
+                    const s = data.suggestions[0];
+                    addMessage(`Here's a generated prompt based on your preferences:\n\n<strong>Positive:</strong> ${s.positive?.substring(0, 300)}...\n\n<strong>Tags used:</strong> ${s.tags_used?.join(', ')}`, false);
+                }
+            } catch {
+                addMessage("Couldn't generate prompt. Make sure the AI Brain service is running.", false);
+            }
+        }
+        
+        async function generateImage() {
+            const imageSection = document.getElementById('generatedImages');
+            const imageGrid = document.getElementById('imageGrid');
+            
+            imageSection.style.display = 'block';
+            imageGrid.innerHTML = '<div class="generating"><div class="spinner"></div>Generating image based on your preferences...</div>';
+            
+            addMessage("🎨 Generating an image based on your learned preferences...", false);
+            
+            try {
+                // First get a prompt from preferences
+                const promptResp = await fetch(`${API_BASE}/api/suggest`);
+                const promptData = await promptResp.json();
+                
+                if (!promptData.suggestions || promptData.suggestions.length === 0) {
+                    imageGrid.innerHTML = '<p style="color:#ff6b6b">No preferences learned yet. Chat with me first!</p>';
+                    return;
+                }
+                
+                const prompt = promptData.suggestions[0];
+                
+                // Send to Rating Studio to generate
+                const genResp = await fetch('http://localhost:8196/api/generate-batch', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        count: 1,
+                        prompt: prompt.positive,
+                        negative: prompt.negative
+                    })
+                });
+                
+                const genData = await genResp.json();
+                
+                if (genData.queued > 0 || genData.success) {
+                    addMessage(`✅ Image generation started! Check the output folder or Rating Studio for your new image.`, false);
+                    imageGrid.innerHTML = `
+                        <div style="text-align:center; padding:20px;">
+                            <p style="color:#44ff44">✅ Image queued for generation!</p>
+                            <p style="color:#888; font-size:0.9em;">Prompt: ${prompt.positive?.substring(0, 100)}...</p>
+                            <p style="margin-top:15px;">
+                                <a href="http://localhost:8196" target="_blank" style="color:#00d4ff;">Open Rating Studio to view</a>
+                            </p>
+                        </div>
+                    `;
+                } else {
+                    imageGrid.innerHTML = '<p style="color:#ff6b6b">Generation failed. Check if ComfyUI is running.</p>';
+                }
+            } catch (e) {
+                console.error(e);
+                imageGrid.innerHTML = `<p style="color:#ff6b6b">Error: ${e.message}. Make sure ComfyUI and Rating Studio are running.</p>`;
+            }
+        }
+        
+        // Initialize
+        checkServices();
+        setInterval(checkServices, 30000);
+    </script>
+</body>
+</html>

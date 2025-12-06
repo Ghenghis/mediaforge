@@ -1,0 +1,544 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-12-04",
+  "description": "Complete Guardrails Index - All Forbidden Terms & Rating Definitions",
+  
+  "global_forbidden_terms": {
+    "count": 25,
+    "description": "Terms that are ALWAYS blocked regardless of rating level or country",
+    "severity": "CRITICAL - Immediate block, logged, flagged",
+    "categories": {
+      "minor_related": {
+        "description": "Any terms suggesting minors in inappropriate contexts",
+        "terms": [
+          "child",
+          "children",
+          "minor",
+          "minors",
+          "underage",
+          "loli",
+          "lolita",
+          "shota",
+          "shotacon",
+          "young girl",
+          "young boy",
+          "little girl",
+          "little boy",
+          "infant",
+          "baby",
+          "toddler",
+          "preteen",
+          "pre-teen",
+          "prepubescent",
+          "pubescent",
+          "juvenile",
+          "kid",
+          "kids",
+          "schoolgirl inappropriate",
+          "schoolboy inappropriate"
+        ],
+        "action": "BLOCK + LOG + FLAG USER"
+      },
+      "illegal_content": {
+        "description": "Terms related to illegal activities",
+        "terms": [
+          "illegal",
+          "abuse",
+          "assault",
+          "rape",
+          "non-consensual",
+          "nonconsensual",
+          "forced",
+          "trafficking",
+          "exploitation",
+          "bestiality",
+          "zoophilia",
+          "necrophilia",
+          "incest",
+          "pedophilia",
+          "pedophile"
+        ],
+        "action": "BLOCK + LOG + FLAG USER + REPORT"
+      },
+      "violence_extreme": {
+        "description": "Extreme violence and gore",
+        "terms": [
+          "snuff",
+          "torture porn",
+          "gore porn",
+          "murder porn",
+          "death porn",
+          "real death",
+          "real violence"
+        ],
+        "action": "BLOCK + LOG"
+      }
+    },
+    "total_unique_terms": 47
+  },
+
+  "ratings_protected": {
+    "count": 22,
+    "description": "Complete 22-level rating system with guardrails",
+    "ratings": {
+      "EL": {
+        "code": "EL",
+        "name": "Early Learning",
+        "age_range": "0-5",
+        "category": "family_safe",
+        "guardrail_level": 1,
+        "clothing_coverage": "100%",
+        "description": "Educational content for young children",
+        "allowed_themes": ["educational", "animals", "nature", "colors", "shapes", "numbers"],
+        "forbidden_themes": ["violence", "scary", "romance", "conflict", "death"],
+        "forbidden_keywords": [
+          "scary", "monster", "death", "kill", "blood", "fight", "weapon",
+          "gun", "knife", "sword", "war", "battle", "hate", "angry",
+          "romance", "love", "kiss", "dating", "boyfriend", "girlfriend",
+          "sexy", "hot", "attractive", "beautiful woman", "handsome man",
+          "alcohol", "beer", "wine", "drunk", "smoke", "cigarette", "drug"
+        ]
+      },
+      "L": {
+        "code": "L",
+        "name": "Little Kids",
+        "age_range": "5-7",
+        "category": "family_safe",
+        "guardrail_level": 1,
+        "clothing_coverage": "100%",
+        "description": "Content for young children with simple stories",
+        "allowed_themes": ["adventure", "friendship", "family", "fantasy light", "humor"],
+        "forbidden_themes": ["violence", "romance", "scary content"],
+        "forbidden_keywords": [
+          "death", "kill", "blood", "gore", "weapon", "gun", "knife",
+          "romance", "kiss", "dating", "love interest", "crush",
+          "sexy", "hot", "revealing", "bikini", "underwear",
+          "alcohol", "drug", "smoke", "drunk"
+        ]
+      },
+      "G": {
+        "code": "G",
+        "name": "General Audience",
+        "age_range": "7-10",
+        "category": "family_safe",
+        "guardrail_level": 1,
+        "clothing_coverage": "95%+",
+        "description": "Family-friendly content for all ages",
+        "allowed_themes": ["adventure", "comedy", "fantasy", "sci-fi light", "mystery light"],
+        "forbidden_themes": ["violence graphic", "romance sexual", "horror"],
+        "forbidden_keywords": [
+          "blood", "gore", "death graphic", "murder", "torture",
+          "sexy", "sexual", "erotic", "sensual", "seductive",
+          "nude", "naked", "topless", "revealing clothing",
+          "alcohol abuse", "drug use", "smoking"
+        ]
+      },
+      "PG": {
+        "code": "PG",
+        "name": "Parental Guidance",
+        "age_range": "10-12",
+        "category": "family_safe",
+        "guardrail_level": 1,
+        "clothing_coverage": "90%+",
+        "description": "May require parental guidance for younger viewers",
+        "allowed_themes": ["action", "adventure", "fantasy", "sci-fi", "mystery", "light romance"],
+        "forbidden_themes": ["graphic violence", "sexual content", "horror intense"],
+        "forbidden_keywords": [
+          "gore", "graphic violence", "brutal", "torture",
+          "nude", "naked", "sexual", "erotic", "sensual",
+          "explicit", "nsfw", "porn", "xxx",
+          "drug abuse", "heavy drinking"
+        ]
+      },
+      "PG-13": {
+        "code": "PG-13",
+        "name": "Parental Guidance 13",
+        "age_range": "13+",
+        "category": "family_safe",
+        "guardrail_level": 2,
+        "clothing_coverage": "85%+",
+        "description": "Some content may be inappropriate for children under 13",
+        "allowed_themes": ["action intense", "romance", "thriller", "horror mild", "drama"],
+        "forbidden_themes": ["graphic violence", "sexual content", "drug use positive"],
+        "forbidden_keywords": [
+          "nude", "naked", "explicit", "sexual intercourse",
+          "graphic gore", "torture detailed", "brutal murder",
+          "porn", "xxx", "nsfw", "erotic",
+          "drug positive", "drug glorification"
+        ]
+      },
+      "NC-14": {
+        "code": "NC-14",
+        "name": "Not for Children 14",
+        "age_range": "14+",
+        "category": "teen",
+        "guardrail_level": 2,
+        "clothing_coverage": "80%+",
+        "description": "Teen content with mild mature themes",
+        "allowed_themes": ["romance teen", "action", "drama", "thriller", "horror"],
+        "forbidden_themes": ["explicit sexual", "graphic violence extreme", "drug glorification"],
+        "forbidden_keywords": [
+          "nude", "naked", "explicit sex", "sexual intercourse",
+          "hardcore", "porn", "xxx", "penetration",
+          "extreme gore", "torture graphic"
+        ]
+      },
+      "NC-15": {
+        "code": "NC-15",
+        "name": "Not for Children 15",
+        "age_range": "15+",
+        "category": "teen",
+        "guardrail_level": 2,
+        "clothing_coverage": "75%+",
+        "description": "Mature teen content",
+        "allowed_themes": ["romance", "action mature", "horror", "drama adult"],
+        "forbidden_themes": ["explicit sexual", "extreme violence", "drug use detailed"],
+        "forbidden_keywords": [
+          "nude full", "explicit sex", "sexual intercourse detailed",
+          "hardcore", "porn", "xxx", "penetration",
+          "extreme gore", "torture detailed"
+        ]
+      },
+      "NC-16": {
+        "code": "NC-16",
+        "name": "Not for Children 16",
+        "age_range": "16+",
+        "category": "teen",
+        "guardrail_level": 3,
+        "clothing_coverage": "70%+",
+        "description": "Older teen content with mature themes",
+        "allowed_themes": ["romance mature", "violence", "horror intense", "drama"],
+        "forbidden_themes": ["explicit sexual graphic", "extreme gore"],
+        "forbidden_keywords": [
+          "explicit sex graphic", "hardcore porn", "xxx",
+          "penetration detailed", "extreme torture"
+        ]
+      },
+      "NC-17": {
+        "code": "NC-17",
+        "name": "Not for Children 17",
+        "age_range": "17+",
+        "category": "teen",
+        "guardrail_level": 3,
+        "clothing_coverage": "60%+",
+        "description": "Adults only (US rating) - strong adult content",
+        "allowed_themes": ["romance adult", "violence graphic", "horror extreme", "drama intense"],
+        "forbidden_themes": ["explicit pornographic", "extreme illegal content"],
+        "forbidden_keywords": [
+          "hardcore pornography", "xxx explicit", "extreme torture porn"
+        ]
+      },
+      "NC-18": {
+        "code": "NC-18",
+        "name": "Not for Children 18",
+        "age_range": "18+",
+        "category": "adult_entry",
+        "guardrail_level": 4,
+        "clothing_coverage": "50%+",
+        "description": "Adult content - legal adult age required",
+        "allowed_themes": ["adult romance", "erotica light", "violence", "horror"],
+        "forbidden_themes": ["hardcore explicit", "extreme content"],
+        "forbidden_keywords": [
+          "hardcore explicit", "xxx graphic", "extreme content"
+        ]
+      },
+      "NC-19": {
+        "code": "NC-19",
+        "name": "Not for Children 19",
+        "age_range": "19+",
+        "category": "adult_entry",
+        "guardrail_level": 4,
+        "clothing_coverage": "40%+",
+        "description": "Adult content for regions with 19+ adult age",
+        "allowed_themes": ["adult content", "erotica", "mature violence"],
+        "forbidden_themes": ["extreme hardcore"],
+        "forbidden_keywords": ["extreme hardcore", "illegal content"]
+      },
+      "NC-20": {
+        "code": "NC-20",
+        "name": "Not for Children 20",
+        "age_range": "20+",
+        "category": "adult_entry",
+        "guardrail_level": 4,
+        "clothing_coverage": "30%+",
+        "description": "Adult content for regions with 20+ adult age",
+        "allowed_themes": ["adult content", "erotica", "mature themes"],
+        "forbidden_themes": ["extreme illegal"],
+        "forbidden_keywords": ["illegal content"]
+      },
+      "SOFT": {
+        "code": "SOFT",
+        "name": "Soft Adult",
+        "age_range": "18+",
+        "category": "adult_soft",
+        "guardrail_level": 5,
+        "clothing_coverage": "25%+",
+        "description": "Soft adult content - artistic nudity, implied intimacy",
+        "allowed_themes": ["artistic nudity", "romance sensual", "implied intimacy"],
+        "forbidden_themes": ["explicit acts", "hardcore"],
+        "forbidden_keywords": ["explicit penetration", "hardcore sex"]
+      },
+      "SOFTCORE": {
+        "code": "SOFTCORE",
+        "name": "Softcore Adult",
+        "age_range": "18+",
+        "category": "adult_soft",
+        "guardrail_level": 5,
+        "clothing_coverage": "15%+",
+        "description": "Softcore adult content - nudity, sensual content",
+        "allowed_themes": ["nudity", "sensual", "erotic art", "intimate scenes"],
+        "forbidden_themes": ["explicit hardcore"],
+        "forbidden_keywords": ["hardcore penetration", "explicit graphic sex"]
+      },
+      "MED": {
+        "code": "MED",
+        "name": "Medium Adult",
+        "age_range": "18+",
+        "category": "adult_soft",
+        "guardrail_level": 5,
+        "clothing_coverage": "10%+",
+        "description": "Medium intensity adult content",
+        "allowed_themes": ["nudity full", "erotic", "sexual situations"],
+        "forbidden_themes": ["extreme hardcore"],
+        "forbidden_keywords": ["extreme hardcore"]
+      },
+      "R": {
+        "code": "R",
+        "name": "Restricted",
+        "age_range": "18+",
+        "category": "adult_soft",
+        "guardrail_level": 5,
+        "clothing_coverage": "5%+",
+        "description": "Restricted adult content",
+        "allowed_themes": ["adult sexual", "explicit nudity", "erotic content"],
+        "forbidden_themes": ["extreme content"],
+        "forbidden_keywords": ["extreme illegal"]
+      },
+      "HARD": {
+        "code": "HARD",
+        "name": "Hard Adult",
+        "age_range": "21+",
+        "category": "adult_explicit",
+        "guardrail_level": 6,
+        "clothing_coverage": "0%+",
+        "description": "Hard adult content - explicit sexual content",
+        "allowed_themes": ["explicit sexual", "pornographic", "hardcore light"],
+        "forbidden_themes": ["extreme illegal"],
+        "forbidden_keywords": ["illegal content"]
+      },
+      "HC": {
+        "code": "HC",
+        "name": "Hardcore",
+        "age_range": "21+",
+        "category": "adult_explicit",
+        "guardrail_level": 6,
+        "clothing_coverage": "0%",
+        "description": "Hardcore adult content",
+        "allowed_themes": ["hardcore", "explicit", "pornographic"],
+        "forbidden_themes": ["illegal"],
+        "forbidden_keywords": ["illegal"]
+      },
+      "X": {
+        "code": "X",
+        "name": "X-Rated",
+        "age_range": "21+",
+        "category": "adult_explicit",
+        "guardrail_level": 6,
+        "clothing_coverage": "0%",
+        "description": "X-rated explicit content",
+        "allowed_themes": ["explicit sexual", "pornographic", "adult entertainment"],
+        "forbidden_themes": ["illegal content"],
+        "forbidden_keywords": ["illegal"]
+      },
+      "XXX": {
+        "code": "XXX",
+        "name": "Triple X",
+        "age_range": "21+",
+        "category": "adult_explicit",
+        "guardrail_level": 6,
+        "clothing_coverage": "0%",
+        "description": "XXX explicit adult content",
+        "allowed_themes": ["hardcore explicit", "pornographic", "graphic sexual"],
+        "forbidden_themes": ["illegal"],
+        "forbidden_keywords": ["illegal"]
+      },
+      "EXTREME": {
+        "code": "EXTREME",
+        "name": "Extreme Adult",
+        "age_range": "21+",
+        "category": "adult_explicit",
+        "guardrail_level": 6,
+        "clothing_coverage": "0%",
+        "description": "Maximum adult content - all legal content allowed",
+        "allowed_themes": ["all legal adult content"],
+        "forbidden_themes": ["illegal only"],
+        "forbidden_keywords": ["illegal only - global forbidden still applies"]
+      }
+    }
+  },
+
+  "rating_categories": {
+    "family_safe": {
+      "ratings": ["EL", "L", "G", "PG", "PG-13"],
+      "description": "Content safe for families and children",
+      "guardrail_level": "1-2",
+      "requires_verification": false,
+      "forbidden_content": [
+        "nudity", "sexual content", "explicit violence", "drug use",
+        "strong language", "adult themes"
+      ]
+    },
+    "teen": {
+      "ratings": ["NC-14", "NC-15", "NC-16", "NC-17"],
+      "description": "Content for teenagers with parental awareness",
+      "guardrail_level": "2-3",
+      "requires_verification": false,
+      "forbidden_content": [
+        "explicit nudity", "sexual acts", "extreme violence",
+        "drug glorification"
+      ]
+    },
+    "adult_entry": {
+      "ratings": ["NC-18", "NC-19", "NC-20"],
+      "description": "Entry-level adult content requiring age verification",
+      "guardrail_level": "4",
+      "requires_verification": true,
+      "forbidden_content": [
+        "hardcore explicit", "extreme content"
+      ]
+    },
+    "adult_soft": {
+      "ratings": ["SOFT", "SOFTCORE", "MED", "R"],
+      "description": "Soft adult content with nudity and sensual themes",
+      "guardrail_level": "5",
+      "requires_verification": true,
+      "forbidden_content": [
+        "extreme hardcore"
+      ]
+    },
+    "adult_explicit": {
+      "ratings": ["HARD", "HC", "X", "XXX", "EXTREME"],
+      "description": "Explicit adult content - maximum restrictions lifted",
+      "guardrail_level": "6",
+      "requires_verification": true,
+      "requires_restriction_release": true,
+      "forbidden_content": [
+        "illegal content only - global forbidden always applies"
+      ]
+    }
+  },
+
+  "guardrail_levels": {
+    "1": {
+      "name": "Maximum Protection",
+      "description": "Strictest filtering for children's content",
+      "auto_sanitize": true,
+      "block_on_violation": true,
+      "log_all_attempts": true
+    },
+    "2": {
+      "name": "Family Protection",
+      "description": "Strong filtering for family content",
+      "auto_sanitize": true,
+      "block_on_violation": true,
+      "log_violations": true
+    },
+    "3": {
+      "name": "Teen Protection",
+      "description": "Moderate filtering for teen content",
+      "auto_sanitize": true,
+      "block_explicit": true,
+      "log_violations": true
+    },
+    "4": {
+      "name": "Adult Entry",
+      "description": "Light filtering, age verification required",
+      "auto_sanitize": false,
+      "block_extreme": true,
+      "requires_verification": true
+    },
+    "5": {
+      "name": "Adult Soft",
+      "description": "Minimal filtering for adult soft content",
+      "auto_sanitize": false,
+      "block_illegal_only": true,
+      "requires_verification": true
+    },
+    "6": {
+      "name": "Adult Explicit",
+      "description": "No filtering except global forbidden",
+      "auto_sanitize": false,
+      "block_illegal_only": true,
+      "requires_restriction_release": true
+    }
+  },
+
+  "auto_correction_dictionary": {
+    "description": "Terms automatically replaced when detected in restricted ratings",
+    "replacements": {
+      "nude": "clothed",
+      "naked": "dressed",
+      "explicit": "tasteful",
+      "sexual": "romantic",
+      "erotic": "elegant",
+      "nsfw": "artistic",
+      "revealing": "stylish",
+      "seductive": "confident",
+      "provocative": "bold",
+      "sensual": "graceful",
+      "suggestive": "subtle",
+      "risque": "daring",
+      "topless": "covered",
+      "bottomless": "dressed",
+      "lingerie": "sleepwear",
+      "underwear": "loungewear",
+      "bikini": "swimwear modest",
+      "thong": "swimwear",
+      "g-string": "swimwear",
+      "cleavage": "neckline",
+      "busty": "figure",
+      "voluptuous": "elegant figure",
+      "curvy": "shapely"
+    }
+  },
+
+  "country_restriction_matrix": {
+    "description": "How ratings map to country restrictions",
+    "explicit_banned_countries_max_rating": "NC-18",
+    "strict_censorship_countries_max_rating": "PG-13",
+    "age_21_countries_max_unrestricted": "R",
+    "standard_countries_max_unrestricted": "EXTREME"
+  },
+
+  "ui_settings": {
+    "about_dropdown": {
+      "show_forbidden_terms_count": true,
+      "show_ratings_count": true,
+      "show_countries_count": true,
+      "allow_details_view": true
+    },
+    "settings_wheel": {
+      "sections": [
+        {
+          "name": "Content Protection",
+          "items": [
+            "Global Forbidden Terms: 47 unique terms",
+            "Ratings Protected: 22 levels",
+            "Countries Supported: 197",
+            "Guardrail Levels: 6"
+          ]
+        },
+        {
+          "name": "Categories",
+          "items": [
+            "Family Safe: 5 ratings (EL, L, G, PG, PG-13)",
+            "Teen: 4 ratings (NC-14, NC-15, NC-16, NC-17)",
+            "Adult Entry: 3 ratings (NC-18, NC-19, NC-20)",
+            "Adult Soft: 4 ratings (SOFT, SOFTCORE, MED, R)",
+            "Adult Explicit: 5 ratings (HARD, HC, X, XXX, EXTREME)"
+          ]
+        }
+      ]
+    }
+  }
+}

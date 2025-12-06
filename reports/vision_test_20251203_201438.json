@@ -1,0 +1,15 @@
+{
+  "model": "lfm2-vl-1.6b",
+  "timestamp": "2025-12-03T20:14:38.033922",
+  "results": [
+    {
+      "success": true,
+      "content": "This image depicts a charming koala bear engaged in an artistic activity. The koala is perched on a log, surrounded by an array of flowers and leaves. Its large, expressive eyes are wide open, conveying a sense of wonder and curiosity as it gazes at the viewer.\n\nThe koala's fur is depicted with soft, fluffy textures, giving it a cuddly appearance. Its ears are large and floppy, adding to its endearing look. The koala's paws are visible, showing its unique claw-like structure.\n\nThe setting appears to be outdoors, possibly in a forest or wooded area. The environment is filled with various plants and flowers, creating a vibrant and lively atmosphere. The lighting seems natural, suggesting it's daytime.\n\nThe art style is cartoonish and whimsical, with bold outlines and simplified shapes. This style enhances the playful nature of the koala's pose and expression. The image has a cheerful and inviting mood, making it an appealing subject for coloring activities.\n\nNotable details include the koala's small nose and the intricate patterns on its paws. The surrounding flora is also well-detailed, with various flower types and leaf shapes adding depth to the scene. Overall, the image combines a cute animal subject with a rich, natural environment, creating an engaging and visually pleasing composition.",
+      "elapsed_seconds": 51.23,
+      "prompt_tokens": 63,
+      "completion_tokens": 278,
+      "tokens_per_second": 5.4,
+      "image": "Captura de pantalla 2025-04-23 214035.png"
+    }
+  ]
+}

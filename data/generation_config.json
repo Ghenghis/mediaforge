@@ -1,0 +1,61 @@
+{
+  "body_types": {
+    "frame": ["petite", "small frame", "medium frame", "tall", "athletic build", "slim", "slender", "delicate"],
+    "build": ["skinny", "slim", "toned", "athletic", "fit", "lean", "lithe", "muscular", "well-built"],
+    "muscle_tone": ["soft", "slightly toned", "toned", "defined muscles", "visible abs", "six pack", "ripped", "extremely toned", "bodybuilder"]
+  },
+  "face_types": {
+    "shape": ["oval face", "round face", "heart shaped face", "square jaw", "diamond face", "oblong face", "angular face"],
+    "features": ["high cheekbones", "soft features", "sharp features", "defined jawline", "delicate features", "strong features", "feminine features"],
+    "expressions": ["neutral", "slight smile", "smirking", "serious", "fierce", "confident", "mysterious", "intense", "seductive gaze", "playful"]
+  },
+  "eye_types": {
+    "color": ["blue eyes", "green eyes", "brown eyes", "hazel eyes", "amber eyes", "gray eyes", "violet eyes", "golden eyes"],
+    "special": ["heterochromia", "cat eyes", "almond eyes", "big eyes", "narrow eyes", "piercing eyes", "doe eyes"],
+    "details": ["detailed iris", "reflective eyes", "expressive eyes", "long eyelashes", "sharp eyes"]
+  },
+  "hair_types": {
+    "length": ["short hair", "medium hair", "long hair", "very long hair", "pixie cut", "shoulder length", "waist length"],
+    "style": ["straight hair", "wavy hair", "curly hair", "braided", "ponytail", "bun", "loose", "messy hair", "styled hair"],
+    "color": ["black hair", "brown hair", "blonde hair", "red hair", "white hair", "silver hair", "blue hair", "green hair", "pink hair", "purple hair", "multicolored hair"]
+  },
+  "skin_types": {
+    "tone": ["pale skin", "fair skin", "light skin", "olive skin", "tan skin", "caramel skin", "brown skin", "dark skin", "ebony skin"],
+    "texture": ["smooth skin", "realistic skin", "detailed skin", "skin pores", "freckles", "beauty marks", "flawless skin"]
+  },
+  "bust_sizes": {
+    "sizes": ["flat chest", "AAA cup", "AA cup", "A cup", "B cup", "C cup", "D cup"],
+    "descriptors": ["petite bust", "small bust", "modest bust", "average bust", "full bust"]
+  },
+  "poses": {
+    "standing": ["standing", "standing tall", "hands on hips", "arms crossed", "one hand raised", "leaning"],
+    "sitting": ["sitting", "kneeling", "crouching", "seated elegantly"],
+    "dynamic": ["walking", "running", "jumping", "action pose", "fighting stance", "dancing"],
+    "angles": ["facing viewer", "profile view", "three quarter view", "from behind", "looking over shoulder", "looking up", "looking down"]
+  },
+  "lighting": {
+    "type": ["natural lighting", "studio lighting", "dramatic lighting", "soft lighting", "harsh lighting", "rim lighting"],
+    "mood": ["golden hour", "blue hour", "moonlight", "firelight", "neon lighting", "candlelight"],
+    "direction": ["front lit", "back lit", "side lighting", "top lighting", "underlighting"]
+  },
+  "backgrounds": {
+    "nature": ["forest", "beach", "mountains", "desert", "jungle", "waterfall", "meadow", "cave"],
+    "urban": ["city", "alley", "rooftop", "street", "abandoned building", "neon city"],
+    "indoor": ["studio", "bedroom", "bathroom", "living room", "throne room", "temple"],
+    "abstract": ["plain background", "gradient background", "dark background", "white background", "bokeh background"]
+  },
+  "styles": {
+    "photography": ["photorealistic", "RAW photo", "DSLR", "portrait photography", "fashion photography", "editorial"],
+    "artistic": ["cinematic", "dramatic", "moody", "ethereal", "dark fantasy", "high fantasy"]
+  },
+  "tribal_specific": {
+    "face_paint": ["geometric face paint", "war paint", "tribal markings", "ceremonial paint", "shamanic symbols"],
+    "body_paint": ["tribal body paint", "geometric patterns", "war markings", "ritual symbols"],
+    "colors": ["red paint", "black paint", "white paint", "earth tones", "bold colors"],
+    "accessories": ["feather headdress", "bone jewelry", "tribal necklace", "arm bands", "feathers", "leather accessories"]
+  },
+  "quality_tags": {
+    "positive": ["masterpiece", "best quality", "ultra detailed", "8k resolution", "high detail", "sharp focus", "professional"],
+    "negative_always": ["low quality", "worst quality", "blurry", "watermark", "text", "bad anatomy", "deformed"]
+  }
+}

@@ -1,0 +1,232 @@
+# ============================================================
+# LORAFORGE - GLOBAL CONFIGURATION
+# Vision-to-Model Training Pipeline
+# ============================================================
+
+project:
+  name: "LoRAForge"
+  version: "1.0.0"
+  description: "Video to LoRA Model Training Pipeline"
+
+# ============================================================
+# PATH CONFIGURATION
+# ============================================================
+paths:
+  # Source data
+  video_source: "G:/Downloads/Vid"
+  
+  # Training data outputs
+  training_root: "C:/Users/Admin/civitai/training"
+  video_approved: "C:/Users/Admin/civitai/training/video_approved"
+  video_rejected: "C:/Users/Admin/civitai/training/video_rejected"
+  video_frames: "C:/Users/Admin/civitai/training/video_frames"
+  
+  # Model outputs
+  models_output: "C:/Users/Admin/civitai/models_output"
+  
+  # Logs and reports
+  logs: "C:/Users/Admin/civitai/logs"
+  reports: "C:/Users/Admin/civitai/reports"
+  
+  # Evaluation
+  evaluation: "C:/Users/Admin/civitai/evaluation"
+
+# ============================================================
+# HARDWARE CONFIGURATION
+# ============================================================
+hardware:
+  gpu:
+    device: "cuda:0"
+    vram_gb: 24  # RTX 3090 Ti
+    enable_xformers: true
+  
+  cpu:
+    num_workers: 8
+    parallel_processing: true
+
+# ============================================================
+# VISION MODEL CONFIGURATION
+# ============================================================
+vision_model:
+  # Primary: LM Studio (uncensored, fast)
+  primary:
+    provider: "lmstudio"
+    url: "http://localhost:1234/v1"
+    model: "qwen3-vl-8b-abliterated-caption-it"
+    timeout_seconds: 60
+  
+  # Fallback: Ollama
+  fallback:
+    provider: "ollama"
+    url: "http://localhost:11434"
+    model: "llava-llama3"
+    timeout_seconds: 120
+
+# ============================================================
+# VIDEO FILTERING CRITERIA
+# ============================================================
+filtering:
+  # Gender filter
+  gender:
+    required: "female"
+    exclude: ["male", "trans"]
+  
+  # Body type filter
+  body_type:
+    exclude: ["heavy", "obese", "overweight", "bbw"]
+  
+  # Quality thresholds (1-10 scale)
+  quality:
+    min_score: 4
+    prefer_score: 7
+  
+  # Attractiveness thresholds (1-10 scale)
+  attractiveness:
+    min_score: 4
+    prefer_score: 7
+  
+  # Frame extraction
+  frame_extraction:
+    frames_per_video: 3
+    positions: [0.25, 0.50, 0.75]  # 25%, 50%, 75%
+    min_resolution: [640, 480]
+  
+  # Frame quality
+  frame_quality:
+    blur_threshold: 100
+    brightness_range: [30, 220]
+
+# ============================================================
+# TRAINING CONFIGURATION
+# ============================================================
+training:
+  # Base model
+  base_model: "stable-diffusion-xl"
+  base_model_path: "C:/Users/Admin/civitai/checkpoints/sd_xl_base_1.0.safetensors"
+  
+  # Version configurations
+  versions:
+    bronze:
+      name: "Bronze"
+      version: "v1.0"
+      description: "Foundation model from video frames"
+      data_source: "video_frames"
+      min_rating: 0
+      lora_rank: 32
+      learning_rate: 0.0001
+      steps: 2000
+      batch_size: 4
+      
+    silver:
+      name: "Silver"
+      version: "v2.0"
+      description: "Refined with user-rated images"
+      data_source: "user_rated"
+      min_rating: 7
+      lora_rank: 64
+      learning_rate: 0.00005
+      steps: 1000
+      batch_size: 4
+      base_model: "bronze"  # Fine-tune from Bronze
+      
+    gold:
+      name: "Gold"
+      version: "v3.0"
+      description: "Polished with error corrections"
+      data_source: "error_corrections"
+      min_rating: 10
+      lora_rank: 64
+      learning_rate: 0.00003
+      steps: 500
+      batch_size: 2
+      base_model: "silver"  # Fine-tune from Silver
+      
+    platinum:
+      name: "Platinum"
+      version: "v4.0"
+      description: "Ultimate model - best of all + anti-failure"
+      data_sources:
+        - source: "bronze"
+          filter: "top_20_percent"
+        - source: "silver"
+          filter: "top_15_percent"
+        - source: "gold"
+          filter: "top_10_percent"
+        - source: "all_failures"
+          type: "negative"  # Anti-failure training
+      lora_rank: 128
+      learning_rate: 0.00001
+      steps: 1500
+      batch_size: 4
+      base_model: "gold"
+
+# ============================================================
+# EVALUATION CONFIGURATION
+# ============================================================
+evaluation:
+  metrics:
+    aesthetic:
+      weight: 0.25
+      model: "laion_aesthetic_predictor"
+    prompt_adherence:
+      weight: 0.15
+      model: "clip_vit_l_14"
+    technical_quality:
+      weight: 0.20
+      checks: ["artifacts", "sharpness", "detail"]
+    consistency:
+      weight: 0.10
+      model: "clip_similarity"
+    user_preference:
+      weight: 0.20
+    failure_rate:
+      weight: 0.10
+  
+  # Grading scale
+  grades:
+    "S+": { min_score: 9.0 }
+    "S":  { min_score: 8.5 }
+    "A+": { min_score: 8.0 }
+    "A":  { min_score: 7.5 }
+    "A-": { min_score: 7.0 }
+    "B+": { min_score: 6.5 }
+    "B":  { min_score: 6.0 }
+    "B-": { min_score: 5.5 }
+    "C":  { min_score: 5.0 }
+    "D":  { min_score: 0.0 }
+  
+  # Quality gates for Platinum
+  platinum_gates:
+    min_aesthetic_score: 8.5
+    max_failure_rate: 5
+    min_user_rating: 8.0
+
+# ============================================================
+# DASHBOARD API CONFIGURATION
+# ============================================================
+dashboard:
+  api:
+    host: "0.0.0.0"
+    port: 8500
+  websocket:
+    path: "/ws/live"
+  refresh_interval_seconds: 5
+
+# ============================================================
+# LOGGING CONFIGURATION
+# ============================================================
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+  save_to_file: true
+  console_output: true
+  max_log_files: 10
+  max_log_size_mb: 50
+
+# ============================================================
+# SAFETY CONFIGURATION
+# ============================================================
+safety:
+  backup_before_delete: true
+  require_confirmation: false  # Automation friendly
+  max_file_size_mb: 500

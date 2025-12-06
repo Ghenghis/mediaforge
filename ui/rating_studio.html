@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaForge Rating Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2em;
+            background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stats-bar {
+            display: flex;
+            gap: 30px;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.5em; font-weight: bold; color: #ffd93d; }
+        .stat-label { font-size: 0.8em; color: #888; }
+        
+        .main-content { display: flex; gap: 30px; }
+        
+        .image-panel {
+            flex: 2;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #000;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .no-image {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .image-info {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        .image-path { font-size: 0.9em; color: #888; word-break: break-all; }
+        
+        .rating-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .rating-section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #ffd93d;
+        }
+        
+        .rating-buttons {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+        .rating-btn {
+            padding: 15px 5px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .rating-btn:hover { transform: scale(1.1); }
+        .rating-btn.low { background: linear-gradient(135deg, #ff4444, #cc0000); color: #fff; }
+        .rating-btn.mid { background: linear-gradient(135deg, #ffaa00, #ff8800); color: #000; }
+        .rating-btn.high { background: linear-gradient(135deg, #44ff44, #00cc00); color: #000; }
+        .rating-btn.gold { background: linear-gradient(135deg, #ffd700, #ffaa00); color: #000; }
+        .rating-btn.platinum { background: linear-gradient(135deg, #e5e4e2, #a8a8a8); color: #000; }
+        .rating-btn.selected { box-shadow: 0 0 20px currentColor; transform: scale(1.15); }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .nav-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .nav-btn.prev { background: #444; color: #fff; }
+        .nav-btn.next { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+        .nav-btn.skip { background: #333; color: #888; }
+        .nav-btn:hover { transform: translateY(-2px); }
+        
+        .folder-section input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .folder-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .tier-legend {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            font-size: 0.85em;
+        }
+        .tier { text-align: center; }
+        .tier-name { font-weight: bold; }
+        .tier-range { color: #888; }
+        
+        .keyboard-hint {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        .keyboard-hint kbd {
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin: 0 3px;
+        }
+        
+        .queue-info {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .queue-count { font-size: 2em; color: #00d4ff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⭐ Rating Studio</h1>
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value" id="totalRated">0</div>
+                    <div class="stat-label">Rated</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="avgRating">0</div>
+                    <div class="stat-label">Avg Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="goldCount">0</div>
+                    <div class="stat-label">Gold (10+)</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="image-panel">
+                <div class="image-container" id="imageContainer">
+                    <div class="no-image">Select a folder to start rating</div>
+                </div>
+                <div class="image-info">
+                    <div class="image-path" id="imagePath">No image loaded</div>
+                    <div id="imageIndex" style="margin-top:10px; color:#666;">- / -</div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-btn prev" onclick="prevImage()">← Previous</button>
+                    <button class="nav-btn skip" onclick="skipImage()">Skip</button>
+                    <button class="nav-btn next" onclick="nextImage()">Next →</button>
+                </div>
+            </div>
+            
+            <div class="rating-panel">
+                <div class="rating-section folder-section">
+                    <div class="section-title">📁 Image Folder</div>
+                    <input type="text" id="folderPath" placeholder="Enter folder path..." value="c:\Users\Admin\civitai\training\datasets\15_mystyle">
+                    <button class="folder-btn" onclick="loadFolder()">Load Images</button>
+                    <div class="queue-info" style="margin-top:15px;">
+                        <span>Queue: </span><span class="queue-count" id="queueCount">0</span>
+                    </div>
+                </div>
+                
+                <div class="rating-section">
+                    <div class="section-title">🎯 Rate This Image</div>
+                    <div class="rating-buttons">
+                        <button class="rating-btn low" onclick="rate(1)">1</button>
+                        <button class="rating-btn low" onclick="rate(2)">2</button>
+                        <button class="rating-btn low" onclick="rate(3)">3</button>
+                        <button class="rating-btn mid" onclick="rate(4)">4</button>
+                        <button class="rating-btn mid" onclick="rate(5)">5</button>
+                        <button class="rating-btn mid" onclick="rate(6)">6</button>
+                        <button class="rating-btn mid" onclick="rate(7)">7</button>
+                        <button class="rating-btn high" onclick="rate(8)">8</button>
+                        <button class="rating-btn high" onclick="rate(9)">9</button>
+                        <button class="rating-btn gold" onclick="rate(10)">10</button>
+                        <button class="rating-btn gold" onclick="rate(11)">11</button>
+                        <button class="rating-btn gold" onclick="rate(12)">12</button>
+                        <button class="rating-btn platinum" onclick="rate(13)">13</button>
+                        <button class="rating-btn platinum" onclick="rate(14)">14</button>
+                        <button class="rating-btn platinum" onclick="rate(15)">15</button>
+                    </div>
+                </div>
+                
+                <div class="tier-legend">
+                    <div class="tier"><div class="tier-name" style="color:#ff4444">Bronze</div><div class="tier-range">1-6</div></div>
+                    <div class="tier"><div class="tier-name" style="color:#ffaa00">Silver</div><div class="tier-range">7-9</div></div>
+                    <div class="tier"><div class="tier-name" style="color:#ffd700">Gold</div><div class="tier-range">10-12</div></div>
+                    <div class="tier"><div class="tier-name" style="color:#e5e4e2">Platinum</div><div class="tier-range">13-15</div></div>
+                </div>
+                
+                <div class="keyboard-hint">
+                    <strong>Keyboard:</strong> <kbd>1-9</kbd> <kbd>0</kbd>=10 <kbd>-</kbd>=11-15<br>
+                    <kbd>←</kbd> <kbd>→</kbd> Navigate | <kbd>Space</kbd> Skip
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API = 'http://localhost:8196';
+        let images = [];
+        let currentIndex = 0;
+        
+        async function loadFolder() {
+            const folder = document.getElementById('folderPath').value;
+            if (!folder) return;
+            
+            try {
+                // For local files, we'll scan the folder via API
+                const resp = await fetch(`${API}/api/scan?folder=${encodeURIComponent(folder)}`);
+                const data = await resp.json();
+                
+                if (data.images && data.images.length > 0) {
+                    images = data.images;
+                    currentIndex = 0;
+                    document.getElementById('queueCount').textContent = images.length;
+                    showImage();
+                    loadStats();
+                } else {
+                    // Fallback: try to load directly
+                    alert('Could not load images. Make sure the Rating Studio API supports folder scanning.');
+                }
+            } catch (e) {
+                console.error(e);
+                alert('Error loading folder. Check if Rating Studio is running on port 8196.');
+            }
+        }
+        
+        function showImage() {
+            if (images.length === 0) return;
+            
+            const img = images[currentIndex];
+            const container = document.getElementById('imageContainer');
+            const path = typeof img === 'string' ? img : img.path;
+            
+            // For local files, use file:// protocol
+            container.innerHTML = `<img src="file:///${path.replace(/\\/g, '/')}" onerror="this.src=''; this.alt='Cannot load image'">`;
+            document.getElementById('imagePath').textContent = path;
+            document.getElementById('imageIndex').textContent = `${currentIndex + 1} / ${images.length}`;
+        }
+        
+        async function rate(rating) {
+            if (images.length === 0) return;
+            
+            const img = images[currentIndex];
+            const path = typeof img === 'string' ? img : img.path;
+            
+            // Highlight selected button
+            document.querySelectorAll('.rating-btn').forEach(b => b.classList.remove('selected'));
+            event.target.classList.add('selected');
+            
+            try {
+                await fetch(`${API}/api/rate`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        image_path: path,
+                        rating: rating,
+                        filename: path.split(/[/\\]/).pop()
+                    })
+                });
+                
+                // Auto-advance
+                setTimeout(() => {
+                    nextImage();
+                    loadStats();
+                }, 300);
+            } catch (e) {
+                console.error('Rating failed:', e);
+            }
+        }
+        
+        function nextImage() {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                showImage();
+                document.querySelectorAll('.rating-btn').forEach(b => b.classList.remove('selected'));
+            }
+        }
+        
+        function prevImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage();
+            }
+        }
+        
+        function skipImage() {
+            nextImage();
+        }
+        
+        async function loadStats() {
+            try {
+                const resp = await fetch(`${API}/api/stats`);
+                const data = await resp.json();
+                document.getElementById('totalRated').textContent = data.total_rated || data.rated_count || 0;
+                document.getElementById('avgRating').textContent = (data.avg_rating || 0).toFixed(1);
+                document.getElementById('goldCount').textContent = data.gold_count || 0;
+            } catch (e) {
+                console.log('Stats not available');
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT') return;
+            
+            if (e.key >= '1' && e.key <= '9') {
+                rate(parseInt(e.key));
+            } else if (e.key === '0') {
+                rate(10);
+            } else if (e.key === '-') {
+                rate(11);
+            } else if (e.key === '=') {
+                rate(12);
+            } else if (e.key === 'ArrowRight') {
+                nextImage();
+            } else if (e.key === 'ArrowLeft') {
+                prevImage();
+            } else if (e.key === ' ') {
+                e.preventDefault();
+                skipImage();
+            }
+        });
+        
+        // Initial load
+        loadStats();
+    </script>
+</body>
+</html>

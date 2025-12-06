@@ -1,0 +1,128 @@
+{
+  "timestamp": "2025-12-03T12:23:37.625943",
+  "scores": {
+    "LoRAForge": 25.0,
+    "anime-lora-pipeline": 14.5,
+    "ai-image-dataset-pipeline": 2.5,
+    "LoRA-Dataset-Automaker": 5.5,
+    "kohya-colab": 3.5
+  },
+  "winner": "LoRAForge",
+  "feature_comparison": {
+    "LoRAForge": {
+      "total_features": 20,
+      "features": {
+        "video_to_lora_pipeline": true,
+        "uncensored_vision_ai": true,
+        "multi_version_training": true,
+        "model_evaluation_metrics": true,
+        "clip_scoring": true,
+        "image_deduplication": true,
+        "quality_filtering": true,
+        "real_time_dashboard": true,
+        "anti_failure_training": true,
+        "config_driven": true,
+        "stage_pipeline": true,
+        "local_only": true,
+        "nsfw_support": true,
+        "free_no_api_costs": true,
+        "scene_detection": true,
+        "auto_captioning_wd14": true,
+        "auto_captioning_lmstudio": true,
+        "character_clustering": true,
+        "model_comparison_charts": true,
+        "pca_visualization": true
+      }
+    },
+    "anime-lora-pipeline": {
+      "total_features": 13,
+      "features": {
+        "video_to_lora_pipeline": true,
+        "uncensored_vision_ai": false,
+        "multi_version_training": false,
+        "model_evaluation_metrics": true,
+        "clip_scoring": true,
+        "image_deduplication": true,
+        "quality_filtering": true,
+        "real_time_dashboard": false,
+        "anti_failure_training": false,
+        "config_driven": true,
+        "stage_pipeline": true,
+        "local_only": false,
+        "nsfw_support": false,
+        "free_no_api_costs": true,
+        "scene_detection": true,
+        "auto_captioning_wd14": true,
+        "auto_captioning_lmstudio": false,
+        "character_clustering": true,
+        "model_comparison_charts": true,
+        "pca_visualization": true
+      }
+    },
+    "ai-image-dataset-pipeline": {
+      "total_features": 3,
+      "features": {
+        "video_to_lora_pipeline": false,
+        "uncensored_vision_ai": false,
+        "multi_version_training": false,
+        "model_evaluation_metrics": false,
+        "clip_scoring": false,
+        "image_deduplication": false,
+        "quality_filtering": true,
+        "real_time_dashboard": false,
+        "anti_failure_training": false,
+        "config_driven": true,
+        "stage_pipeline": true,
+        "local_only": false,
+        "nsfw_support": false,
+        "free_no_api_costs": false
+      }
+    },
+    "LoRA-Dataset-Automaker": {
+      "total_features": 5,
+      "features": {
+        "video_to_lora_pipeline": false,
+        "uncensored_vision_ai": false,
+        "multi_version_training": false,
+        "model_evaluation_metrics": false,
+        "clip_scoring": true,
+        "image_deduplication": true,
+        "quality_filtering": true,
+        "real_time_dashboard": false,
+        "anti_failure_training": false,
+        "config_driven": false,
+        "stage_pipeline": false,
+        "local_only": true,
+        "nsfw_support": false,
+        "free_no_api_costs": true
+      }
+    },
+    "kohya-colab": {
+      "total_features": 3,
+      "features": {
+        "video_to_lora_pipeline": false,
+        "uncensored_vision_ai": false,
+        "multi_version_training": false,
+        "model_evaluation_metrics": false,
+        "clip_scoring": false,
+        "image_deduplication": false,
+        "quality_filtering": false,
+        "real_time_dashboard": false,
+        "anti_failure_training": false,
+        "config_driven": true,
+        "stage_pipeline": false,
+        "local_only": false,
+        "nsfw_support": true,
+        "free_no_api_costs": true
+      }
+    }
+  },
+  "our_benchmarks": [],
+  "unique_advantages": [
+    "uncensored_vision_ai",
+    "multi_version_training",
+    "real_time_dashboard",
+    "anti_failure_training",
+    "auto_captioning_lmstudio"
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "catalog_version": "2.0",
+  "description": "Complete Models/Actors Catalog for All Story Types",
+  "updated": "2024-12-04",
+  
+  "content_modes": {
+    "family_safe": {
+      "id": "FAMILY",
+      "name": "Family Safe Mode",
+      "description": "All ages appropriate, fully modest",
+      "ratings_allowed": ["EL", "L", "PG", "PG13", "PG17"],
+      "restrictions": "STRICT",
+      "age_groups_allowed": ["child", "teen", "young_adult", "adult", "elder"],
+      "grey_areas": []
+    },
+    "mature": {
+      "id": "MATURE",
+      "name": "Mature Mode",
+      "description": "18+ content, artistic and tasteful",
+      "ratings_allowed": ["SOFT", "MED", "R"],
+      "restrictions": "MODERATE",
+      "age_groups_allowed": ["adult", "elder"],
+      "grey_areas": ["transparent_clothing", "artistic_nudity", "sensual_poses"]
+    },
+    "adult": {
+      "id": "ADULT",
+      "name": "Adult Mode (21+)",
+      "description": "Unrestricted adult content",
+      "ratings_allowed": ["HARD", "HC", "X", "XXX"],
+      "restrictions": "NONE",
+      "age_groups_allowed": ["adult"],
+      "grey_areas": ["explicit_content", "fetish_themes"]
+    }
+  },
+  
+  "age_groups": {
+    "child": {
+      "code": "CHILD",
+      "age_range": "0-12",
+      "label": "Child",
+      "allowed_modes": ["FAMILY"],
+      "absolute_restrictions": [
+        "ALWAYS fully clothed",
+        "NO adult themes",
+        "NO suggestive content",
+        "NO revealing attire",
+        "Family-appropriate poses only"
+      ],
+      "grey_areas": []
+    },
+    "teen": {
+      "code": "TEEN",
+      "age_range": "13-17",
+      "label": "Teenager",
+      "allowed_modes": ["FAMILY"],
+      "absolute_restrictions": [
+        "ALWAYS age-appropriate clothing",
+        "NO adult themes",
+        "NO revealing attire",
+        "School/casual appropriate only"
+      ],
+      "grey_areas": []
+    },
+    "young_adult": {
+      "code": "YOUNG_ADULT",
+      "age_range": "18-25",
+      "label": "Young Adult",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "restrictions_by_mode": {
+        "FAMILY": "Modest attire, family poses",
+        "MATURE": "Artistic content allowed",
+        "ADULT": "Unrestricted (21+ verified)"
+      },
+      "grey_areas": ["age_verification_required_for_adult"]
+    },
+    "adult": {
+      "code": "ADULT",
+      "age_range": "26-55",
+      "label": "Adult",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "restrictions_by_mode": {
+        "FAMILY": "Modest attire",
+        "MATURE": "Artistic freedom",
+        "ADULT": "Unrestricted"
+      },
+      "grey_areas": []
+    },
+    "elder": {
+      "code": "ELDER",
+      "age_range": "55+",
+      "label": "Elder",
+      "allowed_modes": ["FAMILY", "MATURE"],
+      "restrictions_by_mode": {
+        "FAMILY": "Dignified, respectful",
+        "MATURE": "Tasteful only"
+      },
+      "grey_areas": []
+    }
+  },
+  
+  "grey_areas": {
+    "definition": "Content that falls between clearly defined categories and requires careful handling",
+    "categories": {
+      "clothing_transparency": {
+        "id": "GREY_CLOTHING",
+        "name": "Clothing Transparency",
+        "description": "See-through fabrics like red carpet fashion",
+        "min_rating": "SOFT",
+        "examples": [
+          "Sheer evening gowns with strategic coverage",
+          "Lace overlay dresses",
+          "Mesh fashion pieces",
+          "Celebrity red carpet looks"
+        ],
+        "NOT_included": ["Full nudity", "No coverage at all"],
+        "real_world_examples": "Like celebrity fashion shows, Met Gala outfits"
+      },
+      "artistic_nudity": {
+        "id": "GREY_ARTISTIC",
+        "name": "Artistic Nudity",
+        "description": "Classical art-style nudity",
+        "min_rating": "MED",
+        "examples": [
+          "Renaissance painting style",
+          "Classical sculpture poses",
+          "Fine art photography",
+          "Museum-appropriate content"
+        ],
+        "standard": "Museum/gallery acceptable"
+      },
+      "cultural_traditional": {
+        "id": "GREY_CULTURAL",
+        "name": "Cultural/Traditional",
+        "description": "Traditional attire that may show more skin but is culturally appropriate",
+        "min_rating": "PG13",
+        "examples": [
+          "Traditional tribal ceremonial wear",
+          "Ancient Greek/Roman attire",
+          "Pacific Islander traditional dress",
+          "African tribal ceremonial"
+        ],
+        "context": "Respectful cultural representation"
+      },
+      "athletic_fitness": {
+        "id": "GREY_ATHLETIC",
+        "name": "Athletic/Fitness",
+        "description": "Sports and fitness attire",
+        "min_rating": "PG13",
+        "examples": [
+          "Swimwear for sports",
+          "Gymnastics attire",
+          "Dance costumes",
+          "Fitness photography"
+        ],
+        "context": "Athletic context appropriate"
+      },
+      "period_historical": {
+        "id": "GREY_HISTORICAL",
+        "name": "Period Historical",
+        "description": "Historical accuracy may include revealing attire",
+        "min_rating": "PG17",
+        "examples": [
+          "Ancient bathing scenes",
+          "Historical accurate slave/servant attire",
+          "Renaissance low-cut gowns",
+          "Saloon girl period costumes"
+        ],
+        "context": "Historical accuracy in appropriate context"
+      }
+    },
+    "real_time_indicators": {
+      "green": "Clearly within rating bounds",
+      "yellow": "Grey area - requires context review",
+      "red": "Exceeds rating bounds - needs higher rating or adjustment"
+    }
+  },
+  
+  "actor_roles_az": {
+    "A": [
+      {"role": "Adventurer", "themes": ["fantasy", "western", "scifi"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Amazon Warrior", "themes": ["fantasy", "tribal"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Aristocrat", "themes": ["medieval", "victorian", "steampunk"], "age_groups": ["adult", "elder"]},
+      {"role": "Artist", "themes": ["modern", "renaissance"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Assassin", "themes": ["fantasy", "asian", "scifi"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Athlete", "themes": ["modern", "scifi"], "age_groups": ["teen", "young_adult", "adult"]}
+    ],
+    "B": [
+      {"role": "Bandit", "themes": ["western", "medieval"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Barmaid", "themes": ["western", "medieval"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Blacksmith", "themes": ["western", "medieval", "fantasy"], "age_groups": ["adult"]},
+      {"role": "Bounty Hunter", "themes": ["western", "scifi"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Bride", "themes": ["all"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "C": [
+      {"role": "Cavalry Officer", "themes": ["western"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Chief's Daughter", "themes": ["native_american", "tribal"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Concubine", "themes": ["asian", "medieval"], "age_groups": ["adult"], "mode": "MATURE"},
+      {"role": "Courtesan", "themes": ["asian", "renaissance"], "age_groups": ["adult"], "mode": "MATURE"},
+      {"role": "Cowgirl", "themes": ["western"], "age_groups": ["teen", "young_adult", "adult"]}
+    ],
+    "D": [
+      {"role": "Dancer", "themes": ["tribal", "asian", "fantasy"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Deputy", "themes": ["western"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Doctor", "themes": ["western", "modern", "scifi"], "age_groups": ["adult"]},
+      {"role": "Dragon Rider", "themes": ["fantasy"], "age_groups": ["teen", "young_adult", "adult"]},
+      {"role": "Druid", "themes": ["fantasy", "celtic"], "age_groups": ["adult", "elder"]}
+    ],
+    "E": [
+      {"role": "Elder", "themes": ["all"], "age_groups": ["elder"]},
+      {"role": "Empress", "themes": ["asian", "roman"], "age_groups": ["adult"]},
+      {"role": "Enchantress", "themes": ["fantasy"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Explorer", "themes": ["victorian", "modern"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "F": [
+      {"role": "Fairy", "themes": ["fantasy"], "age_groups": ["child", "teen", "young_adult"]},
+      {"role": "Farmer's Daughter", "themes": ["western", "medieval"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Fortune Teller", "themes": ["fantasy", "victorian"], "age_groups": ["adult", "elder"]},
+      {"role": "Frontier Woman", "themes": ["western"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "G": [
+      {"role": "Geisha", "themes": ["asian"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Goddess", "themes": ["fantasy", "mythology"], "age_groups": ["adult"]},
+      {"role": "Gunslinger", "themes": ["western"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Gypsy", "themes": ["fantasy", "victorian"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "H": [
+      {"role": "Healer", "themes": ["tribal", "fantasy", "native_american"], "age_groups": ["adult", "elder"]},
+      {"role": "Heiress", "themes": ["victorian", "modern"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Huntress", "themes": ["tribal", "fantasy"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "I": [
+      {"role": "Indian Maiden", "themes": ["native_american"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Inventor", "themes": ["steampunk", "modern"], "age_groups": ["adult"]}
+    ],
+    "J": [
+      {"role": "Judge's Wife", "themes": ["western", "victorian"], "age_groups": ["adult"]}
+    ],
+    "K": [
+      {"role": "Knight", "themes": ["medieval", "fantasy"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Kunoichi (Ninja)", "themes": ["asian"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "L": [
+      {"role": "Lady of the Manor", "themes": ["medieval", "victorian"], "age_groups": ["adult"]},
+      {"role": "Librarian", "themes": ["modern", "victorian"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "M": [
+      {"role": "Maid", "themes": ["victorian", "modern"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Matriarch", "themes": ["all"], "age_groups": ["adult", "elder"]},
+      {"role": "Mayor's Wife", "themes": ["western"], "age_groups": ["adult"]},
+      {"role": "Medicine Woman", "themes": ["native_american", "tribal"], "age_groups": ["adult", "elder"]},
+      {"role": "Merchant's Wife", "themes": ["medieval", "western"], "age_groups": ["adult"]},
+      {"role": "Model", "themes": ["modern"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "N": [
+      {"role": "Native Woman", "themes": ["native_american"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Ninja", "themes": ["asian"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Noble Lady", "themes": ["medieval", "renaissance"], "age_groups": ["adult"]},
+      {"role": "Nurse", "themes": ["modern", "western"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Nymph", "themes": ["fantasy", "mythology"], "age_groups": ["young_adult"], "mode": "MATURE"}
+    ],
+    "O": [
+      {"role": "Oracle", "themes": ["fantasy", "mythology"], "age_groups": ["adult", "elder"]},
+      {"role": "Outlaw Woman", "themes": ["western"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "P": [
+      {"role": "Peasant Girl", "themes": ["medieval"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Pilot", "themes": ["scifi", "modern"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Pioneer Woman", "themes": ["western"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Pirate", "themes": ["fantasy", "historical"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Preacher's Wife", "themes": ["western"], "age_groups": ["adult"]},
+      {"role": "Priestess", "themes": ["tribal", "fantasy", "mythology"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Princess", "themes": ["medieval", "fantasy", "asian"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Prospector's Wife", "themes": ["western"], "age_groups": ["adult"]}
+    ],
+    "Q": [
+      {"role": "Queen", "themes": ["medieval", "fantasy"], "age_groups": ["adult"]}
+    ],
+    "R": [
+      {"role": "Rancher's Wife", "themes": ["western"], "age_groups": ["adult"]},
+      {"role": "Rebel", "themes": ["scifi", "modern"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Rogue", "themes": ["fantasy", "medieval"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "S": [
+      {"role": "Saloon Girl", "themes": ["western"], "age_groups": ["young_adult", "adult"], "grey_area": "period_historical"},
+      {"role": "Samurai Woman", "themes": ["asian"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Schoolteacher", "themes": ["western", "victorian"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Scout", "themes": ["native_american", "western"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Servant", "themes": ["medieval", "victorian"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Shaman", "themes": ["tribal", "native_american"], "age_groups": ["adult", "elder"]},
+      {"role": "Sheriff", "themes": ["western"], "age_groups": ["adult"]},
+      {"role": "Shieldmaiden", "themes": ["viking", "medieval"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Shopkeeper", "themes": ["western", "victorian"], "age_groups": ["adult"]},
+      {"role": "Slave Girl", "themes": ["roman", "medieval"], "age_groups": ["adult"], "mode": "MATURE", "grey_area": "period_historical"},
+      {"role": "Sorceress", "themes": ["fantasy"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Space Pilot", "themes": ["scifi"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Spy", "themes": ["modern", "scifi"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "T": [
+      {"role": "Tavern Wench", "themes": ["medieval", "fantasy"], "age_groups": ["young_adult", "adult"], "grey_area": "period_historical"},
+      {"role": "Temple Dancer", "themes": ["asian", "tribal"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Tribal Chief's Daughter", "themes": ["tribal"], "age_groups": ["teen", "young_adult"]},
+      {"role": "Tribal Priestess", "themes": ["tribal"], "age_groups": ["adult"]},
+      {"role": "Tribal Warrior", "themes": ["tribal"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "U": [
+      {"role": "Undead Queen", "themes": ["fantasy", "gothic"], "age_groups": ["adult"]}
+    ],
+    "V": [
+      {"role": "Valkyrie", "themes": ["viking", "fantasy"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Viking Woman", "themes": ["viking"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Village Girl", "themes": ["medieval", "tribal"], "age_groups": ["teen", "young_adult"]}
+    ],
+    "W": [
+      {"role": "Warrior Princess", "themes": ["fantasy", "tribal"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Warrior Woman", "themes": ["all"], "age_groups": ["young_adult", "adult"]},
+      {"role": "Weaver", "themes": ["native_american", "tribal"], "age_groups": ["adult"]},
+      {"role": "Widow", "themes": ["western", "victorian"], "age_groups": ["adult", "elder"]},
+      {"role": "Witch", "themes": ["fantasy"], "age_groups": ["adult", "elder"]},
+      {"role": "Wisewoman", "themes": ["medieval", "tribal"], "age_groups": ["elder"]}
+    ],
+    "X": [
+      {"role": "Xenoarchaeologist", "themes": ["scifi"], "age_groups": ["adult"]}
+    ],
+    "Y": [
+      {"role": "Young Bride", "themes": ["all"], "age_groups": ["young_adult"]},
+      {"role": "Young Mother", "themes": ["all"], "age_groups": ["young_adult", "adult"]}
+    ],
+    "Z": [
+      {"role": "Zephyr (Wind Spirit)", "themes": ["fantasy", "mythology"], "age_groups": ["adult"]}
+    ]
+  },
+  
+  "story_themes": {
+    "western": {
+      "name": "Western (1850-1900)",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Sheriff", "Cowgirl", "Saloon Girl", "Native Woman", "Outlaw Woman"],
+      "grey_areas_common": ["period_historical", "cultural_traditional"]
+    },
+    "tribal": {
+      "name": "Tribal/Indigenous",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Tribal Warrior", "Priestess", "Healer", "Dancer"],
+      "grey_areas_common": ["cultural_traditional", "artistic_nudity"]
+    },
+    "native_american": {
+      "name": "Native American",
+      "allowed_modes": ["FAMILY", "MATURE"],
+      "typical_roles": ["Medicine Woman", "Chief's Daughter", "Weaver"],
+      "grey_areas_common": ["cultural_traditional"],
+      "sensitivity": "Respectful cultural representation required"
+    },
+    "fantasy": {
+      "name": "Fantasy",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Sorceress", "Princess", "Warrior", "Fairy"],
+      "grey_areas_common": ["artistic_nudity"]
+    },
+    "medieval": {
+      "name": "Medieval Europe",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Queen", "Knight", "Peasant", "Noble Lady"],
+      "grey_areas_common": ["period_historical"]
+    },
+    "asian": {
+      "name": "Asian Historical",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Geisha", "Samurai Woman", "Empress"],
+      "grey_areas_common": ["cultural_traditional", "artistic_nudity"]
+    },
+    "scifi": {
+      "name": "Science Fiction",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Space Pilot", "Rebel", "Android"],
+      "grey_areas_common": ["athletic_fitness"]
+    },
+    "modern": {
+      "name": "Modern/Contemporary",
+      "allowed_modes": ["FAMILY", "MATURE", "ADULT"],
+      "typical_roles": ["Model", "Athlete", "Artist"],
+      "grey_areas_common": ["athletic_fitness", "clothing_transparency"]
+    }
+  },
+  
+  "family_structures": {
+    "nuclear": {
+      "name": "Nuclear Family",
+      "members": ["father", "mother", "child_1", "child_2", "child_3"],
+      "max_children": 5
+    },
+    "extended": {
+      "name": "Extended Family",
+      "members": ["grandfather", "grandmother", "father", "mother", "uncle", "aunt", "child_1", "child_2", "cousin_1"],
+      "generations": 3
+    },
+    "tribal": {
+      "name": "Tribal Family",
+      "members": ["chief", "chief_wife", "elder", "warrior_son", "daughter", "shaman"],
+      "structure": "clan-based"
+    },
+    "western_ranch": {
+      "name": "Western Ranch Family",
+      "members": ["rancher", "rancher_wife", "oldest_son", "daughter", "young_child", "grandmother"],
+      "setting": "1870s frontier"
+    }
+  },
+  
+  "guardrails": {
+    "absolute_rules": [
+      "CHILD and TEEN age groups: NEVER in adult content modes",
+      "CHILD characters: ALWAYS fully clothed, no exceptions",
+      "Minors: NEVER in suggestive or revealing content",
+      "Age verification: REQUIRED for MATURE and ADULT modes",
+      "Content warnings: REQUIRED for R+ ratings"
+    ],
+    "grey_area_handling": {
+      "approach": "Context-sensitive evaluation",
+      "indicators": {
+        "GREEN": "Clearly within bounds",
+        "YELLOW": "Grey area - flagged for context review",
+        "RED": "Exceeds bounds - requires adjustment"
+      },
+      "real_time_display": true
+    }
+  }
+}
